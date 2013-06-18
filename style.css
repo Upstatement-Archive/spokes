@@ -457,7 +457,7 @@ button {
   *zoom: 1;
   overflow: hidden;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .dropdown:after {
   content: "";
   display: table;
@@ -497,7 +497,7 @@ button {
   margin: 0 0 18px;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tabs:after, .pills:after {
   content: "";
   display: table;
@@ -805,11 +805,6 @@ button {
   background-position: 0 -15px;
 }
 
-/* line 30, src/style.scss */
-body {
-  background-color: red;
-}
-
 /************************************/
 /************************************/
 /************************************/
@@ -829,13 +824,13 @@ body {
   text-shadow: 0px -1px 1px #00729d;
 }
 
-/* line 61, src/style.scss */
+/* line 58, src/style.scss */
 input[type="search"] {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
 
-/* line 69, src/style.scss */
+/* line 66, src/style.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -863,7 +858,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .ad-sponsor:after {
   content: "";
   display: table;
@@ -937,7 +932,7 @@ input[type="search"]::-webkit-search-results-decoration {
   *zoom: 1;
   background-color: #fff;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .ad-mod:after {
   content: "";
   display: table;
@@ -1198,7 +1193,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .mod-tags-horiz {
     *zoom: 1;
   }
-  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .mod-tags-horiz:after {
     content: "";
     display: table;
@@ -1254,7 +1249,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .tz-post-blog {
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tz-post-blog:after {
   content: "";
   display: table;
@@ -1299,7 +1294,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .tz-post-tweet {
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tz-post-tweet:after {
   content: "";
   display: table;
@@ -1359,7 +1354,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tool-pagination:after {
   content: "";
   display: table;
