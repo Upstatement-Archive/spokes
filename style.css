@@ -117,7 +117,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -518,7 +518,7 @@ button {
 
 /* line 20, src/project/_tabs.scss */
 .tabs {
-  border: 0px solid #ddd;
+  border: 0px solid #dddddd;
   background-color: #CCC;
 }
 /* line 24, src/project/_tabs.scss */
@@ -805,6 +805,11 @@ button {
   background-position: 0 -15px;
 }
 
+/* line 30, src/style.scss */
+body {
+  background-color: red;
+}
+
 /************************************/
 /************************************/
 /************************************/
@@ -824,13 +829,13 @@ button {
   text-shadow: 0px -1px 1px #00729d;
 }
 
-/* line 57, src/style.scss */
+/* line 61, src/style.scss */
 input[type="search"] {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
 
-/* line 65, src/style.scss */
+/* line 69, src/style.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -842,7 +847,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /************************************/
 /* line 5, src/project/_components-ads.scss */
 .feed .lead-ad {
-  border-bottom: 5px solid #EEE;
+  border-bottom: 5px solid #eeeeee;
   margin-top: 20px;
 }
 
@@ -888,7 +893,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* line 28, src/project/_components-ads.scss */
 .ad-feed {
   padding: 20px 0;
-  border-bottom: 5px solid #EEE;
+  border-bottom: 5px solid #eeeeee;
   margin: 0 0 20px 0;
 }
 /* line 33, src/project/_components-ads.scss */
@@ -1007,7 +1012,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .ad-promo input[type="text"] {
   width: 100%;
   padding: 1em;
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
   margin: 0 auto 12px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1179,8 +1184,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* line 46, src/project/_components-mods.scss */
 .mod-tags {
-  border-top: 1px dotted #CCC;
-  border-bottom: 1px dotted #CCC;
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
   padding: 20px 0 20px 0;
 }
 
@@ -1525,7 +1530,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /* line 3, src/project/_print.scss */
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -1557,7 +1562,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /* line 34, src/project/_print.scss */
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
