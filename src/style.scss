@@ -1,7 +1,7 @@
 /*  
 
-	Theme Name: BizToday
-	Description: Business Today theme for use with Timber
+	Theme Name: Spokes
+	Description: Diff't Spokes for Diff't Folks
 	Author: Upstatement
 	
 */
@@ -86,161 +86,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 
-/************************************/
-
-// HEADER
-
-/************************************/
-
-@import "project/header";
-
-
-/************************************/
-
-// FOOTER
-
-/************************************/
-
-@import "project/footer";
-
-
-
-/************************************/
-
-// SINGLE.HTML
-
-/************************************/
-
-@import "project/single";
-
-
-
-/************************************/
-
-// HOME.HTML
-
-/************************************/
-
-@import "project/homepage";
-
-
-/************************************/
-
-// HOME.HTML
-
-/************************************/
-
-@import "project/archive";
-
-
-
-/************************************/
-
-// AUTHOR.HTML
-
-/************************************/
-
-@import "project/author";
-
-
-
-/************************************/
-
-// PAGE-THE-PROX.HTML
-
-/************************************/
-
-@import "project/prox";
-
-
-
-/************************************/
-
-// PAGE-INTERSECTIONS.HTML
-
-/************************************/
-
-@import "project/intersections";
-
-
-/************************************/
-
-// Events
-
-/************************************/
-
-@import "project/events";
-
-
-/************************************/
-
-// Events teases
-
-/************************************/
-
-@import "project/events-tz";
-
-
-/************************************/
-
-// Sponsors
-
-/************************************/
-
-@import "project/sponsor";
-
-
-/************************************/
-
-// Pages
-
-/************************************/
-
-@import "project/pages";
-
-
-/************************************/
-
-// SINGLE-ATTACHMENT.HTML
-
-/************************************/
-
-.media-mod {
-	border-bottom: 1px solid #666;
-	padding: 0 0 20px 0;
-	margin: 0 0 20px 0;
-	color: #CCC;
-}
-
-
-/************************************/
-
-// DARK PAGES
-
-/************************************/
-
-@import "project/theme-dark";
-
-
-
-/************************************/
-
-// Galleries
-
-/************************************/
-
-@import "project/galleries";
-
-
-
-/************************************/
-
-// Search.html
-
-/************************************/
-
-@import "project/search";
-
 
 
 
@@ -250,8 +95,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /************************************/
 
-@import "inkwell/layout.scss";
-@import "inkwell/type.scss";
+//@import "inkwell/_layout.scss";
+//@import "inkwell/_type.scss";
 
 
 

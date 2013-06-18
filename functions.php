@@ -3,6 +3,8 @@
 	add_filter('get_twig', 'add_to_twig');
 	define('THEME_URL', get_template_directory_uri());
 
+	require_once('spokes.php');
+
 	function add_to_twig($twig){
 		/* this is where you can add your own fuctions to twig */
 		$twig->addExtension(new Twig_Extension_StringLoader());

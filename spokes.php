@@ -15,7 +15,7 @@
 		}
 
 		function load_header_scripts(){
-		
+			wp_enqueue_script( 'jquery');
 			
 		}
 
