@@ -1,0 +1,76 @@
+.page-author {
+	@media (min-width: $medium){
+		@include ui-grid-2(30%, 70%, 4%);
+	}
+}
+
+.author_bio {
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #EEE;
+	margin-bottom: 20px;
+	p {
+		margin: 0 0 5px 0;
+	}
+	.tz-txt {
+		text-align: left;
+	}
+	.author-contact {
+		@extend .tz-txt;
+		text-align: center;
+		font-family: $sans;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #EEE;
+		margin-bottom: 20px;
+	}
+}
+
+.author-img {
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	background-color: #FFF;
+	border: 1px solid #EEE;
+	// @include border-radius(100px);
+}
+
+.author-contact {
+	margin: 0 0 20px 0;
+
+	a {
+		color: $orange;
+	}
+}
+
+.author-twitter {
+	@media(max-width: $large){
+		// display: none;
+	}
+
+	.mod-h {
+		margin: 0 0 10px 0;
+	}
+	li {
+		border-bottom: 1px solid #EEE;
+		padding: 10px 0;
+		margin: 0;
+		.tz-txt {
+			font-size: 12px;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.tz-content-author {
+
+	.h2 {
+		font-size: 42px;
+	}
+
+	.tz-txt {
+		font-size: 17px;
+		line-height: 1.45em;
+	}
+}

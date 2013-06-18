@@ -1,0 +1,121 @@
+// !============================================= */
+
+// ! Variables						  			  */ 
+
+// !============================================= */
+
+
+// --------------------------------------------
+//
+// Breakpoints
+// 
+
+$small: 200px;
+$medium: 600px;
+$large: 900px;
+$x-large: 1100px;
+
+$max-width:	1600px;
+
+$margin-top: 35px;
+$margin-top-l: 85px;
+
+// --------------------------------------------
+//
+// Colors 
+// 
+
+
+$black-5: #f5f5f5;
+$black-10: #ededed;
+$black-15: #ccc;
+$black-50: #999;
+$black-75: #666; 
+$black-90: #222; 
+$black-95: #111; 
+
+$light-gray: $black-10;
+$med-gray: $black-50;
+$dark-gray: $black-75;
+$tease-txt: $black-75;
+$txt-black: $black-90;
+$text-black: $txt-black;
+
+$rgba-black: rgba(25, 25, 25, 0.15);
+
+
+// $link: #27b99e;
+
+$body-color: #fff;
+$faint-gray: #efefef;
+
+
+// $lt-background: #fcfcfc;
+$lt-background: #003244;
+
+
+
+
+$orange: #f1592a;
+$link-h: #1d1d1d;
+$link-h-hover: #666;
+$intersections-blue: #3fb0ff;
+
+$link: #1581b1;
+$link-hover: darken($link, 8%);
+
+
+// --------------------------------------------
+//
+// Biz Today palette
+// 
+$bt-blue: #0066a1;
+$bt-med-blue: #009fda;
+$bt-lt-blue: #589cc1;
+$bt-red: #c60c30;
+
+$bt-link: $link;
+
+$txt: #191919;
+$tz-hd: lighten($txt, 15%);
+$tz-cat: $black-75;
+
+// Site header
+$hdr-background: $bt-blue;
+$hdr-border: red;
+$hdr-link: $bt-lt-blue;
+
+// Section headers
+$section-hdr: $bt-med-blue;
+$section-hdr-border: $bt-blue;
+
+
+// --------------------------------------------
+//
+// Typography 
+// 
+
+$bt-sans: 'PT Sans';
+$bt-serif: 'Roboto Slab';
+
+$sans: $bt-sans, "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+$serif: $bt-serif, Georgia, Times, "Times New Roman", serif;
+$mono: "Courier New", Courier, mono;
+
+
+
+$body: normal 17px/27px $bt-sans;
+
+
+// --------------------------------------------
+//
+// Borders 
+// 
+
+// Border colors
+$border-color: $faint-gray;
+$border-color-dark: darken($faint-gray, 10%);
+
+// Border colors
+$border: 1px solid $border-color;
+$border-dark: 1px solid $border-color-dark;

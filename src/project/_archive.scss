@@ -1,0 +1,91 @@
+.archive-posts {
+	@extend %page-padding;
+	margin-top: 30px;
+	// padding-bottom: 30px;
+	@include pie-clearfix;
+}
+
+.tz-post-archive {
+	@include pie-clearfix;
+	// padding-bottom: 45px;
+	// margin-bottom: 45px;
+	margin-bottom: 0;
+
+	&.feed-mod {
+		padding: 30px 0;
+		margin-bottom: 0px;
+		&:first-of-type {
+			padding-top: 0;
+		}
+		@media (min-width: $large) {
+			padding: 45px 0;
+		}
+	}
+}
+
+.tz-img-archive {
+	// width: 25%;
+	// float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	@extend %sq-img;
+	@media (min-width: $medium) {
+		width: 40%;
+		// float: left;
+		// margin-bottom: 0;
+	}
+	@media (min-width: $large) {
+		width: 25%;
+		float: left;
+		margin-bottom: 0;
+	}
+}
+
+.tz-content-archive {
+	width: 100%;
+	// width: 70%;
+	// float: right;
+
+	.h2 {
+		// font-size: 42px;
+		// letter-spacing: -1px;
+		font-size: 1.45em;
+		font-weight: bold;
+		@media (min-width: $medium) {
+			font-size: 2em;
+		}
+		@media (min-width: $large) {
+			font-size: 42px;
+			letter-spacing: -1px;
+			font-weight: 300;
+		}
+	}
+
+	.tz-txt {
+		// font-size: 17px;
+		// line-height: 1.45em;
+		font-size: 14px;
+		line-height: 22px;
+		@media (min-width: $large) {
+			font-size: 17px;
+			line-height: 1.45em;
+		}
+	}
+
+	@media (min-width: $large) {
+		width: 70%;
+		float: right;
+	}
+}
+
+
+.tz-cat-archive {
+	@extend %cat-tag;
+	margin-top: 12px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+

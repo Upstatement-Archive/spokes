@@ -1,0 +1,562 @@
+//
+// Events archive
+// 
+
+
+// Archive padding
+.archive-event {
+	@extend %page-padding;
+	position: relative;
+	// margin-top: 60px;
+	margin-bottom: 60px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid $border-color;
+	&:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.event-tz-img {
+		margin-top: 0;
+	}
+
+	.kicker {
+		margin-top: 0;
+	}
+
+	.h1 {
+		font-size: 2.15em;
+		font-weight: bold;
+		@media (min-width: $large) {
+			font-size: 3em;
+		}
+	}
+
+} // archive-event
+
+
+.post-type-conferences,
+.post-type-seminars,
+.content-wrapper.archive {
+	padding-bottom: 45px;
+}
+
+.archive-events-about {
+	@extend %page-padding;
+	padding-top: 45px;
+	margin-bottom: 60px;
+	p {
+		@extend %big-page-txt;
+		font-size: 18px;
+		@media (min-width: $large) {
+			font-size: 24px;
+		}
+	}
+}
+
+.archive-event-tz-intro {
+	font-size: 18px;
+	line-height: 1.45em;
+
+	a {
+		color: $link;
+	}
+}
+
+
+.h3.archive-event-subhead {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0;
+	@media (min-width: $medium) {
+		font-size: 22px;
+		font-weight: 300;
+	}
+}
+
+.archive-event-section {
+	@include pie-clearfix;
+	// margin-bottom: 30px;
+	margin-bottom: 15px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.event-featured-grid {
+		margin-top: 0;
+	}
+
+	@media (min-width: $medium) {
+		margin-bottom: 30px;
+	}
+}
+
+.archive-event-date {
+	.h5 {
+		font-family: $sans;
+		color: #000;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+	.h6 {
+		font-family: $sans;
+		color: $txt;
+		margin: 0;
+	}
+
+	@media (min-width: $medium) {
+		float: left;
+	}
+}
+
+
+.archive-event-btn {
+	margin-top: 8px;
+	.event-tz-btn {
+		width: auto;
+	}
+
+	@media (min-width: $medium) {
+		float: right;
+	}
+}
+
+
+// Sets section-hdr to larger size and changes background based on the .archive context
+.archive {
+	.section-hdr {
+		@extend %sect-hdr-l;
+		> h5 {
+			// @extend %page-padding;
+			// text-shadow: none;
+			// font-size: 2em;
+			// padding-top: 20px;
+			// padding-bottom: 20px;
+			// border-bottom-color: $bt-lt-blue;
+		}
+	}
+}
+
+
+// Backgrounds on page headers for conferences
+.post-type-archive-conferences {
+	.section-hdr-l {
+		background-image: url(/wp-content/themes/biztoday/images/dev/events_bg/conference_bg_1.jpg);
+	}
+}
+
+
+// Background on page headers for seminars
+.post-type-archive-seminars {
+	.section-hdr-l {
+		background-image: url(/wp-content/themes/biztoday/images/dev/events_bg/seminar_bg_1.jpg);
+	}
+}
+
+
+.archive-grid-view {
+	.section-hdr-l {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		> h5 {
+			font-size: 28px;
+		}
+	}
+}
+
+
+// grid for past conferences or seminars
+.story-grid {
+	@extend %page-padding;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	// margin-left: 0;
+
+	@media (max-width: $large) {
+		@include media-grid(2);
+	}
+	
+	@media (min-width: $large){
+		@include media-grid(3);
+		// margin-left: 0;
+	}
+
+	.media-block {
+		border-right: 1px solid $border-color;
+		// border-bottom: 1px solid $border-color;
+		border-top: 1px solid $border-color;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 1.53846em;
+		height: 275px;
+		max-height: 275px;
+		&:nth-child(2n + 2) {
+			border-right: none;
+		}
+
+		@media (min-width: $large) {
+			&:nth-child(2n + 2) {
+				border-right: 1px solid $border-color;
+			}
+			&:nth-child(3n + 3) {
+				border-right: none;
+			}
+		} 
+		
+	} // media-block
+
+	li {
+		list-style: none;
+	}
+
+	.h5 {
+		font-size: 18px;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+	p {
+		font-family: $serif;
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	.h6 {
+		font-family: $sans;
+		margin: 0 0 3px 0;
+	}
+
+	.event-grid-date {
+		font-weight: bold;
+	}
+} // story-grid
+
+
+// intro on events archive page
+.event-tz-intro {
+	@extend %event-intro-txt;
+
+	a {
+		color: $link;
+	}
+}
+
+
+//
+// Single event
+// 
+
+.event-bg {
+	@extend %letter-box;
+	margin-bottom: 80px;
+	background-color: $bt-lt-blue;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+
+	.h1, .h3, .h5, .h6 {
+		color: #fff;
+	}
+
+	.h1 {
+		font-weight: bold;
+		// font-size: 60px;
+		font-size: 2.45em;
+		@media (min-width: $medium) {
+			font-size: 3em;
+		}
+		@media (min-width: $large) {
+			font-size: 60px;
+		}
+	}
+
+	.h3 {
+		// font-weight: 100;
+		// font-size: 44px;
+		font-size: 1.25em;
+		@media (min-width: $medium) {
+			font-size: 2em;
+		}
+		@media (min-width: $large) {
+			font-size: 42px;
+			font-weight: 100;
+		}
+	}
+
+	.kicker {
+		background-color: transparent;
+		color: #fff;
+		padding: 0;
+		margin-bottom: 20px;
+		border-left: none;
+	}
+} // event-bg
+
+
+.single-conferences {
+	.event-bg {
+		background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_0.jpg);
+		&.card-0 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_0.jpg);
+		}
+		&.card-1 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_1.jpg);
+		}
+		&.card-2 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_2.jpg);
+		}
+		&.card-3 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_3.jpg);
+		}
+		&.card-4 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/conference_bg_4.jpg);
+		}
+	}
+}
+
+.single-seminars {
+	.event-bg {
+		background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_1.jpg);
+		&.card-0 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_0.jpg);
+		}
+		&.card-1 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_1.jpg);
+		}
+		&.card-2 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_2.jpg);
+		}
+		&.card-3 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_3.jpg);
+		}
+		&.card-4 {
+			background-image: url(/wp-content/themes/biztoday/images/events_bg/seminar_bg_4.jpg);
+		}
+	}
+
+}
+
+.single-event-date {
+	// position: absolute;
+	// bottom: 3em;
+	// border-top: 8px solid rgba(255, 255, 255, 0.2);
+	padding-top: 15px;
+
+	.h5, .h6 {
+		font-family: $sans;
+	}
+
+	.h5 {
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.h6 {
+		font-size: 16px;
+	}
+
+	@media (min-width: $large) {
+		position: absolute;
+		bottom: 2em;
+		border-top: 8px solid rgba(255, 255, 255, 0.2);
+	}
+} // single-event-date
+
+
+
+.event-content {
+	width: 100%;
+	@include box-shadow(none);
+
+	.event-tz-img {
+		width: 100%;
+	}
+
+	.ui-block-1 {
+		.event-tz-img {
+			margin-top: 0;
+		}
+	}
+
+	.article-bd {
+		a.event-tz-btn {
+			color: #fff;
+			display: block;
+			width: 200px;
+		}
+	}
+}
+
+
+// changes size image size for event landing pages
+.post-type-archive {
+	.event-tz-img {
+		width: 100%;
+	}
+}
+
+.l-event {
+	@include pie-clearfix;
+
+	> .ui-block-1 {
+		// float: left;
+		width: 45%;
+		// margin: 0 25px 10px 0;
+		margin-bottom: 25px;
+
+		@media (min-width: $medium) {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	@media (min-width: $medium) {
+		@include ui-grid-2(30%, 70%, 5%);
+	}
+
+	// @media (min-width: $large) {
+	// 	@include ui-grid-2(30%, 70%, 3%);
+	// }
+} // end .l-event
+
+
+// sets size of event-intro. using event-content to override article-bd styles
+.event-content {
+	.event-intro {
+		p {
+			@extend %event-intro-txt;
+		}
+		
+	}
+}
+
+
+.tz-img-caption {
+	max-width: 90%;
+	h6 {
+		font-family: $sans;
+		font-size: 13px;
+		line-height: 1em;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		color: $txt;
+		letter-spacing: 1px;
+	}
+	p {
+		font-size: 13px;
+		line-height: 1.35em;
+		margin-top: 2px;
+	}
+}
+
+// sets margin for image grid
+.event-featured-grid {
+	margin-top: 30px;
+}
+
+.img-grid {
+	@media (max-width: $large) {
+		@include media-grid(2);
+	}
+
+	@media (min-width: $large){
+		@include media-grid(4);
+	}
+
+	li {
+		list-style: none;
+	}
+}
+
+
+
+// Sets margin between event-sections
+.event-section {
+	margin-top: 45px;
+	@include pie-clearfix;
+	&:last-of-type {
+		margin-bottom: 45px;
+	}
+}
+
+
+
+
+//
+// Events schedule for a single event
+// 
+
+.sked-table {
+	width: 100%;
+	margin-bottom: 45px;
+	&:first-of-type {
+		margin-top: 10px;
+	}
+}
+
+.sked-head {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+	margin-top: 45px;
+}
+
+td { 
+	line-height: 1.45em;
+	border-bottom: 1px solid $border-color;
+	padding: 1.45em 8px;
+}
+.sked-row {
+	.last {
+		td {
+			border-bottom: none;
+		}
+	}
+	&:nth-child(odd) {
+		background-color: lighten($border-color, 3%);
+	}
+}
+
+
+
+.sked-time {
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	width: 22%;
+	@media (min-width: $large) {
+		width: 15%;
+	}
+}
+
+.sked-explainer {
+	padding-left: 1em;
+	width: 78%;
+	@media (min-width: $large) {
+		width: 85%;
+	}
+}
+
+
+
+
+
+
+
+// 	background: 
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.10) 40%, rgba(255,255,255,.15) 20%, rgba(255,255,255,0) 33%) 0 0,
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.05) 41%, rgba(255,255,255,.15) 20%, rgba(255,255,255,0) 14%) 0 0,
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.10) 17%, rgba(255,255,255,.15) 19%, rgba(255,255,255,0) 20%) 0 110px,
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.15) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.15) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+// radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.15) 13%, rgba(255,255,255,0) 14%) 0 0,
+// linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 85%, #b13e12 90%, #e27412 100%);
+// background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+// background-color: #840b2a;

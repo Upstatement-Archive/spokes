@@ -1,0 +1,272 @@
+
+// @import "../project/variables";
+
+/************************************/
+
+// TYPE
+
+/************************************/
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: $serif;
+	font-weight: normal;
+	margin: 10px 0;
+
+	a {
+		text-decoration: none;
+		color: lighten($txt-black, 8%);
+		@include trans(0.25s);
+		&:hover {
+			color: black;
+		}
+	}
+
+	@extend %link-h;
+}
+
+.sans {
+	font-family: $sans;
+}
+
+.h1 {	font-size: em(36); }
+.h2 {	font-size: em(32); }
+.h3 {	font-size: em(26); }
+.h4 {	font-size: em(22); }
+.h5 { 	font-size: em(14); }
+
+.light { color: $black-75; }
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+
+// a { text-decoration: none; }
+
+.tz-txt {
+	font-family: $sans;
+	font-size: 14px;
+	line-height: 22px;
+	// margin-bottom: 20px;
+
+	a {
+		color: $link;
+		text-decoration: none;
+	}
+}
+
+.tz-txt-mod, .tz-txt-mod p {
+	font-family: $sans;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.section-h {
+	font-family: $sans;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	color: black;
+	// border-bottom: 1px dotted #CCC;
+
+	a {
+		color: #000;
+		&:hover {
+			color: $link;
+		}
+	}
+}
+
+.mod-h {
+	font-family: $sans;
+	text-transform: uppercase;
+	background-color: $lt-background;
+	color: #FFF;
+	padding: 10px;
+}
+
+.kicker {
+	font-family: $sans;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	// margin-bottom: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	a {
+		color: $black-75;
+		text-decoration: none;
+
+		&:hover {
+			color: #000;
+			border-bottom: dotted 1px #666;
+		}
+	}
+}
+
+.byline, .tz-byline {
+	margin-bottom: 10px;
+	font-family: $serif;
+	font-size: 14px;
+	color: $black-75;
+	font-weight: normal;
+	// text-transform: uppercase;
+
+	a {
+		color: $txt;
+		font-weight: bold;
+		text-decoration: none;
+		font-family: $serif;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: 0.85em;
+		font-weight: 300;
+		text-transform: none;
+		font-family: $serif;
+	}
+	a.icon-twitter {
+		font-size: 0.75em;
+		color: $black-75;
+		&:hover {
+			color: $txt;
+			text-decoration: none;
+		}
+	}
+}
+
+.date {
+	font-size: 11px;
+}
+
+.tz-date {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+}
+
+.photo-caption {
+	margin: 10px 0 0 0;
+	.byline {
+		text-align: right;
+		font-size: 12px;
+	}
+}
+
+.link-tz {
+	font-family: $sans;
+	padding: 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+	background-color: $lt-background;
+
+	&:hover {
+		background-color: $link;
+		color: #FFF;
+		cursor: pointer;
+	}
+}
+
+.tag-txt {
+	color: $link;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+
+	}
+}
+
+
+.tz-list-ol, 
+.tz-list-ul {
+	padding: 0 8%;
+}
+
+.tz-list-item {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: $border-dark;
+	@include pie-clearfix;
+	&:last-child {
+		border-bottom: none;
+	}
+	
+	a {
+		color: $tz-hd;
+		font-family: $serif;
+		// font-size: 14px;
+		font-size: 16px;
+		line-height: 1.35em;
+		text-decoration: none;
+		text-transform: none;
+		&:hover {
+			color: darken($tz-hd, 30%);
+		}
+		@media (min-width: $large) {
+			font-size: 18px;
+		}
+	}
+}
+
+.tz-list-cat {
+	color: $tz-cat;
+	font-weight: normal;
+	margin-bottom: 8px;
+	a {
+		font-family: $sans;
+		color: $tz-cat;
+		font-size: 11px;
+		line-height: 1em;
+		font-weight: normal;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include trans;
+		&:hover {
+			color: darken($tz-cat, 30%);
+		}
+		
+	}
+}
+
+.tz-list-ol {
+	padding-left: 20px;
+}
+
+.tz-list-bull {
+	list-style-type: disc;
+	list-style-position: inside;
+	color: $link;
+
+	li {
+		margin-bottom: 20px;
+
+		a {
+			color: $link;
+			font-family: $sans;
+			font-size: 16px;
+			text-decoration: none;
+		}
+	}
+}
+
+.tz-list-heads {
+	.list-mod {
+		padding: 10px 0;
+		border-bottom: 1px solid #EEE;
+		margin-bottom: 10px;
+	}
+}
+
+.comment-count {
+	color: $black-75;
+	padding: 2px 5px;
+	background-color: $black-5;
+	font-size: 10px;
+	line-height: 0.75em;
+	font-weight: bold;
+	border: 1px solid $black-10;
+}

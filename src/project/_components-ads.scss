@@ -1,0 +1,242 @@
+// 
+// Ads
+//
+
+.feed .lead-ad {
+	border-bottom: 5px solid #EEE;
+	margin-top: 20px;
+}
+
+.ad-sponsor {
+	padding: 20px;
+	background-color: #FFF;
+	margin: 0 0 20px 0;
+
+	font-family: $sans;
+	font-size: 16px;
+	font-weight: bold;
+	color: #CCC;
+	text-transform: uppercase;
+
+	@include ui-grid-2(40%, 60%, 5%);
+
+	a {
+		color: $orange;
+	}
+}
+
+.ad-feed {
+	// background-color:#f0f0f0; 
+	padding: 20px 0;
+	border-bottom: 5px solid #EEE;
+	margin: 0 0 20px 0;
+	.ad-mod {
+		margin:auto;
+		width:300px;
+		background-color:#f0f0f0;
+		img {
+			@include resp-img;
+		}
+	}
+}
+
+.ad-billboard {
+	background-color: #EEE;
+	padding: 20px;
+	display: none;
+
+	@media (min-width: $medium){
+		display: block;
+	}
+}
+
+.ad-billboard-mod {
+	text-align: center;
+}
+
+.ad-display-mod {
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.ad-mod {
+	@include pie-clearfix;
+	background-color: #fff;
+}
+
+//
+// Promo ads
+//
+
+.hp-ad-promos {
+	margin-bottom: 40px;
+}
+
+.resp-img { width: 100%; }
+
+
+.ad-promo {
+	position: relative;
+	z-index: 5;
+
+	> .ad-mod {
+		position: relative;
+		border: 6px solid #e5e5e5;
+		background-color: #fff;
+		z-index: 4;
+		padding: 20px;
+		margin: 0 0 20px 0;
+		text-align: center;
+
+		@media (min-width: $medium){
+			min-height: 380px;
+		}
+	} // end ad-mod
+
+	.h4 {
+		font-family: $sans;
+	}
+
+	.h5 {
+		font-family: $sans;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		margin: 3px 0 12px;
+	}
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		&.hp-local-popular {
+			margin: 10px 0;
+			text-transform: capitalize;
+			display: block;
+		}
+		color: $orange;
+
+		&.btn {
+			color: #FFF;
+		}
+	}
+
+	#pgmenu2 {
+		padding: 10px;
+		background-color: #EEE;
+		position: relative;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		padding: 1em;
+		border: 1px solid #eee;
+		margin: 0 auto 12px;
+		@include border-radius(4px);
+	}
+
+	input[type="submit"] {
+		max-width: 50%;
+		border: 0;
+		color: #FFF;
+	}
+
+} // end ad.promo
+
+.ad-box-shadow {
+	&:before,
+	&:after {
+		@include box-shadow( 0 4px 4px rgba(0, 0, 0, 0.2) );
+		background-color: transparent;
+		bottom: 3px;
+		line-height: 0;
+		height: 51%;
+		content: '\0020';
+		position: absolute;
+		text-align: left;
+		width: 70%;
+	}
+
+	&:before {
+		left: 3px;
+		z-index: 3;
+		-webkit-transform: skew(-2deg) rotate(-1deg);
+		   -moz-transform: skew(-2deg) rotate(-1deg);
+		       transform: skew(-2deg) rotate(-1deg);
+	}
+
+	&:after {
+		right: 4px;
+		z-index: 3;
+		-webkit-transform: skew(2deg) rotate(1deg);
+		   -moz-transform: skew(2deg) rotate(1deg);
+		       transform: skew(2deg) rotate(1deg);
+	}
+
+} // end .ad-box-shadow
+
+
+.ad-highlight {
+	padding: 0.75em 1em;
+	margin-bottom: 12px;
+	color: #000;
+	> .ad-promo-txt {
+		margin-bottom: 0;
+	}
+}
+
+.ad-highlight-orange,
+.ad-highlight-drk {
+	color: #fff;
+}
+
+.ad-highlight-orange {
+	background-color: $orange;
+}
+
+.ad-highlight-drk {
+	background-color: #444;
+}
+
+.ad-promo-img {
+	height: 126px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.ad-promo-img-full {
+	position: relative;
+
+	img {
+		opacity: 0.8;
+	}
+}
+
+.ad-promo-big-type {
+	.h4 {
+		font-size: 30px;
+		line-height: 1em;
+		text-transform: uppercase;
+	}
+}
+
+.ad-promo-overlay {
+	position: absolute;
+	bottom: 1em;
+	padding-bottom: 1.25em;
+	padding: 0 0.75em 1em;
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	left: 5%;
+
+	.h4 {
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+		background-color: rgba( 0, 0, 0, 0.3 );
+		padding: 0.25em;
+	}
+}
+
+
+.ad-promo-txt {
+	margin-bottom: 8px;
+}

@@ -1,0 +1,241 @@
+// !============================================= */
+
+// ! Placeholders					  			  */ 
+
+// !============================================= */
+
+
+// Margin-top
+%page-top {
+	margin-top: 3px;
+	@media (min-width: $large) {
+		margin-top: 52px;
+	}
+}
+
+
+// Square image
+%sq-img {
+	padding: 3px;
+	background: rgba(0, 0, 0, 0.02);
+	border: 1px solid $black-10;
+	border-right-color: $black-15;
+	border-bottom-color: $black-15;
+	img {
+		@include resp-img;
+	}
+}
+
+
+
+// Sets height for full-page elements
+%letter-box {
+	// height: 600px;
+	// max-height: 600px;
+	// height: 350px;
+	// max-height: 350px;
+	@media (min-width: $medium) {
+
+	}
+	@media (min-width: $large) {
+		height: 600px;
+		min-height: 600px;
+	}
+}
+
+
+
+// Sets padding on article pages, events pages, etc.
+%page-padding {
+	padding-right: 3%;
+	padding-left: 3%;
+
+	@media (min-width: $large) {
+		padding-right: 8%;
+		padding-left: 8%;
+	}
+
+}
+
+
+// Sets size for event intros on single-event and archive-event
+%event-intro-txt {
+	font-size: 20px;
+	line-height: 1.45em;
+	margin-top: 15px;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+
+
+// Box shadows
+%mod-shadow {
+	@include box-shadow(3px 2px 8px $rgba-black);
+}
+
+
+
+// Sets margin between sections on team, etc. more to come
+%page-section {
+	// margin-top: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	&:last-of-type {
+		// margin-bottom: 45px;
+	}
+}
+
+
+%bt-btn {
+	// padding: 5px;
+	padding: 9px 11px;
+	background-color: $bt-lt-blue;
+	// width: 85px;
+	// margin-top: 5px;
+	text-align: center;
+	color: white;
+	@include border-radius(3px);
+	@include trans(0.35s);
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $bt-blue;
+	}
+
+}
+
+
+
+
+// Gray boxes for categories on article pages, archive and author pages
+%cat-tag {
+	// background-color: $black-10;
+	display: inline-block;
+	// padding: 5px 8px;
+	color: #666;
+	color: $bt-lt-blue;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-left: 6px solid lighten($bt-lt-blue, 25%);
+	padding-left: 8px;
+		a {
+			color: darken($black-15, 35%);
+			display: inline-block;
+			font-family: $sans;
+			@include trans(0.25s);
+			&:hover {
+				color: darken($black-15, 55%);
+				border-bottom: none;
+			}
+		}
+}
+
+
+// Intro area of conference and seminars
+%big-page-txt {
+	// font-size: 16px;
+	font-size: 24px;
+	line-height: 1.45em;
+	font-style: italic;
+	font-family: $sans;
+	color: $bt-lt-blue;
+
+		@media (min-width: $medium) {
+			font-size: 30px;
+			margin-bottom: 12px;
+		}
+
+		@media (min-width: $large) {
+			max-width: 90%;
+			font-size: 34px;
+			line-height: 1.35em;
+		}
+}
+
+// Section headers
+%sect-hdr {
+	font-family: $serif;
+	background-color: $section-hdr;
+	border-bottom: 3px solid lighten($section-hdr-border, 5%);
+	padding: 5px 10px;
+	color: #ffffff;
+	font-weight: 400;
+	text-transform: none;
+	font-size: 20px;
+	margin-bottom: 2px;
+	margin-top: 0;
+	@include text-shadow(0px -1px 1px darken($section-hdr, 12%) );
+}
+
+%sect-hdr-l {
+	@extend %sect-hdr;
+	padding-left: 3%;
+	// padding-top: 20px;
+	// padding-bottom: 20px;
+	font-size: 2em;
+	margin-bottom: 0;
+	// padding-left: 8%;
+	font-size: 30px;
+	.h5 {
+		font-weight: 100;
+	}
+	@media (min-width: $large) {
+		padding-left: 8%;
+		font-size: 45px;
+	}
+}
+
+%sect-hdr-m {
+	@extend %sect-hdr;
+	background-color: #fff;
+	text-shadow: none;
+	font-size: 20px;
+	color: $txt;
+	text-transform: uppercase;
+	padding: 0;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	border-color: lighten($section-hdr, 15%);
+	> .h5 {
+		margin-top: 0;
+		margin-bottom: 8px;
+		font-weight: 100;
+	}
+
+	@media (min-width: $large) {
+		font-size: 24px;
+	}
+
+	@media (min-width: $x-large) {
+		font-size: 30px;
+	}
+} 
+
+
+// Section headers
+%page-pair {
+
+	@media (min-width: $medium) {
+		.pair-1 {
+			width: 30%;
+			float: left;
+		}
+		.pair-2 {
+			width: 60%;
+			float: right;
+		}
+	}
+
+	@media (min-width: $large) {
+		.pair-1 {
+			width: 25%;
+		}
+		.pair-2 {
+			width: 65%;
+		}
+	}
+}
+

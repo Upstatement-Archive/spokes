@@ -1,0 +1,51 @@
+.search-term {
+	color: $bt-lt-blue;
+}
+
+.search-form {
+	width: 100%;
+	background-color: #EEE;
+	padding: 8px;
+	margin: 0 0 30px 0;
+	@include pie-clearfix;
+	@include border-radius(5px);
+
+	.search-input {
+		@include trans;
+		float: left;
+		background-color: #FFF;
+		padding: 10px;
+		border: #EEE;
+		height: 30px;
+		width: 90%;
+		font-family: $sans;
+		@media(min-width: $medium){
+			width: 95%;
+		}
+	}
+
+	.search-btn {
+		float: left;
+		background-color: $bt-lt-blue;
+		text-indent: -10000px;
+		// width: 5%;
+		width: 8%;
+		height: 30px;
+		border: #333;
+		background-image: url('/wp-content/themes/biztoday/images/icons/hdr-search.png');
+		// background-image: @include svg(hdr-search);
+		background-position: center center;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		@include trans(background-color, 0.25s);
+
+		&:hover {
+			background-color: $bt-blue;
+		}
+
+		@media (min-width: $medium) {
+			width: 5%;
+		}
+	}
+
+}

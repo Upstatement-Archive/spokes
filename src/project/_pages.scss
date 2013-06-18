@@ -1,0 +1,236 @@
+//
+// Currently only used on author page
+//
+.l-page {
+	@extend %page-padding;
+	margin-top: $margin-top;
+	padding-top: 100px;
+}
+
+
+
+//
+// Team page
+//
+.l-team {
+	@extend %page-padding;
+	margin-top: $margin-top;
+}
+
+.team-member {
+	@extend %page-section;
+	@extend .l-event;
+	padding-bottom: 60px;
+	border-bottom: $border-dark;
+	.h2 {
+		font-size: 24px;
+		color: black;
+		margin-top: 0;
+		margin-bottom: 7px;
+	}
+
+	.team-title {
+		text-transform: uppercase;
+		margin: 0 0 25px;
+		font-family: $sans;
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+} // team-member
+
+
+.team-img {
+	@extend %sq-img;
+	@extend .event-tz-img;
+	width: 40%;
+}
+
+
+.team-section {
+	// background-color: yellow;
+}
+
+.user-story-link {
+	// float: left;
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $bt-lt-blue;
+		@include trans(0.25s);
+		&:hover {
+			color: $bt-blue;
+		}
+	}
+}
+
+
+//
+// Page mod
+//
+.page-mod {
+	@extend %page-section;
+	@extend .l-event;
+	// background-color: green;
+	border-bottom: $border;
+	@include pie-clearfix;
+
+	.h3 {
+		color: black;
+		font-family: $sans;
+		font-weight: 700;
+		font-size: 17px;
+		margin-top: 40px;
+		margin-bottom: 6px;
+		&:first-child {
+			margin-top: 0;
+		}
+		@media (min-width: $large) {
+			font-size: 20px;
+			margin-bottom: 4px;
+		}
+	}
+
+	.article-bd {
+		color: $txt;
+		a {
+			text-decoration: none;
+			color: $link;
+		}
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+} // end page-mod
+
+
+.page-mod {
+	@extend %page-pair;
+	.tool-share {
+		opacity: 1;
+		display: inline-block;
+		float: right;
+	}
+}
+
+
+//
+// Pairs
+// 
+
+
+//
+// Page intro
+// 
+
+.page-intro {
+	// padding-top: 45px;
+	// margin-bottom: 45px;
+	padding-top: 15px;
+	.h1 {
+		color: black;
+		font-size: 2.75em;
+		line-height: 1.35em;
+		letter-spacing: -2px;
+	}
+	.event-intro {
+		@extend %big-page-txt;
+	}
+}
+
+
+// 
+// Large section headers
+//
+.section-hdr-l {
+	@extend %sect-hdr-l;
+}
+
+
+
+//
+// Medium section headers
+//
+.section-hdr-m {
+	@extend %sect-hdr-m;
+}
+
+
+//
+// Form styling on pages
+//
+.gform_body {
+	font-family: $sans;
+
+	ul {
+		list-style: none;
+
+		li {
+			margin-bottom: 15px;
+			line-height: 1.25em;
+		}
+	}
+
+	.gfield_label {
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    font-size: 12px;
+	    font-weight: bold;
+	    color: $txt;
+	}
+
+	.gfield_required {
+		color: red;
+		margin-left: 2px;
+		font-size: 16px;
+	}
+
+	input[type=text] {
+	    display: block;
+	    padding: 10px;
+	    border: 1px solid #ccc;
+	    width: 100%;
+	    max-width: 400px;
+	    border-radius: 5px;
+    }
+
+    .ginput_left label, 
+    .ginput_right label {
+        font-size: 11px;
+        line-height: 2em;
+        color: #666;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+	select[name=input_6] {
+	    border: 1px solid #ccc;
+	    background-image: none;
+	}
+
+	textarea {
+	    border: $border;
+	    width: 100%;
+	    max-width: 400px;
+	    padding: 15px;   
+	}
+
+} // gform-body
+
+.gform_footer {
+	input[type=submit] {
+		@extend %bt-btn;
+	    border: none;
+	    padding: 20px;
+	    width: 100%;
+	    max-width: 400px;
+	 }
+}

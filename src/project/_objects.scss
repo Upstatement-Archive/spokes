@@ -1,0 +1,25 @@
+@mixin arrow-defaults {
+	position: relative;
+	display: block;
+	@include circle;
+	border: 1px solid #000;
+
+	// Triangle "Play" Icon
+	&:after {
+		@include content;
+		position: absolute;
+	}
+}
+
+@mixin play-btn {
+	height: 26px;
+	width: 26px;	
+	@include arrow-defaults;
+
+	// Triangle "Play" Icon
+	&:after {
+		top: 8px;
+		left: 10px;
+		@include triangle(right, 6px, #000, 4px);
+	}	
+}

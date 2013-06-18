@@ -1,0 +1,231 @@
+.wrapper { background-color: #ffffff; }
+
+
+// .hp-main > .ui-block-1 { @extend %mod-shadow; }
+// .hp-main > .ui-block-2 { background-color: #fcfcfc; padding-left: 2%; @extend %mod-shadow; }
+// .hp-secondary > .ui-block-3 { background-color: darken(#fcfcfc, 3%); }
+
+
+//
+// hp layout
+//
+.l-hp {
+	@include pie-clearfix;
+	.hp-main {
+		@extend %mod-shadow;
+	}
+
+	@media (min-width: $medium) {
+		.hp-main {
+			width: 60%;
+			float: left;
+		}
+		.hp-secondary {
+			width: 40%;
+			float: left;
+		}
+	}
+
+	@media (min-width: $large) {
+		.hp-main {
+			width: 70%;
+		}
+
+		.hp-secondary {
+			width: 30%;
+		}
+	}
+
+	@media (min-width: $x-large) {
+		.hp-main {
+			background: url(/wp-content/themes/biztoday/images/dev/bt_bg_f4f4f4.gif) 65% 0;
+			position: relative;
+			width: 75%;
+			.ui-block-1 {
+					@include box-shadow(3px 2px 8px $rgba-black);
+					width: 65%;
+					float: left;
+					position: relative;
+					z-index: 1;
+				}
+
+				.ui-block-2 {
+					width: 35%;
+					float: right;
+					position: relative;
+					padding-bottom: 30px;
+					// background-color: yellow;
+					// padding-left: 2%;
+				}
+			
+		}
+
+		.hp-secondary {
+			width: 25%;
+		}
+	}
+} // l-hp
+
+
+.feed-mod {
+	border-bottom: $border;
+	padding: 20px 0;
+	@media (min-width: $large) {
+		// padding: 40px 0;
+	}
+}
+
+
+.feed-control {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.tease-post {
+	.h2 {
+		font-size: 1.45em;
+		font-weight: 700;
+		margin: 5px 0 10px;
+		@media (min-width: $medium) {
+			font-size: 2em;
+		}
+		@media (min-width: $large) {
+			font-size: 2.46154em;
+			font-weight: 400;
+			margin: 10px 0;
+		}
+	}
+	.kicker {
+		margin: 0;
+	}
+}
+
+// styles for overlapping in large teases
+.tz-post-l {
+	.tz-content {
+		background-color: rgba(255, 255, 255, 0.97);
+		position: relative;
+		top: -2em;
+		margin: 0 3%;
+		padding: 10px 3% 0;
+	}
+}
+
+.tz-post-m {
+	min-height: 225px;
+	@include pie-clearfix;
+	.tz-img {
+		@extend %sq-img;
+		// width: 35%;
+		width: 45%;
+		float: right;
+		// margin-left: 3%;
+		margin-left: 5%;
+		position: relative;
+		top: 25px;
+		// margin-bottom: 35px;
+		margin-bottom: 40px;
+	}
+}
+
+
+.editors-choice {
+	.tz-post-m {
+		// padding: 20px 6%;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.feed-mod {
+		&:first-of-type {
+			padding-top: 10px;
+		}
+	}
+}
+
+
+// changes margin for event house ads when they're in editors-choice. Need new tz type?
+.editors-choice {
+	.house-ad {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	.event-tz {
+		margin: 40px auto;
+
+		@media (min-width: $x-large) {
+			margin-bottom: 0;
+		}
+	}
+} // editors-choice
+
+
+
+// changes stuff when most-recent is in the x-large breakpoint;
+.most-recent {
+	.feed-mod {
+		&:first-of-type {
+			padding-top: 10px;
+			.tool-share {
+				top: 1px;
+			}
+		}
+	}
+	.tz-post-m {
+		// padding: 20px 6%;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	
+	@media (min-width: $x-large) {
+		background-color: lighten($faint-gray, 2%);
+
+		.tz-post-m {
+			.tz-img {
+				display: none;
+			}
+		}
+
+		.tz-post-l {
+			.tz-content {
+				background-color: transparent;
+				position: static;
+				top: 0;
+				margin: 15px 0 0;
+				padding: 0;
+			}
+		}
+	
+		.feed-mod {
+			border-bottom: $border-dark;
+			padding-left: 8%;
+			padding-right: 8%;
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+
+		.section-hdr {
+			> h5 {
+				background-color: #888;
+				border-bottom-color: darken(#888, 10%);
+				padding-left: 8%;
+				@include text-shadow(0px -1px 1px darken(#888, 18%) );
+			}
+		}
+	}
+} // most-recent
+
+
+.hp-secondary {
+	background-color: darken($faint-gray, 2%);
+
+	.house-ad {
+		padding: 20px 8% 0;
+	}
+}
+
+.hp-btn {
+	@extend %bt-btn;
+}
