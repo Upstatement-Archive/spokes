@@ -16,10 +16,12 @@
 	if (!class_exists('Timber')){
 		echo 'Timber not activated';
 	}
-	
+	$sponsors = Timber::get_post(17);
+	$sponsors->sponsors = get_field("sponsor", 17);
 	$data = Timber::get_context();
 	$posts = Timber::get_posts('TimberPost');
 	$data['posts'] = $posts;
-	render_twig('index.twig', $data);
+	$data['sponsors'] = $sponsors;
+	render_twig('home.twig', $data);
 
 

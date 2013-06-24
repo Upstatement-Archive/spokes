@@ -1,9 +1,13 @@
 {% extends "base.twig" %}
 
 {% block content %}
-
 	<h1>The home page</h1>
-	
+
+	{% for sponsor in sponsors.sponsors %}
+		{{sponsor.sponsor_name}}
+		{{sponsor.sponsor_link}}
+	{% endfor %}
+
 	{% for post in posts %}
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 	{% endfor %}
