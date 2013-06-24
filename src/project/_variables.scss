@@ -105,17 +105,3 @@ $mono: "Courier New", Courier, mono;
 
 
 $body: normal 17px/27px $bt-sans;
-
-
-// --------------------------------------------
-//
-// Borders 
-// 
-
-// Border colors
-$border-color: $faint-gray;
-$border-color-dark: darken($faint-gray, 10%);
-
-// Border colors
-$border: 1px solid $border-color;
-$border-dark: 1px solid $border-color-dark;

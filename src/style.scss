@@ -26,11 +26,27 @@
 
 
 
-/************************************/
+/* ============================================= */
 
-// Nav
+/*	Universal						   			 */ 
 
-/************************************/
+/* ============================================= */
+
+body {
+	overflow: hidden;
+
+}
+
+a 		{ 	text-decoration: none; color: inherit; }
+strong	{	font-weight: bold;	}
+em   	{	font-style: italic;	}
+
+
+/* ============================================= */
+
+/*	nav     						   			 */ 
+
+/* ============================================= */
 
 .nav-mod {
 	position: fixed;
@@ -50,6 +66,8 @@
 
 .nav-li-item {
 	display: inline;
+	background-color: #000;
+	color: #fff;
 }
 
 

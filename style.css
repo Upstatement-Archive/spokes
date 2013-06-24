@@ -805,9 +805,34 @@ button {
   background-position: 0 -15px;
 }
 
-/************************************/
-/************************************/
+/* ============================================= */
+/*	Universal						   			 */
+/* ============================================= */
 /* line 35, src/style.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 40, src/style.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 41, src/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 42, src/style.scss */
+em {
+  font-style: italic;
+}
+
+/* ============================================= */
+/*	nav     						   			 */
+/* ============================================= */
+/* line 51, src/style.scss */
 .nav-mod {
   position: fixed;
   top: 0px;
@@ -815,20 +840,22 @@ button {
   padding: 0px 35px;
 }
 
-/* line 42, src/style.scss */
+/* line 58, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
 }
 
-/* line 47, src/style.scss */
+/* line 63, src/style.scss */
 .nav-li-mod {
   float: right;
 }
 
-/* line 51, src/style.scss */
+/* line 67, src/style.scss */
 .nav-li-item {
   display: inline;
+  background-color: #000;
+  color: #fff;
 }
 
 /************************************/
@@ -850,13 +877,13 @@ button {
   text-shadow: 0px -1px 1px #00729d;
 }
 
-/* line 76, src/style.scss */
+/* line 94, src/style.scss */
 input[type="search"] {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
 
-/* line 84, src/style.scss */
+/* line 102, src/style.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
