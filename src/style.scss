@@ -13,10 +13,8 @@
 //  ## Base CSS  
 // @import "project/forms";
 // @import "project/tables";
-@import "project/lists";
 
 //  ## Components 
-@import "project/objects";
 @import "project/dropdowns";  
 @import "project/tabs";
 @import "project/fonts";
@@ -27,6 +25,7 @@
 
 
 /* ============================================= */
+
 
 /*	Universal						   			 */ 
 
@@ -69,73 +68,6 @@ em   	{	font-style: italic;	}
 	background-color: #000;
 	color: #fff;
 }
-
-
-
-/************************************/
-
-// Variables
-
-/************************************/
-
-@import "project/variables";
-
-
-/************************************/
-
-// Placeholders
-
-/************************************/
-
-@import "project/placeholders";
-
-
-//Resets for search
-input[type="search"] {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
-}
-
-
-
-
-/************************************/
-
-// COMPONENTS 
-// Ads: things that hold advertisements
-// Mods: lists of things like related, trending &c.
-// Teases: single serving teases of posts + content
-// Tools: stuff like sharing + pagination
-
-/************************************/
-
-@import "project/components-ads";
-@import "project/components-mods";
-@import "project/components-teases";
-@import "project/components-tools";
-
-
-
-
-
-
-/************************************/
-
-// Inkwell CSS stuffs
-
-/************************************/
-
-//@import "inkwell/_layout.scss";
-//@import "inkwell/_type.scss";
-
-
 
 
 /* --------------------------------------------- */
