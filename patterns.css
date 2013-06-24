@@ -36,7 +36,7 @@
   margin: 0 5%;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #style-hdr .style-hdr-group:after {
   content: "";
   display: table;
@@ -118,17 +118,17 @@
   font-weight: bold;
   margin: 0 0 16px;
   padding: 6px;
-  text-shadow: 1px 0 0 #000000;
+  text-shadow: 1px 0 0 black;
 }
 
 /* line 101, src/patterns.scss */
 .style-node {
-  border-top: 1px solid #CCCCCC;
+  border-top: 1px solid #cccccc;
   margin: 30px 0 0;
   padding: 30px 0 0;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .style-node:after {
   content: "";
   display: table;
@@ -162,7 +162,7 @@
 .style-meta-container {
   float: left;
   padding: 0 2% 0 1%;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
   width: 40%;
 }
 
@@ -174,7 +174,7 @@ dl, dt, dd {
 
 /* line 140, src/patterns.scss */
 .style-color {
-  font: normal 24px/130% Miller,Georgia,Times,Times New Roman,serif;
+  font: normal 24px/130% Miller, Georgia, Times, Times New Roman, serif;
 }
 
 /* line 144, src/patterns.scss */
@@ -192,7 +192,7 @@ dl, dt, dd {
 .style-meta dd {
   margin: 4px 0 12px;
   padding: 0 0 12px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 /* line 159, src/patterns.scss */
