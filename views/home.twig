@@ -1,7 +1,28 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<h1>The home page</h1>
+
+	<body>
+		<header>
+		</header>
+		
+		<section class="nav-mod">
+			<a href="#"> <img class="nav-logo" src="/wp-content/themes/spokes/images/bfc-nav-logo.png"/> </a>
+			<div class="nav-li-mod">
+				<ul class="nav-li">
+					<li class="nav-li-item"><a href="#">Donate</a></li>
+					<li class="nav-li-item"><a href="#">Raffle</a></li>
+					<li class="nav-li-item"><a href="#">About</a></li>
+					<li class="nav-li-item"><a href="#">History</a></li>
+					<li class="nav-li-item"><a href="#">Blog</a></li>
+					<li class="nav-li-item"><a href="#">Store</a></li>					
+				</ul>	
+			</div><!-- /nav-link-mod -->	
+		</section><!-- /nav -->	
+
+		<footer>
+		</footer>	
+	</body>	
 
 	{% for sponsor in sponsors.sponsors %}
 		{{sponsor.sponsor_name}}
@@ -9,7 +30,7 @@
 	{% endfor %}
 
 	{% for post in posts %}
-		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
+<!-- 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+ -->	{% endfor %}
 
 {% endblock %}

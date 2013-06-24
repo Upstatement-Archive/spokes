@@ -6,9 +6,6 @@
 	
 */
 
-
-
-
 //  ## Bring in all Compass Helpers 
 @import "partials/base";
 @import "partials/reset";
@@ -29,10 +26,31 @@
 
 
 
+/************************************/
 
+// Nav
 
+/************************************/
 
+.nav-mod {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding: 0px 35px;
+}
  
+.nav-logo {
+	max-width: 80px;
+	width: 100%;
+} 
+
+.nav-li-mod {
+	float: right;
+} 
+
+.nav-li-item {
+	display: inline;
+}
 
 
 
