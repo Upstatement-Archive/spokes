@@ -15,8 +15,8 @@
  */
 ?>
 <?php
-	
 	$context = Timber::get_context();
 	$post = new TimberPost();
+	$post->team = get_field("about-team", 9);
 	$context['post'] = $post;
 	render_twig(array('page-'.$post->post_name.'.twig', 'page-about.twig'), $context);
