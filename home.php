@@ -16,8 +16,8 @@
 	if (!class_exists('Timber')){
 		echo 'Timber not activated';
 	}
-	$sponsors = Timber::get_post(17);
-	$sponsors->sponsors = get_field("sponsor", 17);
+	$sponsors = Timber::get_post(16);
+	$sponsors->sponsors = get_field("sponsors", 16);
 	$data = Timber::get_context();
 	$posts = Timber::get_posts('TimberPost');
 	$data['posts'] = $posts;
