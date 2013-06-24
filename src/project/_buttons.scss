@@ -112,12 +112,12 @@
 @mixin btn-alt {
 	color: #fff;
 	text-decoration: none;
-	background-color: darken($orange, 10%);
-	@include background-image(linear-gradient($orange, darken($orange, 10%)));
+	background-color: darken($bfc-green, 10%);
+	@include background-image(linear-gradient($bfc-green, darken($bfc-green, 10%)));
 	background-repeat: no-repeat;
 
 	&:hover {
-		background-color: darken($orange, 10%);
+		background-color: darken($bfc-green, 10%);
 		background-position: 0 -15px;
 	}// &:hover	
 }

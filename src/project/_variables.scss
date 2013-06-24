@@ -44,13 +44,10 @@ $text-black: $txt-black;
 $rgba-black: rgba(25, 25, 25, 0.15);
 
 
-// $link: #27b99e;
-
 $body-color: #fff;
 $faint-gray: #efefef;
 
 
-// $lt-background: #fcfcfc;
 $lt-background: #003244;
 
 
@@ -67,8 +64,11 @@ $link-hover: darken($link, 8%);
 
 // --------------------------------------------
 //
-// Biz Today palette
-// 
+// BFC Palette
+//
+// -------------------------------------------- 
+
+$bfc-green: #bada55;
 $bt-blue: #0066a1;
 $bt-med-blue: #009fda;
 $bt-lt-blue: #589cc1;
@@ -92,9 +92,12 @@ $section-hdr-border: $bt-blue;
 
 // --------------------------------------------
 //
-// Typography 
-// 
+// Typography
+//
+// --------------------------------------------
 
+
+$freight-sans: 'freight-sans-pro';
 $bt-sans: 'PT Sans';
 $bt-serif: 'Roboto Slab';
 

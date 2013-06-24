@@ -584,17 +584,17 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 7px 8px 8px;
   color: #fff;
   text-decoration: none;
-  background-color: #da3e0e;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1592a), color-stop(100%, #da3e0e));
-  background-image: -webkit-linear-gradient(#f1592a, #da3e0e);
-  background-image: -moz-linear-gradient(#f1592a, #da3e0e);
-  background-image: -o-linear-gradient(#f1592a, #da3e0e);
-  background-image: linear-gradient(#f1592a, #da3e0e);
+  background-color: #a8cf2d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bada55), color-stop(100%, #a8cf2d));
+  background-image: -webkit-linear-gradient(#bada55, #a8cf2d);
+  background-image: -moz-linear-gradient(#bada55, #a8cf2d);
+  background-image: -o-linear-gradient(#bada55, #a8cf2d);
+  background-image: linear-gradient(#bada55, #a8cf2d);
   background-repeat: no-repeat;
 }
 /* line 119, src/project/_buttons.scss */
 .btn-alt-s:hover, .btn-s:hover {
-  background-color: #da3e0e;
+  background-color: #a8cf2d;
   background-position: 0 -15px;
 }
 
@@ -630,17 +630,17 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 7px 8px 8px;
   color: #fff;
   text-decoration: none;
-  background-color: #da3e0e;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1592a), color-stop(100%, #da3e0e));
-  background-image: -webkit-linear-gradient(#f1592a, #da3e0e);
-  background-image: -moz-linear-gradient(#f1592a, #da3e0e);
-  background-image: -o-linear-gradient(#f1592a, #da3e0e);
-  background-image: linear-gradient(#f1592a, #da3e0e);
+  background-color: #a8cf2d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bada55), color-stop(100%, #a8cf2d));
+  background-image: -webkit-linear-gradient(#bada55, #a8cf2d);
+  background-image: -moz-linear-gradient(#bada55, #a8cf2d);
+  background-image: -o-linear-gradient(#bada55, #a8cf2d);
+  background-image: linear-gradient(#bada55, #a8cf2d);
   background-repeat: no-repeat;
 }
 /* line 119, src/project/_buttons.scss */
 .btn-alt-m:hover, .btn:hover, .btn-m:hover, .btn-alt:hover {
-  background-color: #da3e0e;
+  background-color: #a8cf2d;
   background-position: 0 -15px;
 }
 
@@ -676,17 +676,17 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 10px 10px 11px;
   color: #fff;
   text-decoration: none;
-  background-color: #da3e0e;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1592a), color-stop(100%, #da3e0e));
-  background-image: -webkit-linear-gradient(#f1592a, #da3e0e);
-  background-image: -moz-linear-gradient(#f1592a, #da3e0e);
-  background-image: -o-linear-gradient(#f1592a, #da3e0e);
-  background-image: linear-gradient(#f1592a, #da3e0e);
+  background-color: #a8cf2d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bada55), color-stop(100%, #a8cf2d));
+  background-image: -webkit-linear-gradient(#bada55, #a8cf2d);
+  background-image: -moz-linear-gradient(#bada55, #a8cf2d);
+  background-image: -o-linear-gradient(#bada55, #a8cf2d);
+  background-image: linear-gradient(#bada55, #a8cf2d);
   background-repeat: no-repeat;
 }
 /* line 119, src/project/_buttons.scss */
 .btn-alt-l:hover, .btn-l:hover {
-  background-color: #da3e0e;
+  background-color: #a8cf2d;
   background-position: 0 -15px;
 }
 
@@ -714,10 +714,27 @@ em {
   font-style: italic;
 }
 
+/* line 44, src/style.scss */
+.btn-donate {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 175px;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-shadow: inset #87a722 0px 0px 30px;
+  -moz-box-shadow: inset #87a722 0px 0px 30px;
+  box-shadow: inset #87a722 0px 0px 30px;
+}
+
+/* line 53, src/style.scss */
+.page-mod {
+  padding: 50px;
+}
+
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 50, src/style.scss */
+/* line 63, src/style.scss */
 .nav-mod {
   position: fixed;
   top: 0px;
@@ -725,22 +742,86 @@ em {
   padding: 0px 35px;
 }
 
-/* line 57, src/style.scss */
+/* line 70, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
 }
 
-/* line 62, src/style.scss */
+/* line 75, src/style.scss */
 .nav-li-mod {
   float: right;
+  padding-top: 30px;
 }
 
-/* line 66, src/style.scss */
+/* line 80, src/style.scss */
 .nav-li-item {
   display: inline;
   background-color: #000;
   color: #fff;
+  padding: 2px 6px;
+  font: 600 15px/120% "freight-sans-pro";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 2px;
+}
+/* line 90, src/style.scss */
+.nav-li-item:last-child {
+  margin-right: 0px;
+}
+/* line 94, src/style.scss */
+.nav-li-item:hover {
+  color: #bada55;
+}
+
+/* ============================================= */
+/*	Page-Intro     						   		 */
+/* ============================================= */
+/* line 107, src/style.scss */
+.page-intro {
+  padding: 0% 0%;
+  background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3000000;
+  max-height: 786px;
+  height: 786px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 118, src/style.scss */
+.intro-h1 {
+  max-width: 1080px;
+  width: 100%;
+  text-indent: -3000px;
+  background: url(/wp-content/themes/spokes/images/home-intro-txt.png) no-repeat 50% 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 110px;
+  padding-top: 400px;
+  background-size: 1080px;
+  margin-bottom: 25px;
+}
+
+/* line 131, src/style.scss */
+.intro-h2 {
+  font: 600 29px/120% "freight-sans-pro";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/* line 141, src/style.scss */
+.sub-intro-txt {
+  font: 600 32px/120% "freight-sans-pro";
+  max-width: 780px;
+  width: 100%;
 }
 
 /* --------------------------------------------- */
