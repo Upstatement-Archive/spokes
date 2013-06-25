@@ -260,11 +260,11 @@ em   	{	font-style: italic;	}
 	text-align: center;
 }
 
-.blog-feed-ul {
+.blog-feed-mod {
 }
 
-.blog-post {
-	margin: 0 auto;
+.blog-post-tz {
+	margin: 0 auto 40px auto;
 	border: 1px solid;
 	border-color: #eee;
 	border-bottom-color: #ddd;
@@ -275,12 +275,13 @@ em   	{	font-style: italic;	}
 	padding: 35px 35px 50px 165px;
 	position: relative;
 	background-color: #fff;
-	position: relative;
+
+	background-image: url(/wp-content/themes/spokes/images/bg-dots.png);
+	background-size: 120px;
+	background-repeat: repeat-y;
 }
 
 .post-date-mod {
-	background: url(/wp-content/themes/spokes/images/bg-dots.png) 50% 50%;
-	background-size: 100%;
 	width: 131px;
 	height: 260px;
 }

@@ -950,8 +950,8 @@ em {
 }
 
 /* line 266, src/style.scss */
-.blog-post {
-  margin: 0 auto;
+.blog-post-tz {
+  margin: 0 auto 40px auto;
   border: 1px solid;
   border-color: #eee;
   border-bottom-color: #ddd;
@@ -962,18 +962,18 @@ em {
   padding: 35px 35px 50px 165px;
   position: relative;
   background-color: #fff;
-  position: relative;
+  background-image: url(/wp-content/themes/spokes/images/bg-dots.png);
+  background-size: 120px;
+  background-repeat: repeat-y;
 }
 
-/* line 281, src/style.scss */
+/* line 284, src/style.scss */
 .post-date-mod {
-  background: url(/wp-content/themes/spokes/images/bg-dots.png) 50% 50%;
-  background-size: 100%;
   width: 131px;
   height: 260px;
 }
 
-/* line 288, src/style.scss */
+/* line 289, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -990,7 +990,7 @@ em {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 308, src/style.scss */
+/* line 309, src/style.scss */
 footer {
   height: 515px;
   background-color: #222;
@@ -998,21 +998,21 @@ footer {
   text-align: center;
 }
 
-/* line 315, src/style.scss */
+/* line 316, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 321, src/style.scss */
+/* line 322, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 327, src/style.scss */
+/* line 328, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
 }
@@ -1037,11 +1037,11 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 331, src/style.scss */
+/* line 332, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
 }
-/* line 335, src/style.scss */
+/* line 336, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1049,12 +1049,12 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 339, src/style.scss */
+/* line 340, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/160% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 344, src/style.scss */
+/* line 345, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1062,7 +1062,7 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 351, src/style.scss */
+/* line 352, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
@@ -1070,12 +1070,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 366, src/style.scss */
+/* line 367, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 370, src/style.scss */
+/* line 371, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1096,7 +1096,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 384, src/style.scss */
+/* line 385, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
