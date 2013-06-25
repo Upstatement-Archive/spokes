@@ -81,42 +81,43 @@ em   	{	font-style: italic;	}
 
 /* ============================================= */
 
-.nav-mod {
+.header {
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	padding: 0px 35px;
 }
  
+#access {
+	float: right;
+	padding-top: 30px;
+
+	#menu-main-nav {
+		> li {
+			@include inline-block;
+			background-color: #000;
+			color: #fff;
+			padding: 2px 6px;
+			font: 600 15px/120% $freight-sans;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-right: 2px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+
+			&:hover {
+				color: $bfc-green;
+			}
+		}
+	}
+} 
+
 .nav-logo {
 	max-width: 80px;
 	width: 100%;
 } 
-
-.nav-li-mod {
-	float: right;
-	padding-top: 30px;
-} 
-
-.nav-li-item {
-	display: inline;
-	background-color: #000;
-	color: #fff;
-	padding: 2px 6px;
-	font: 600 15px/120% $freight-sans;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-right: 2px;
-
-	&:last-child {
-		margin-right: 0px;
-	}
-
-	&:hover {
-		color: $bfc-green;
-	}
-}
-
 
 
 /* ============================================= */

@@ -758,7 +758,7 @@ em {
 /*	nav     						   			 */
 /* ============================================= */
 /* line 84, src/style.scss */
-.nav-mod {
+.header {
   position: fixed;
   top: 0px;
   width: 100%;
@@ -766,20 +766,18 @@ em {
 }
 
 /* line 91, src/style.scss */
-.nav-logo {
-  max-width: 80px;
-  width: 100%;
-}
-
-/* line 96, src/style.scss */
-.nav-li-mod {
+#access {
   float: right;
   padding-top: 30px;
 }
-
-/* line 101, src/style.scss */
-.nav-li-item {
-  display: inline;
+/* line 96, src/style.scss */
+#access #menu-main-nav > li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   background-color: #000;
   color: #fff;
   padding: 2px 6px;
@@ -788,19 +786,25 @@ em {
   letter-spacing: 1px;
   margin-right: 2px;
 }
-/* line 111, src/style.scss */
-.nav-li-item:last-child {
+/* line 106, src/style.scss */
+#access #menu-main-nav > li:last-child {
   margin-right: 0px;
 }
-/* line 115, src/style.scss */
-.nav-li-item:hover {
+/* line 110, src/style.scss */
+#access #menu-main-nav > li:hover {
   color: #bada55;
+}
+
+/* line 117, src/style.scss */
+.nav-logo {
+  max-width: 80px;
+  width: 100%;
 }
 
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 128, src/style.scss */
+/* line 129, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -811,7 +815,7 @@ em {
   text-align: center;
 }
 
-/* line 138, src/style.scss */
+/* line 139, src/style.scss */
 .intro-h1 {
   max-width: 1080px;
   width: 100%;
@@ -825,7 +829,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 151, src/style.scss */
+/* line 152, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro";
   text-transform: uppercase;
@@ -836,7 +840,7 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 161, src/style.scss */
+/* line 162, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/120% "freight-sans-pro";
   max-width: 780px;
