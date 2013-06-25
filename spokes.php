@@ -12,6 +12,7 @@
 			add_action('init', array(&$this, 'load_scripts'));
 			add_action( 'init', array(&$this, 'set_permalinks'));
 			add_filter('404_template', array(&$this, 'check_404_template'));
+			$this->add_routes();
 		}
 
 		function load_header_scripts(){
@@ -30,6 +31,20 @@
 			// $req = '^nutrition/([^/]*)/([^/]*)/?';
 			// $route = 'index.php?page_id=12&food=$matches[1]&variety=$matches[2]';
 			// add_rewrite_rule($req, $route, 'top');
+		}
+
+		function add_routes(){
+			Timber::add_route('blog', function($params){
+				$query = 'posts_per_page=1&post_type=post';
+				query_posts($query);
+				Timber::load_template('archive.php');
+			});
+
+			Timber::add_route('blog/page/:pg', function($params){
+				$query = 'posts_per_page=1&post_type=post&paged='.$params['pg'];
+				query_posts($query);
+				Timber::load_template('archive.php');
+			});
 		}
 
 		function check_404_template($temp){
