@@ -51,7 +51,7 @@
 	text-align: center;
 	@include inline-block;
 	line-height: normal;
-	@include border-radius(5px);
+	@include border-radius(6px);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	@include trans;	
