@@ -324,9 +324,21 @@ footer {
 	margin: 0 auto;
 	text-align: center;	
 
+	.sponsors-mod {
+		@include ui-grid-lr(25%, 75%, 5%);
+	}
+
 	.section-h1 {
 		color: #000;
 	}	
+
+	.sponsors-list-mod {
+		@include columns(3);
+	}
+
+	.sponsor-list-item {
+		font: 400 18px/160% $freight-sans;
+	}
 }
 
 .sponsors-ul {
@@ -339,10 +351,6 @@ footer {
 	&:last-child {
 		margin-right: 0px;
 	}
-}
-
-.sponsors-item {
-	font: 400 18px/160% $freight-sans;
 }
 
 .ftr-logo-bike {

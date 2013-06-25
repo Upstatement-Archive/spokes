@@ -1,0 +1,24 @@
+<section class="sponsors">
+	<div class="page-mod">
+		<div class="sponsors-mod">
+			<div class="ui-block-1">
+				<img class="ftr-logo-bike" src="/wp-content/themes/spokes/images/ftr-logo-bike.png"/>
+				<a class="btn btn-large">Donate</a>
+			</div>
+
+			<div class="ui-block-2">
+				<h4 class="section-h1">Our Business Sponsors</h4>
+
+				<ul class="sponsors-list-mod">
+					{% for sponsor in sponsors.sponsors %}
+						<li class="sponsor-list-item">
+							{% if sponsor.sponsor_link %}<a href="{{sponsor.sponsor_link}}">{% endif %}
+							{{sponsor.sponsor_name}}
+							{% if sponsor.sponsor_link %}</a>{% endif %}
+						</li><!-- sponsor -->
+					{% endfor %}
+				</ul><!--sponsors mod -->
+			</div>
+		</div><!-- sponsors-mod -->
+	</div> <!-- /page-mod -->	 
+</section> <!-- /sponsors -->
