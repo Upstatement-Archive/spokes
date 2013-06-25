@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<h1>Blog page</h1>
+	
+	<div class="content-wrapper">
+		{% for post in posts %}
+			{% include ['tease-blog.twig', 'tease.twig'] %}
+		{% endfor %}
+	</div> <!-- /content-wrapper -->
+
+{% endblock %}

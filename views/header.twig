@@ -1,0 +1,11 @@
+<header class="header" data-source="base.twig">
+    {% block header %}
+    <div class="wrapper">
+		<a href="/"> <img class="nav-logo" src="/wp-content/themes/spokes/images/bfc-nav-logo.png"/> </a>
+
+        <nav id="access" role="navigation">
+           {{wp_nav_menu}}
+        </nav><!-- #access -->
+    </div>
+    {% endblock %}
+</header>
