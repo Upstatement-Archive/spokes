@@ -15,6 +15,13 @@
 			$this->add_routes();
 		}
 
+		function get_context(){
+			$context = Timber::get_context();
+			$context['footer'] = array();
+			//$context['footer']['sponsors'] = whatever();
+			return $context;
+		}
+
 		function load_header_scripts(){
 			wp_enqueue_script( 'jquery');
 			
