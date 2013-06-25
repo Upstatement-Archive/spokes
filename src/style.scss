@@ -47,7 +47,28 @@ em   	{	font-style: italic;	}
 	max-width: 175px;
 	width: 100%;
 	padding: 20px;
+	position: relative;
 	@include box-shadow(inset #87a722 0px 0px 30px);	
+}
+
+.btn-donate:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    @include border-radius(3px);
+    background-color: rgba(255,255,255,0.4);
+    @include transition(none);
+    
+}
+
+.btn-donate:hover:after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+     @include transition(all 0.5s ease-out);
 }
 
 .page-mod {
@@ -107,18 +128,17 @@ em   	{	font-style: italic;	}
 	.page-intro {
 		padding: 0% 0%;
 		background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
-		@include background-size(cover);
-		z-index:3000000;
+		background-size: 120%; //If you change this, change the number in site.js
 		max-height: 786px;
 		height: 786px;	
 		margin: 0 auto;
-		text-align: center;		
+		text-align: center;	
 	}
 
 	.intro-h1 {
 		max-width: 1080px;
 		width: 100%;
-		text-indent:-3000px;
+		text-indent: -3000px;
 		background: url(/wp-content/themes/spokes/images/home-intro-txt.png) no-repeat 50% 100%;
 		margin: 0 auto;
 		text-align: center;	
