@@ -214,7 +214,7 @@ em   	{	font-style: italic;	}
 
 .team-signatures {
 	max-width: 750px;
-	width: 750px;
+	width: 100%;
 }
 
 
@@ -235,18 +235,31 @@ em   	{	font-style: italic;	}
 
 .raffle-ticket-mod {
 	border: 1px solid;
-	border-color: $bfc-gold-dark;
-	background-color: $bfc-gold;
+	border-color: #817351;
+	background-color: #867856;
     @include border-radius(12px);
     max-width: 780px;
     width: 100%;
     max-height: 355px;
     height: 355px;
-    padding: 65px;
- 	background: url(/wp-content/themes/spokes/images/bg-raffle.jpg) no-repeat 50% 50%;
+    padding: 35px;
 	background-size: 101%; 
 	margin: 0 auto;
-	text-align: center;  	
+	text-align: center;
+	background: 
+		url(/wp-content/themes/spokes/images/pmc-logo-raffle.png) top right no-repeat,
+		url(/wp-content/themes/spokes/images/bg-raffle.jpg) 50% 50%;
+
+	background-size: 200px, 50%;
+	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));	
+}
+
+.raffle-inside {
+	padding: 20px;
+	border: 3px dashed;
+	border-color: $bfc-gold-dark;
+	height: 100%;
+	@include border-radius(12px);
 }
 
 /* ============================================= */
@@ -264,7 +277,7 @@ em   	{	font-style: italic;	}
 }
 
 .blog-post-tz {
-	margin: 0 auto 40px auto;
+	margin: 0 auto 50px auto;
 	border: 1px solid;
 	border-color: #eee;
 	border-bottom-color: #ddd;
@@ -275,7 +288,6 @@ em   	{	font-style: italic;	}
 	padding: 35px 35px 50px 165px;
 	position: relative;
 	background-color: #fff;
-
 	background-image: url(/wp-content/themes/spokes/images/bg-dots.png);
 	background-size: 120px;
 	background-repeat: repeat-y;
@@ -331,6 +343,8 @@ footer {
 
 	.section-h1 {
 		color: #000;
+		text-align: left;
+		margin-bottom: 30px;
 	}	
 
 	.sponsors-list-mod {
@@ -338,7 +352,8 @@ footer {
 	}
 
 	.sponsor-list-item {
-		font: 400 18px/160% $freight-sans;
+		font: 400 18px/175% $freight-sans;
+		text-align: left;
 	}
 }
 
@@ -355,6 +370,10 @@ footer {
 }
 
 .ftr-logo-bike {
+	max-width: 125px;
+	width: 100%;
+	display: block;
+	margin-top: -130px;
 }
 
 

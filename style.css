@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration {
   *zoom: 1;
   overflow: hidden;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .dropdown:after {
   content: "";
   display: table;
@@ -382,7 +382,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 18px;
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tabs:after, .pills:after {
   content: "";
   display: table;
@@ -878,7 +878,7 @@ em {
   height: 525px;
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro:after {
   content: "";
   display: table;
@@ -904,7 +904,7 @@ em {
 /* line 215, src/style.scss */
 .team-signatures {
   max-width: 750px;
-  width: 750px;
+  width: 100%;
 }
 
 /* ============================================= */
@@ -922,8 +922,8 @@ em {
 /* line 236, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
-  border-color: #5d4e2e;
-  background-color: #9f916f;
+  border-color: #817351;
+  background-color: #867856;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -933,25 +933,42 @@ em {
   width: 100%;
   max-height: 355px;
   height: 355px;
-  padding: 65px;
-  background: url(/wp-content/themes/spokes/images/bg-raffle.jpg) no-repeat 50% 50%;
+  padding: 35px;
   background-size: 101%;
   margin: 0 auto;
   text-align: center;
+  background: url(/wp-content/themes/spokes/images/pmc-logo-raffle.png) top right no-repeat, url(/wp-content/themes/spokes/images/bg-raffle.jpg) 50% 50%;
+  background-size: 200px, 50%;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* line 257, src/style.scss */
+.raffle-inside {
+  padding: 20px;
+  border: 3px dashed;
+  border-color: #5d4e2e;
+  height: 100%;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
 }
 
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 258, src/style.scss */
+/* line 271, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 266, src/style.scss */
+/* line 279, src/style.scss */
 .blog-post-tz {
-  margin: 0 auto 40px auto;
+  margin: 0 auto 50px auto;
   border: 1px solid;
   border-color: #eee;
   border-bottom-color: #ddd;
@@ -967,13 +984,13 @@ em {
   background-repeat: repeat-y;
 }
 
-/* line 284, src/style.scss */
+/* line 296, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 289, src/style.scss */
+/* line 301, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -990,7 +1007,7 @@ em {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 309, src/style.scss */
+/* line 321, src/style.scss */
 footer {
   height: 515px;
   background-color: #222;
@@ -998,25 +1015,25 @@ footer {
   text-align: center;
 }
 
-/* line 316, src/style.scss */
+/* line 328, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 322, src/style.scss */
+/* line 334, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 328, src/style.scss */
+/* line 340, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .sponsors .sponsors-mod:after {
   content: "";
   display: table;
@@ -1037,11 +1054,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 332, src/style.scss */
+/* line 344, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
+  text-align: left;
+  margin-bottom: 30px;
 }
-/* line 336, src/style.scss */
+/* line 350, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1049,12 +1068,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 340, src/style.scss */
+/* line 354, src/style.scss */
 .sponsors .sponsor-list-item {
-  font: 400 18px/160% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  text-align: left;
 }
 
-/* line 345, src/style.scss */
+/* line 360, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1062,20 +1082,28 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 352, src/style.scss */
+/* line 367, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
+}
+
+/* line 372, src/style.scss */
+.ftr-logo-bike {
+  max-width: 125px;
+  width: 100%;
+  display: block;
+  margin-top: -130px;
 }
 
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 367, src/style.scss */
+/* line 386, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 371, src/style.scss */
+/* line 390, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1096,7 +1124,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 385, src/style.scss */
+/* line 404, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
