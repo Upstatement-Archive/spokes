@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration {
   *zoom: 1;
   overflow: hidden;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .dropdown:after {
   content: "";
   display: table;
@@ -382,7 +382,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 18px;
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tabs:after, .pills:after {
   content: "";
   display: table;
@@ -751,7 +751,7 @@ em {
 
 /* line 74, src/style.scss */
 .page-mod {
-  padding: 50px;
+  padding: 150px 50px;
 }
 
 /* ============================================= */
@@ -837,10 +837,25 @@ em {
 }
 
 /* line 161, src/style.scss */
+.page-sub-intro {
+  background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 13% -10%;
+  max-height: 575px;
+  height: 575px;
+  *zoom: 1;
+}
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page-sub-intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 168, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/120% "freight-sans-pro";
   max-width: 780px;
   width: 100%;
+  float: right;
 }
 
 /* --------------------------------------------- */

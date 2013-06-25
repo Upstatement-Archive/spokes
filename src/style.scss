@@ -72,7 +72,7 @@ em   	{	font-style: italic;	}
 }
 
 .page-mod {
-	padding: 50px;
+	padding: 150px 50px;
 }
 
 /* ============================================= */
@@ -158,10 +158,18 @@ em   	{	font-style: italic;	}
 		margin-bottom: 65px;
 	}
 
+	.page-sub-intro {
+		background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 13% -10%;
+		max-height: 575px;
+		height: 575px;
+		@include pie-clearfix;
+	}
+
 	.sub-intro-txt {
 		font: 600 32px/120% $freight-sans;
 		max-width: 780px;
 		width: 100%;
+		float: right;
 	}
 
 
