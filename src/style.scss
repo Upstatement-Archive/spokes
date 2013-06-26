@@ -32,6 +32,7 @@
 
 body {
 	overflow: hidden;
+	// font: 400 18px/150% $freight-txt;
 
 }
 
@@ -80,6 +81,20 @@ em   	{	font-style: italic;	}
 	margin-bottom: 5px;
 }
 
+.sub-txt-mod {
+	max-width: 780px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.sub-txt {
+	max-width: 780px;
+	width: 100%;
+	margin-bottom: 25px;
+	@include columns(2);
+	font: 400 18px/150% $freight-txt;	
+}
 
 
 /* ============================================= */
@@ -118,6 +133,7 @@ em   	{	font-style: italic;	}
 	top: 0px;
 	width: 100%;
 	padding: 0px 35px;
+	z-index: 3000;
 }
  
 #access {
@@ -240,17 +256,29 @@ em   	{	font-style: italic;	}
 	margin-bottom: 65px;
 }
 
-.page-sub-intro {
+.page-sub-intro-home {
 	background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
 	max-height: 525px;
 	height: 525px;
 	@include pie-clearfix;
 }
 
-.sub-intro-txt-mod {
+.sub-intro-txt-mod-home {
 	max-width: 780px;
 	width: 100%;
 	float: right;	
+}
+
+.page-sub-intro {
+	@include pie-clearfix;
+	border: 1px solid;
+	border-color: #eee;	
+}
+
+.sub-intro-txt-mod {
+	max-width: 780px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .sub-intro-txt {
@@ -277,9 +305,10 @@ em   	{	font-style: italic;	}
 .raffle-tz {
 	background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
 	height: 515px;
-	border-top: 1px solid;
-	border-bottom: 1px solid;	
-	border-color: #eee;
+	border-top: 2px solid;
+	border-bottom: 2px solid;	
+	border-color: #fff;
+	outline: 1px solid #eee;
 }	
 
 .raffle-ticket-mod {
@@ -352,6 +381,36 @@ em   	{	font-style: italic;	}
 	margin-left: 80px;
 	margin-bottom: -3px;
 }
+
+
+/* ============================================= */
+
+/*	About       						   		 */ 
+
+/* ============================================= */
+
+.team-profiles {
+	@include media-grid (3, 50px);
+	border-bottom: 1px solid;
+	border-color: #eee;
+	font: 400 18px/150% $freight-txt;	
+}
+
+.team-member {
+	margin-bottom: 50px;
+}
+
+.rider-img {
+	max-width: 138px;
+	width: 100%;
+	margin: 0 auto;	
+}
+
+.rider-img-mod {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 
 /* ============================================= */
 

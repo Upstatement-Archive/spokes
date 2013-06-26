@@ -689,23 +689,23 @@ body {
   overflow: hidden;
 }
 
-/* line 38, src/style.scss */
+/* line 39, src/style.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 39, src/style.scss */
+/* line 40, src/style.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 40, src/style.scss */
+/* line 41, src/style.scss */
 em {
   font-style: italic;
 }
 
-/* line 43, src/style.scss */
+/* line 44, src/style.scss */
 .btn-donate {
   margin: 0 auto;
   text-align: center;
@@ -718,7 +718,7 @@ em {
   box-shadow: inset #87a722 0px 0px 30px;
 }
 
-/* line 53, src/style.scss */
+/* line 54, src/style.scss */
 .btn-donate:after {
   content: "";
   position: absolute;
@@ -738,7 +738,7 @@ em {
   transition: none;
 }
 
-/* line 66, src/style.scss */
+/* line 67, src/style.scss */
 .btn-donate:hover:after {
   width: 100%;
   height: 100%;
@@ -749,22 +749,42 @@ em {
   transition: all 0.5s ease-out;
 }
 
-/* line 73, src/style.scss */
+/* line 74, src/style.scss */
 .page-mod {
   padding: 75px 50px;
 }
 
-/* line 77, src/style.scss */
+/* line 78, src/style.scss */
 .section-icon {
   max-width: 45px;
   width: 100%;
   margin-bottom: 5px;
 }
 
+/* line 84, src/style.scss */
+.sub-txt-mod {
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 91, src/style.scss */
+.sub-txt {
+  max-width: 780px;
+  width: 100%;
+  margin-bottom: 25px;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  -ms-columns: 2;
+  -o-columns: 2;
+  columns: 2;
+  font: 400 18px/150% "freight-text-pro";
+}
+
 /* ============================================= */
 /*	Typography						   			 */
 /* ============================================= */
-/* line 91, src/style.scss */
+/* line 106, src/style.scss */
 .section-h1 {
   text-transform: uppercase;
   color: #9f916f;
@@ -773,13 +793,13 @@ em {
   margin-bottom: 50px;
 }
 
-/* line 99, src/style.scss */
+/* line 114, src/style.scss */
 .tz-h1 {
   font: 600 32px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #000;
 }
 
-/* line 104, src/style.scss */
+/* line 119, src/style.scss */
 .tz-txt {
   font: 400 20px/140% "freight-text-pro";
   color: #464646;
@@ -788,20 +808,21 @@ em {
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 116, src/style.scss */
+/* line 131, src/style.scss */
 .header {
   position: fixed;
   top: 0px;
   width: 100%;
   padding: 0px 35px;
+  z-index: 3000;
 }
 
-/* line 123, src/style.scss */
+/* line 139, src/style.scss */
 #access {
   float: right;
   padding-top: 30px;
 }
-/* line 128, src/style.scss */
+/* line 144, src/style.scss */
 #access #menu-main-nav > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -817,16 +838,16 @@ em {
   letter-spacing: 1px;
   margin-right: 2px;
 }
-/* line 138, src/style.scss */
+/* line 154, src/style.scss */
 #access #menu-main-nav > li:last-child {
   margin-right: 0px;
 }
-/* line 142, src/style.scss */
+/* line 158, src/style.scss */
 #access #menu-main-nav > li:hover {
   color: #bada55;
 }
 
-/* line 149, src/style.scss */
+/* line 165, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
@@ -835,7 +856,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 161, src/style.scss */
+/* line 177, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -846,7 +867,7 @@ em {
   text-align: center;
 }
 
-/* line 171, src/style.scss */
+/* line 187, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -857,7 +878,7 @@ em {
   text-align: center;
 }
 
-/* line 181, src/style.scss */
+/* line 197, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -868,7 +889,7 @@ em {
   text-align: center;
 }
 
-/* line 194, src/style.scss */
+/* line 210, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -882,7 +903,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 207, src/style.scss */
+/* line 223, src/style.scss */
 .history-intro {
   max-width: 1080px;
   width: 100%;
@@ -896,7 +917,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 220, src/style.scss */
+/* line 236, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -910,7 +931,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 233, src/style.scss */
+/* line 249, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -921,12 +942,32 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 243, src/style.scss */
-.page-sub-intro {
+/* line 259, src/style.scss */
+.page-sub-intro-home {
   background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
   max-height: 525px;
   height: 525px;
   *zoom: 1;
+}
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page-sub-intro-home:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 266, src/style.scss */
+.sub-intro-txt-mod-home {
+  max-width: 780px;
+  width: 100%;
+  float: right;
+}
+
+/* line 272, src/style.scss */
+.page-sub-intro {
+  *zoom: 1;
+  border: 1px solid;
+  border-color: #eee;
 }
 /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro:after {
@@ -935,14 +976,14 @@ em {
   clear: both;
 }
 
-/* line 250, src/style.scss */
+/* line 278, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
-  float: right;
+  margin: 0 auto;
 }
 
-/* line 256, src/style.scss */
+/* line 284, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -951,7 +992,7 @@ em {
   color: #9f916f;
 }
 
-/* line 264, src/style.scss */
+/* line 292, src/style.scss */
 .team-signatures {
   max-width: 750px;
   width: 100%;
@@ -960,16 +1001,17 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 277, src/style.scss */
+/* line 305, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   height: 515px;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #eee;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #fff;
+  outline: 1px solid #eeeeee;
 }
 
-/* line 285, src/style.scss */
+/* line 314, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -994,7 +1036,7 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* line 306, src/style.scss */
+/* line 335, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1014,7 +1056,7 @@ em {
   clear: both;
 }
 
-/* line 315, src/style.scss */
+/* line 344, src/style.scss */
 .raffle-hdr {
   background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
   background-size: 100%;
@@ -1022,7 +1064,7 @@ em {
   margin-bottom: 70px;
 }
 
-/* line 322, src/style.scss */
+/* line 351, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1030,14 +1072,14 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 329, src/style.scss */
+/* line 358, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 335, src/style.scss */
+/* line 364, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
   font: 600 25px/120% "freight-text-pro";
@@ -1048,7 +1090,7 @@ em {
   bottom: 0px;
 }
 
-/* line 345, src/style.scss */
+/* line 374, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
   font: 600 35px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -1061,15 +1103,69 @@ em {
 }
 
 /* ============================================= */
+/*	About       						   		 */
+/* ============================================= */
+/* line 392, src/style.scss */
+.team-profiles {
+  margin-left: -50px;
+  *zoom: 1;
+  border-bottom: 1px solid;
+  border-color: #eee;
+  font: 400 18px/150% "freight-text-pro";
+}
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.team-profiles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 253, src/partials/_layout.scss */
+.team-profiles .media-block {
+  float: left;
+  padding-left: 50px;
+  width: 33.3333%;
+}
+/* line 267, src/partials/_layout.scss */
+.team-profiles .media-block:nth-child(3n+4) {
+  clear: left;
+}
+/* line 270, src/partials/_layout.scss */
+.ie7 .team-profiles .media-block {
+  width: 33%;
+}
+/* line 273, src/partials/_layout.scss */
+.team-profiles .media-block.n3 {
+  clear: left;
+}
+
+/* line 399, src/style.scss */
+.team-member {
+  margin-bottom: 50px;
+}
+
+/* line 403, src/style.scss */
+.rider-img {
+  max-width: 138px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 409, src/style.scss */
+.rider-img-mod {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 362, src/style.scss */
+/* line 421, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 370, src/style.scss */
+/* line 429, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1087,13 +1183,13 @@ em {
   background-repeat: repeat-y;
 }
 
-/* line 387, src/style.scss */
+/* line 446, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 392, src/style.scss */
+/* line 451, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1110,14 +1206,14 @@ em {
 /* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 412, src/style.scss */
+/* line 471, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
   margin-top: -50px;
 }
 
-/* line 418, src/style.scss */
+/* line 477, src/style.scss */
 .history-year {
   max-width: 850px;
   width: 100%;
@@ -1143,7 +1239,7 @@ em {
   clear: both;
 }
 
-/* line 437, src/style.scss */
+/* line 496, src/style.scss */
 .year-tz-img {
   max-width: 380px;
   width: 100%;
@@ -1152,12 +1248,12 @@ em {
   margin-left: -1px;
 }
 
-/* line 445, src/style.scss */
+/* line 504, src/style.scss */
 .year-tz-txt-mod {
   padding: 27px 20px 30px 420px;
   text-align: left;
 }
-/* line 449, src/style.scss */
+/* line 508, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
@@ -1166,28 +1262,28 @@ em {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 462, src/style.scss */
+/* line 521, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 468, src/style.scss */
+/* line 527, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 474, src/style.scss */
+/* line 533, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 480, src/style.scss */
+/* line 539, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1213,13 +1309,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 485, src/style.scss */
+/* line 544, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 491, src/style.scss */
+/* line 550, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1227,13 +1323,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 495, src/style.scss */
+/* line 554, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 501, src/style.scss */
+/* line 560, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1241,12 +1337,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 508, src/style.scss */
+/* line 567, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 513, src/style.scss */
+/* line 572, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1255,7 +1351,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/* line 521, src/style.scss */
+/* line 580, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1268,12 +1364,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 536, src/style.scss */
+/* line 595, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 540, src/style.scss */
+/* line 599, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1294,7 +1390,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 554, src/style.scss */
+/* line 613, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -1305,12 +1401,12 @@ footer {
   left: auto;
 }
 
-/* line 560, src/style.scss */
+/* line 619, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 564, src/style.scss */
+/* line 623, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -1331,7 +1427,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 578, src/style.scss */
+/* line 637, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);

@@ -50,9 +50,6 @@ $faint-gray: #efefef;
 
 $lt-background: #003244;
 
-
-
-
 $orange: #f1592a;
 $link-h: #1d1d1d;
 $link-h-hover: #666;
@@ -110,4 +107,4 @@ $freight-sans: 'freight-sans-pro', $sans;
 $freight-txt:  'freight-text-pro';
 
 
-$body: normal 18px/120%px $freight-txt;
+$body: normal 18px/120% $freight-txt;
