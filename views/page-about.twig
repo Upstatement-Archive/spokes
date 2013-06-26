@@ -2,7 +2,11 @@
 
 {% block content %}
 
-	<h1> Page</h1>
+	<section class="page-intro-about">
+			<h1 class="intro-h1 about-intro">About Bikes Fight Cancer</h1>
+			<h2 class="intro-h2">Friends Fight Cancer Together</h2>
+			<a class="btn btn-donate">Donate Today</a>
+	</section><!-- /page-intro -->
 
 	<!-- this loops gets the team members -->
 	{% for person in post.team %}
@@ -10,17 +14,5 @@
 		<img src="{{person.image.url}}"/>
 		{{person.bio}}
 	{% endfor %}
-
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.post_title}}</h1>
-				
-				
-				{{post.post_content|raw|wpautop}}
-			</section>
-
-		</article>
-	</div> <!-- /content-wrapper -->
 
 {% endblock %}

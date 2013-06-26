@@ -168,6 +168,26 @@ em   	{	font-style: italic;	}
 	text-align: center;	
 }
 
+.page-intro-history {
+	padding: 0% 0%;
+	background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
+	background-size: 120%; //If you change this, change the number in site.js
+	max-height: 786px;
+	height: 786px;	
+	margin: 0 auto;
+	text-align: center;	
+}
+
+.page-intro-about {
+	padding: 0% 0%;
+	background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
+	background-size: 120%; //If you change this, change the number in site.js
+	max-height: 786px;
+	height: 786px;	
+	margin: 0 auto;
+	text-align: center;	
+}
+
 .intro-h1 {
 }
 
@@ -279,7 +299,7 @@ em   	{	font-style: italic;	}
 		url(/wp-content/themes/spokes/images/pmc-logo-raffle.png) top right no-repeat,
 		url(/wp-content/themes/spokes/images/bg-raffle.jpg) 50% 50%;
 
-	background-size: 200px, 50%;
+	background-size: 175px, 50%;
 	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));	
 }
 
@@ -385,6 +405,56 @@ em   	{	font-style: italic;	}
 
 /* ============================================= */
 
+/*	History-Page   						   		 */ 
+
+/* ============================================= */
+
+.history-list-mod {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: -50px;
+}
+
+.history-year {
+	max-width: 850px;
+	width: 100%;
+	max-height: 270px;
+	border: 1px solid;
+	border-color: #eee;
+	border-bottom-color: #ddd;
+	text-align: center;
+	margin: 0 auto 50px auto;
+	background-color: #fff;
+	@include pie-clearfix;
+	background-image: url(/wp-content/themes/spokes/images/bg-dots-long.png);
+	background-size: 250px;
+	background-repeat: repeat-x;
+	margin-bottom: 50px;
+	text-align: left;	
+	padding-bottom: 16px;
+}
+
+.year-tz-img {
+	max-width: 380px;
+	width: 100%;
+	float: left;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+.year-tz-txt-mod {
+	padding: 27px 20px 30px 420px;
+	text-align: left;
+
+	.tz-h1 {
+		color: $bfc-gold;
+		margin-bottom: 15px;
+	}
+}
+
+
+/* ============================================= */
+
 /*	Footer	    						   		 */ 
 
 /* ============================================= */
@@ -454,6 +524,7 @@ footer {
 	font: 400 14px/120% $freight-sans;
 	text-transform: uppercase;
 	padding: 16px 25px 20px 25px;
+	letter-spacing: 1px;
 }
 
 /* ============================================= */
@@ -475,12 +546,36 @@ footer {
 	width: 50%;
 	top: 80%;
 	max-width:300px;
-	background: #777;
+	background: #fff;
 	@include box-shadow(0 15px 10px rgba(0, 0, 0, 0.2));
 	@include transform(rotate(-3deg));  
 }
 
 .card-effect:after {
+	@include transform(rotate(3deg));
+	right: 10px;
+	left: auto;
+}
+
+.card-effect-lg {
+  position: relative;
+}
+
+.card-effect-lg:before, .card-effect-lg:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 10px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: #fff;
+	@include box-shadow(0 15px 10px rgba(0, 0, 0, 0.2));
+	@include transform(rotate(-3deg));  
+}
+
+.card-effect-lg:after {
 	@include transform(rotate(3deg));
 	right: 10px;
 	left: auto;
