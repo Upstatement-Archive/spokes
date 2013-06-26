@@ -169,6 +169,9 @@ em   	{	font-style: italic;	}
 }
 
 .intro-h1 {
+}
+
+.home-intro {	
 	max-width: 1080px;
 	width: 100%;
 	text-indent: -3000px;
@@ -179,6 +182,32 @@ em   	{	font-style: italic;	}
 	padding-top: 400px;
 	background-size: 1080px;
 	margin-bottom: 25px;
+}
+
+.history-intro {
+	max-width: 1080px;
+	width: 100%;
+	text-indent: -3000px;
+	background: url(/wp-content/themes/spokes/images/history-intro-title.png) no-repeat 50% 100%;
+	margin: 0 auto;
+	text-align: center;	
+	height: 110px;
+	padding-top: 400px;
+	background-size: 1080px;
+	margin-bottom: 25px;		
+}
+
+.about-intro {
+	max-width: 1080px;
+	width: 100%;
+	text-indent: -3000px;
+	background: url(/wp-content/themes/spokes/images/about-intro-title.png) no-repeat 50% 100%;
+	margin: 0 auto;
+	text-align: center;	
+	height: 110px;
+	padding-top: 400px;
+	background-size: 1080px;
+	margin-bottom: 25px;	
 }
 
 .intro-h2 {
@@ -192,7 +221,7 @@ em   	{	font-style: italic;	}
 }
 
 .page-sub-intro {
-	background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 13% -10%;
+	background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
 	max-height: 525px;
 	height: 525px;
 	@include pie-clearfix;
@@ -255,11 +284,53 @@ em   	{	font-style: italic;	}
 }
 
 .raffle-inside {
-	padding: 20px;
+	padding: 40px;
 	border: 3px dashed;
 	border-color: $bfc-gold-dark;
 	height: 100%;
 	@include border-radius(12px);
+	@include pie-clearfix;	
+}
+
+.raffle-hdr {
+	background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
+	background-size: 100%;
+	text-indent: -7000px;
+	margin-bottom: 70px;
+}
+
+.raffle-name-mod {
+	position: relative;
+	border-bottom: 3px solid;
+	border-color: $bfc-gold-dark;
+	margin-bottom: 80px;
+}
+
+.raffle-prize-mod {
+	position: relative;
+	border-bottom: 3px solid;
+	border-color: $bfc-gold-dark;
+}
+
+.raffle-name-title, .raffle-prize-title {
+	text-align: left;
+	font: 600 25px/120% $freight-txt;
+	color: $bfc-gold-dark;
+	float: left;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0px;
+}
+
+.raffle-name, .raffle-prize {
+	text-align: left;
+	font: 600 35px/130% $freight-sans;
+	color: #fff;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0px;
+	margin-left: 80px;
+	margin-bottom: -3px;
 }
 
 /* ============================================= */
@@ -319,8 +390,7 @@ em   	{	font-style: italic;	}
 /* ============================================= */
 
 footer {
-	height: 515px;
-	background-color: #222;
+	background-color: #1D1D1D;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -339,6 +409,7 @@ footer {
 
 	.sponsors-mod {
 		@include ui-grid-lr(25%, 75%, 5%);
+		text-align: left;
 	}
 
 	.section-h1 {
@@ -370,12 +441,20 @@ footer {
 }
 
 .ftr-logo-bike {
-	max-width: 125px;
+	max-width: 160px;
 	width: 100%;
 	display: block;
-	margin-top: -130px;
+	margin-top: -155px;
+	margin-bottom: 25px;
 }
 
+.site-credit {
+	background-color: #2A2B2A;
+	color: #fff;
+	font: 400 14px/120% $freight-sans;
+	text-transform: uppercase;
+	padding: 16px 25px 20px 25px;
+}
 
 /* ============================================= */
 

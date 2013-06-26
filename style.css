@@ -846,8 +846,8 @@ em {
   text-align: center;
 }
 
-/* line 171, src/style.scss */
-.intro-h1 {
+/* line 174, src/style.scss */
+.home-intro {
   max-width: 1080px;
   width: 100%;
   text-indent: -3000px;
@@ -860,7 +860,35 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 184, src/style.scss */
+/* line 187, src/style.scss */
+.history-intro {
+  max-width: 1080px;
+  width: 100%;
+  text-indent: -3000px;
+  background: url(/wp-content/themes/spokes/images/history-intro-title.png) no-repeat 50% 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 110px;
+  padding-top: 400px;
+  background-size: 1080px;
+  margin-bottom: 25px;
+}
+
+/* line 200, src/style.scss */
+.about-intro {
+  max-width: 1080px;
+  width: 100%;
+  text-indent: -3000px;
+  background: url(/wp-content/themes/spokes/images/about-intro-title.png) no-repeat 50% 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 110px;
+  padding-top: 400px;
+  background-size: 1080px;
+  margin-bottom: 25px;
+}
+
+/* line 213, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -871,9 +899,9 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 194, src/style.scss */
+/* line 223, src/style.scss */
 .page-sub-intro {
-  background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 13% -10%;
+  background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
   max-height: 525px;
   height: 525px;
   *zoom: 1;
@@ -885,14 +913,14 @@ em {
   clear: both;
 }
 
-/* line 201, src/style.scss */
+/* line 230, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 207, src/style.scss */
+/* line 236, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -901,7 +929,7 @@ em {
   color: #9f916f;
 }
 
-/* line 215, src/style.scss */
+/* line 244, src/style.scss */
 .team-signatures {
   max-width: 750px;
   width: 100%;
@@ -910,7 +938,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 228, src/style.scss */
+/* line 257, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   height: 515px;
@@ -919,7 +947,7 @@ em {
   border-color: #eee;
 }
 
-/* line 236, src/style.scss */
+/* line 265, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -944,9 +972,9 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* line 257, src/style.scss */
+/* line 286, src/style.scss */
 .raffle-inside {
-  padding: 20px;
+  padding: 40px;
   border: 3px dashed;
   border-color: #5d4e2e;
   height: 100%;
@@ -955,18 +983,71 @@ em {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
+  *zoom: 1;
+}
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.raffle-inside:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 295, src/style.scss */
+.raffle-hdr {
+  background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
+  background-size: 100%;
+  text-indent: -7000px;
+  margin-bottom: 70px;
+}
+
+/* line 302, src/style.scss */
+.raffle-name-mod {
+  position: relative;
+  border-bottom: 3px solid;
+  border-color: #5d4e2e;
+  margin-bottom: 80px;
+}
+
+/* line 309, src/style.scss */
+.raffle-prize-mod {
+  position: relative;
+  border-bottom: 3px solid;
+  border-color: #5d4e2e;
+}
+
+/* line 315, src/style.scss */
+.raffle-name-title, .raffle-prize-title {
+  text-align: left;
+  font: 600 25px/120% "freight-text-pro";
+  color: #5d4e2e;
+  float: left;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 325, src/style.scss */
+.raffle-name, .raffle-prize {
+  text-align: left;
+  font: 600 35px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #fff;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 80px;
+  margin-bottom: -3px;
 }
 
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 271, src/style.scss */
+/* line 342, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 279, src/style.scss */
+/* line 350, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -984,13 +1065,13 @@ em {
   background-repeat: repeat-y;
 }
 
-/* line 296, src/style.scss */
+/* line 367, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 301, src/style.scss */
+/* line 372, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1007,31 +1088,31 @@ em {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 321, src/style.scss */
+/* line 392, src/style.scss */
 footer {
-  height: 515px;
-  background-color: #222;
+  background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 328, src/style.scss */
+/* line 398, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 334, src/style.scss */
+/* line 404, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 340, src/style.scss */
+/* line 410, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
+  text-align: left;
 }
 /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .sponsors .sponsors-mod:after {
@@ -1054,13 +1135,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 344, src/style.scss */
+/* line 415, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 350, src/style.scss */
+/* line 421, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1068,13 +1149,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 354, src/style.scss */
+/* line 425, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 360, src/style.scss */
+/* line 431, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1082,28 +1163,38 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 367, src/style.scss */
+/* line 438, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 372, src/style.scss */
+/* line 443, src/style.scss */
 .ftr-logo-bike {
-  max-width: 125px;
+  max-width: 160px;
   width: 100%;
   display: block;
-  margin-top: -130px;
+  margin-top: -155px;
+  margin-bottom: 25px;
+}
+
+/* line 451, src/style.scss */
+.site-credit {
+  background-color: #2A2B2A;
+  color: #fff;
+  font: 400 14px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  padding: 16px 25px 20px 25px;
 }
 
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 386, src/style.scss */
+/* line 465, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 390, src/style.scss */
+/* line 469, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1124,7 +1215,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 404, src/style.scss */
+/* line 483, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
