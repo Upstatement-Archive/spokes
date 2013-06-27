@@ -18,21 +18,23 @@
 			</div><!-- /page-mod -->	
 		</section><!-- /page-sub-intro -->	
 
-		<section class="raffle-tz">
-			<div class="page-mod">
-				<div class="raffle-ticket-mod">
-					<div class="raffle-inside">
-						<h4 class="section-h1 raffle-hdr">Today's Raffle Winner</h4>
-						<div class="raffle-name-mod">
-							<div class="raffle-name-title">Name:</div> <div class="raffle-name">Warren Izyk</div>
-						</div><!-- /raffle-name-mod -->	
-						<div class="raffle-prize-mod">
-							<div class="raffle-prize-title">Prize:</div> <div class="raffle-prize">Red Sox Tickets</div>
-						</div><!-- /raffle-prize-mod -->
-					</div><!-- /raffle-inside -->	
-				</div><!-- /raffle-ticket-mod -->				
-			</div><!-- /page-mod -->	
-		</section><!-- /raffle-tz -->
+		{% if raffle.raffle_name %}
+			<section class="raffle-tz">
+				<div class="page-mod">
+					<div class="raffle-ticket-mod">
+						<div class="raffle-inside">
+							<h4 class="section-h1 raffle-hdr">Today's Raffle Winner</h4>
+							<div class="raffle-name-mod">
+								<div class="raffle-name-title">Name:</div> <div class="raffle-name">{{ raffle.raffle_name }}</div>
+							</div><!-- /raffle-name-mod -->	
+							<div class="raffle-prize-mod">
+								<div class="raffle-prize-title">Prize:</div> <div class="raffle-prize">{{ raffle.raffle_prize }}</div>
+							</div><!-- /raffle-prize-mod -->
+						</div><!-- /raffle-inside -->	
+					</div><!-- /raffle-ticket-mod -->				
+				</div><!-- /page-mod -->	
+			</section><!-- /raffle-tz -->
+		{% endif %}
 
 		<section class="blog-feed">
 			<div class="page-mod">

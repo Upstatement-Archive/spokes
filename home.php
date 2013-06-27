@@ -22,6 +22,9 @@
 	$data['sponsors'] = $sponsors;
 	$posts = Timber::get_posts('TimberPost');
 	$data['posts'] = $posts;
+	$raffle = Timber::get_post(35);
+	$raffle->raffle = get_field("raffle-winner", 35);
+	$data['raffle'] = $raffle;
 	render_twig('home.twig', $data);
 
 
