@@ -142,7 +142,6 @@ em   	{	font-style: italic;	}
 }
 
 
-
 /* ============================================= */
 
 /*	nav     						   			 */ 
@@ -488,6 +487,7 @@ em   	{	font-style: italic;	}
 	background-image: url(/wp-content/themes/spokes/images/bg-dots.png);
 	background-size: 120px;
 	background-repeat: repeat-y;
+	min-height: 300px;
 }
 
 .post-date-mod {
@@ -623,6 +623,34 @@ a.history-link-mod {
 	}
 }
 
+
+/***  History-Post  ***/     						   		 
+
+.raffle-history {
+	top: 1160px;
+	left: 45px;
+	position: absolute;
+	max-width: 200px;
+	width: 100%;
+}
+
+.caption-h {
+	font: 800 14px/150% $freight-sans;
+	color: #555;	
+}
+
+.raffle-history-ul {
+	margin-bottom: 25px;
+}
+
+.raffle-history-item {
+	font: 14px/150% $freight-sans;
+	color: #888;
+
+	&:last-child {
+		margin-bottom: 22px;
+	}
+}
 
 
 /* ============================================= */
