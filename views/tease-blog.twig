@@ -1,10 +1,6 @@
-<article class="tease tease-{{post.post_type}}">
-	{% block content %}
-		<h2 class="h2"><a href="{{post.get_path}}">{{post.title}}</a></h2>
-		<p>{{post.post_content|wpautop|excerpt}}</p>
-
-		{% if post.get_thumbnail %}
-			<img src="{{post.get_thumbnail.get_url}}" />
-		{% endif %}
-	{% endblock %}
-</article>
+<article class="blog-post-tz card-effect">						
+	<div class="post-date">{{ post.post_date | date('n.j.y') }}</div>
+	<!-- <div class="post-date-mod"></div> -->
+	<h5 class="tz-h1">{{ post.post_title }}</h5>
+	<p class="tz-txt">{{ post.get_preview(60) }}</p>
+</article><!-- /blog-post -->

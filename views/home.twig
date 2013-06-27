@@ -11,29 +11,18 @@
 		<section class="page-sub-intro-home">
 			<div class="page-mod">
 				<div class="sub-intro-txt-mod-home">
-				<h3 class="sub-intro-txt">We love bikes. We hate cancer.
-				Bikes Fight Cancer is a tight-knit team of knuckleheads that ride bikes and are committed to raising money for life-saving cancer research and treatment.</h3>
-				<img class="team-signatures" src="/wp-content/themes/spokes/images/team-signatures.png">
+				<h3 class="sub-intro-txt">{{ intro.post_content }}</h3>
+				{% for sig in intro.sigs %}
+					<img src="{{sig.signature.url}}" alt="{{sig.signature.alt}}" />
+				{% endfor %}
+
+				<!-- <img class="team-signatures" src="/wp-content/themes/spokes/images/team-signatures.png"> -->
 				</div><!-- /sub-intro-txt-mod -->
 			</div><!-- /page-mod -->	
 		</section><!-- /page-sub-intro -->	
 
 		{% if raffle.raffle_name %}
-			<section class="raffle-tz">
-				<div class="page-mod">
-					<div class="raffle-ticket-mod">
-						<div class="raffle-inside">
-							<h4 class="section-h1 raffle-hdr">Today's Raffle Winner</h4>
-							<div class="raffle-name-mod">
-								<div class="raffle-name-title">Name:</div> <div class="raffle-name">{{ raffle.raffle_name }}</div>
-							</div><!-- /raffle-name-mod -->	
-							<div class="raffle-prize-mod">
-								<div class="raffle-prize-title">Prize:</div> <div class="raffle-prize">{{ raffle.raffle_prize }}</div>
-							</div><!-- /raffle-prize-mod -->
-						</div><!-- /raffle-inside -->	
-					</div><!-- /raffle-ticket-mod -->				
-				</div><!-- /page-mod -->	
-			</section><!-- /raffle-tz -->
+			{% include 'raffle-ticket.twig' %}
 		{% endif %}
 
 		<section class="blog-feed">
@@ -42,26 +31,9 @@
 				<h4 class="section-h1">Blog</h4>
 
 				<div class="blog-feed-mod">
-					<article class="blog-post-tz card-effect">						
-						<div class="post-date">7.12.13</div>
-						<!-- <div class="post-date-mod"></div> -->
-						<h5 class="tz-h1">We're stoked on our new site!</h5>
-						<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket. The day the ticket is pulled determines the prize that is won. We will contact the lucky person and make sure the prize gets to you!</p>
-					</article><!-- /blog-post -->
-
-					<article class="blog-post-tz card-effect">
-						<div class="post-date">7.12.13</div>
-						<!-- <div class="post-date-mod"></div> -->
-						<h5 class="tz-h1">We're stoked on our new site!</h5>
-						<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket. The day the ticket is pulled determines the prize that is won. We will contact the lucky person and make sure the prize gets to you!</p>
-					</article><!-- /blog-post -->
-
-					<article class="blog-post-tz card-effect">
-						<div class="post-date">7.12.13</div>
-						<!-- <div class="post-date-mod"></div> -->
-						<h5 class="tz-h1">We're stoked on our new site!</h5>
-						<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket. The day the ticket is pulled determines the prize that is won. We will contact the lucky person and make sure the prize gets to you!</p>
-					</article><!-- /blog-post -->
+					{% for post in posts %}
+						{% include 'tease-blog.twig' %}
+					{% endfor %}
 				</div>
 
 			</div><!-- /page-mod -->
