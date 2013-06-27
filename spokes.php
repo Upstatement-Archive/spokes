@@ -19,6 +19,8 @@
 			$context = Timber::get_context();
 			$context['footer'] = array();
 			$context['footer']['sponsors'] = get_field("sponsors", 16);
+			$context['footer']['footer'] = Timber::get_post(18);
+
 			return $context;
 		}
 
