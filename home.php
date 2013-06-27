@@ -30,9 +30,10 @@
 	$data['raffle'] = $raffle;
 
 	$intro = Timber::get_post(36);
+	$intro->goal = get_field("goal", 36);
 	$intro->sigs = get_field("team_signatures", 36);
 	$data['intro'] = $intro;
-	
+
 	render_twig('home.twig', $data);
 
 
