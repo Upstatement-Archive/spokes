@@ -830,7 +830,7 @@ em {
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 152, src/style.scss */
+/* line 151, src/style.scss */
 .header {
   position: fixed;
   top: 0px;
@@ -839,12 +839,12 @@ em {
   z-index: 3000;
 }
 
-/* line 160, src/style.scss */
+/* line 159, src/style.scss */
 #access {
   float: right;
   padding-top: 30px;
 }
-/* line 165, src/style.scss */
+/* line 164, src/style.scss */
 #access #menu-main-nav > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -860,16 +860,16 @@ em {
   letter-spacing: 1px;
   margin-right: 2px;
 }
-/* line 175, src/style.scss */
+/* line 174, src/style.scss */
 #access #menu-main-nav > li:last-child {
   margin-right: 0px;
 }
-/* line 179, src/style.scss */
+/* line 178, src/style.scss */
 #access #menu-main-nav > li:hover {
   color: #bada55;
 }
 
-/* line 186, src/style.scss */
+/* line 185, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
@@ -878,7 +878,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 198, src/style.scss */
+/* line 197, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -889,7 +889,7 @@ em {
   text-align: center;
 }
 
-/* line 208, src/style.scss */
+/* line 207, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -900,7 +900,7 @@ em {
   text-align: center;
 }
 
-/* line 218, src/style.scss */
+/* line 217, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -911,7 +911,7 @@ em {
   text-align: center;
 }
 
-/* line 228, src/style.scss */
+/* line 227, src/style.scss */
 .page-intro-raffle {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
@@ -922,7 +922,7 @@ em {
   text-align: center;
 }
 
-/* line 241, src/style.scss */
+/* line 240, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -936,7 +936,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 254, src/style.scss */
+/* line 253, src/style.scss */
 .history-intro {
   max-width: 1080px;
   width: 100%;
@@ -950,7 +950,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 267, src/style.scss */
+/* line 266, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -964,7 +964,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 280, src/style.scss */
+/* line 279, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -978,7 +978,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 293, src/style.scss */
+/* line 292, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -989,7 +989,7 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 303, src/style.scss */
+/* line 302, src/style.scss */
 .page-sub-intro-home {
   background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
   max-height: 525px;
@@ -1003,14 +1003,14 @@ em {
   clear: both;
 }
 
-/* line 310, src/style.scss */
+/* line 309, src/style.scss */
 .sub-intro-txt-mod-home {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 316, src/style.scss */
+/* line 315, src/style.scss */
 .page-sub-intro {
   *zoom: 1;
   border: 1px solid;
@@ -1023,14 +1023,14 @@ em {
   clear: both;
 }
 
-/* line 322, src/style.scss */
+/* line 321, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 328, src/style.scss */
+/* line 327, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -1039,7 +1039,7 @@ em {
   color: #9f916f;
 }
 
-/* line 336, src/style.scss */
+/* line 335, src/style.scss */
 .team-signatures {
   max-width: 750px;
   width: 100%;
@@ -1048,7 +1048,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 350, src/style.scss */
+/* line 349, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   height: 515px;
@@ -1058,7 +1058,7 @@ em {
   outline: 1px solid #eeeeee;
 }
 
-/* line 359, src/style.scss */
+/* line 358, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -1083,7 +1083,7 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* line 380, src/style.scss */
+/* line 379, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1103,7 +1103,7 @@ em {
   clear: both;
 }
 
-/* line 389, src/style.scss */
+/* line 388, src/style.scss */
 .raffle-hdr {
   background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
   background-size: 100%;
@@ -1111,7 +1111,7 @@ em {
   margin-bottom: 70px;
 }
 
-/* line 396, src/style.scss */
+/* line 395, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1119,14 +1119,14 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 403, src/style.scss */
+/* line 402, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 409, src/style.scss */
+/* line 408, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
   font: 600 25px/120% "freight-text-pro";
@@ -1137,7 +1137,7 @@ em {
   bottom: 0px;
 }
 
-/* line 419, src/style.scss */
+/* line 418, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
   font: 600 35px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -1152,7 +1152,7 @@ em {
 /* ============================================= */
 /*	About       						   		 */
 /* ============================================= */
-/* line 438, src/style.scss */
+/* line 437, src/style.scss */
 .team-profiles {
   margin-left: -50px;
   *zoom: 1;
@@ -1185,19 +1185,19 @@ em {
   clear: left;
 }
 
-/* line 445, src/style.scss */
+/* line 444, src/style.scss */
 .team-member {
   margin-bottom: 50px;
 }
 
-/* line 449, src/style.scss */
+/* line 448, src/style.scss */
 .rider-img {
   max-width: 138px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 455, src/style.scss */
+/* line 454, src/style.scss */
 .rider-img-mod {
   text-align: center;
   margin-bottom: 20px;
@@ -1206,13 +1206,13 @@ em {
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 468, src/style.scss */
+/* line 467, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 476, src/style.scss */
+/* line 475, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1228,6 +1228,7 @@ em {
   background-image: url(/wp-content/themes/spokes/images/bg-dots.png);
   background-size: 120px;
   background-repeat: repeat-y;
+  min-height: 300px;
 }
 
 /* line 493, src/style.scss */
@@ -1373,10 +1374,41 @@ a.history-link-mod {
   margin-bottom: 15px;
 }
 
+/***  History-Post  ***/
+/* line 629, src/style.scss */
+.raffle-history {
+  top: 1160px;
+  left: 45px;
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+}
+
+/* line 637, src/style.scss */
+.caption-h {
+  font: 800 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #555;
+}
+
+/* line 642, src/style.scss */
+.raffle-history-ul {
+  margin-bottom: 25px;
+}
+
+/* line 646, src/style.scss */
+.raffle-history-item {
+  font: 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #888;
+}
+/* line 650, src/style.scss */
+.raffle-history-item:last-child {
+  margin-bottom: 22px;
+}
+
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 634, src/style.scss */
+/* line 662, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1384,7 +1416,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 641, src/style.scss */
+/* line 669, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -1400,13 +1432,13 @@ a.history-link-mod {
   text-align: center;
 }
 
-/* line 654, src/style.scss */
+/* line 682, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro";
   text-align: left;
 }
 
-/* line 659, src/style.scss */
+/* line 687, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -1426,28 +1458,28 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 677, src/style.scss */
+/* line 705, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 683, src/style.scss */
+/* line 711, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 689, src/style.scss */
+/* line 717, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 695, src/style.scss */
+/* line 723, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1473,13 +1505,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 700, src/style.scss */
+/* line 728, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 706, src/style.scss */
+/* line 734, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1487,13 +1519,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 710, src/style.scss */
+/* line 738, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 716, src/style.scss */
+/* line 744, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1501,12 +1533,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 723, src/style.scss */
+/* line 751, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 728, src/style.scss */
+/* line 756, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1515,7 +1547,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/* line 736, src/style.scss */
+/* line 764, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1528,12 +1560,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 753, src/style.scss */
+/* line 781, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 757, src/style.scss */
+/* line 785, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1554,7 +1586,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 771, src/style.scss */
+/* line 799, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -1565,12 +1597,12 @@ footer {
   left: auto;
 }
 
-/* line 777, src/style.scss */
+/* line 805, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 781, src/style.scss */
+/* line 809, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -1591,7 +1623,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 795, src/style.scss */
+/* line 823, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
