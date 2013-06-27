@@ -779,12 +779,18 @@ em {
   -o-columns: 2;
   columns: 2;
   font: 400 18px/150% "freight-text-pro";
+  text-align: justify;
+}
+
+/* line 100, src/style.scss */
+.section-hd-mod {
+  text-align: center;
 }
 
 /* ============================================= */
 /*	Typography						   			 */
 /* ============================================= */
-/* line 106, src/style.scss */
+/* line 112, src/style.scss */
 .section-h1 {
   text-transform: uppercase;
   color: #9f916f;
@@ -793,22 +799,38 @@ em {
   margin-bottom: 50px;
 }
 
-/* line 114, src/style.scss */
+/* line 120, src/style.scss */
 .tz-h1 {
   font: 600 32px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #000;
 }
 
-/* line 119, src/style.scss */
+/* line 125, src/style.scss */
 .tz-txt {
   font: 400 20px/140% "freight-text-pro";
   color: #464646;
 }
 
+/* line 130, src/style.scss */
+.post-h1 {
+  font: 800 45px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  margin-bottom: 28px;
+  color: #000;
+}
+
+/* line 136, src/style.scss */
+.byline {
+  font: 800 18px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 131, src/style.scss */
+/* line 152, src/style.scss */
 .header {
   position: fixed;
   top: 0px;
@@ -817,12 +839,12 @@ em {
   z-index: 3000;
 }
 
-/* line 139, src/style.scss */
+/* line 160, src/style.scss */
 #access {
   float: right;
   padding-top: 30px;
 }
-/* line 144, src/style.scss */
+/* line 165, src/style.scss */
 #access #menu-main-nav > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -838,16 +860,16 @@ em {
   letter-spacing: 1px;
   margin-right: 2px;
 }
-/* line 154, src/style.scss */
+/* line 175, src/style.scss */
 #access #menu-main-nav > li:last-child {
   margin-right: 0px;
 }
-/* line 158, src/style.scss */
+/* line 179, src/style.scss */
 #access #menu-main-nav > li:hover {
   color: #bada55;
 }
 
-/* line 165, src/style.scss */
+/* line 186, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
@@ -856,7 +878,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 177, src/style.scss */
+/* line 198, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -867,7 +889,7 @@ em {
   text-align: center;
 }
 
-/* line 187, src/style.scss */
+/* line 208, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -878,7 +900,7 @@ em {
   text-align: center;
 }
 
-/* line 197, src/style.scss */
+/* line 218, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -889,7 +911,18 @@ em {
   text-align: center;
 }
 
-/* line 210, src/style.scss */
+/* line 228, src/style.scss */
+.page-intro-raffle {
+  padding: 0% 0%;
+  background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
+  background-size: 120%;
+  max-height: 786px;
+  height: 786px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 241, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -903,7 +936,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 223, src/style.scss */
+/* line 254, src/style.scss */
 .history-intro {
   max-width: 1080px;
   width: 100%;
@@ -917,7 +950,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 236, src/style.scss */
+/* line 267, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -931,7 +964,21 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 249, src/style.scss */
+/* line 280, src/style.scss */
+.about-intro {
+  max-width: 1080px;
+  width: 100%;
+  text-indent: -3000px;
+  background: url(/wp-content/themes/spokes/images/raffle-intro-title.png) no-repeat 50% 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 110px;
+  padding-top: 400px;
+  background-size: 1080px;
+  margin-bottom: 25px;
+}
+
+/* line 293, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -942,7 +989,7 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 259, src/style.scss */
+/* line 303, src/style.scss */
 .page-sub-intro-home {
   background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
   max-height: 525px;
@@ -956,14 +1003,14 @@ em {
   clear: both;
 }
 
-/* line 266, src/style.scss */
+/* line 310, src/style.scss */
 .sub-intro-txt-mod-home {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 272, src/style.scss */
+/* line 316, src/style.scss */
 .page-sub-intro {
   *zoom: 1;
   border: 1px solid;
@@ -976,14 +1023,14 @@ em {
   clear: both;
 }
 
-/* line 278, src/style.scss */
+/* line 322, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 284, src/style.scss */
+/* line 328, src/style.scss */
 .sub-intro-txt {
   font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -992,7 +1039,7 @@ em {
   color: #9f916f;
 }
 
-/* line 292, src/style.scss */
+/* line 336, src/style.scss */
 .team-signatures {
   max-width: 750px;
   width: 100%;
@@ -1001,7 +1048,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 305, src/style.scss */
+/* line 350, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   height: 515px;
@@ -1011,7 +1058,7 @@ em {
   outline: 1px solid #eeeeee;
 }
 
-/* line 314, src/style.scss */
+/* line 359, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -1036,7 +1083,7 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* line 335, src/style.scss */
+/* line 380, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1056,7 +1103,7 @@ em {
   clear: both;
 }
 
-/* line 344, src/style.scss */
+/* line 389, src/style.scss */
 .raffle-hdr {
   background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
   background-size: 100%;
@@ -1064,7 +1111,7 @@ em {
   margin-bottom: 70px;
 }
 
-/* line 351, src/style.scss */
+/* line 396, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1072,14 +1119,14 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 358, src/style.scss */
+/* line 403, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 364, src/style.scss */
+/* line 409, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
   font: 600 25px/120% "freight-text-pro";
@@ -1090,7 +1137,7 @@ em {
   bottom: 0px;
 }
 
-/* line 374, src/style.scss */
+/* line 419, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
   font: 600 35px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -1105,7 +1152,7 @@ em {
 /* ============================================= */
 /*	About       						   		 */
 /* ============================================= */
-/* line 392, src/style.scss */
+/* line 438, src/style.scss */
 .team-profiles {
   margin-left: -50px;
   *zoom: 1;
@@ -1138,19 +1185,19 @@ em {
   clear: left;
 }
 
-/* line 399, src/style.scss */
+/* line 445, src/style.scss */
 .team-member {
   margin-bottom: 50px;
 }
 
-/* line 403, src/style.scss */
+/* line 449, src/style.scss */
 .rider-img {
   max-width: 138px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 409, src/style.scss */
+/* line 455, src/style.scss */
 .rider-img-mod {
   text-align: center;
   margin-bottom: 20px;
@@ -1159,13 +1206,13 @@ em {
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 421, src/style.scss */
+/* line 468, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 429, src/style.scss */
+/* line 476, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1183,13 +1230,13 @@ em {
   background-repeat: repeat-y;
 }
 
-/* line 446, src/style.scss */
+/* line 493, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 451, src/style.scss */
+/* line 498, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1204,16 +1251,78 @@ em {
 }
 
 /* ============================================= */
+/*	Blog-Post   						   		 */
+/* ============================================= */
+/* line 519, src/style.scss */
+.intro-img-post {
+  padding: 0% 0%;
+  background: url(/wp-content/themes/spokes/images/hero-img-post.jpg) no-repeat center center;
+  background-size: 120%;
+  max-height: 786px;
+  height: 786px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 530, src/style.scss */
+.post-content-topper, .post-content-mod {
+  margin: 0 auto;
+  max-width: 780px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 537, src/style.scss */
+.post-content-topper {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #eee;
+  margin-top: -50px;
+  height: 140px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* line 547, src/style.scss */
+.post-content-mod {
+  max-width: 779px;
+  margin-top: -140px;
+  padding: 30px 10px 10px 10px;
+}
+/* line 552, src/style.scss */
+.post-content-mod p {
+  font: 20px/160% "freight-text-pro";
+  margin-bottom: 28px;
+}
+/* line 557, src/style.scss */
+.post-content-mod > img {
+  width: 100%;
+}
+/* line 561, src/style.scss */
+.post-content-mod .section-h1 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+@media (min-width: 401px) {
+  /* line 547, src/style.scss */
+  .post-content-mod {
+    padding: 30px 80px 80px 80px;
+  }
+}
+
+/* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 471, src/style.scss */
+/* line 579, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
   margin-top: -50px;
 }
 
-/* line 477, src/style.scss */
+/* line 585, src/style.scss */
 .history-year {
   max-width: 850px;
   width: 100%;
@@ -1239,7 +1348,12 @@ em {
   clear: both;
 }
 
-/* line 496, src/style.scss */
+/* line 604, src/style.scss */
+a.history-link-mod {
+  display: block;
+}
+
+/* line 608, src/style.scss */
 .year-tz-img {
   max-width: 380px;
   width: 100%;
@@ -1248,42 +1362,92 @@ em {
   margin-left: -1px;
 }
 
-/* line 504, src/style.scss */
+/* line 616, src/style.scss */
 .year-tz-txt-mod {
   padding: 27px 20px 30px 420px;
   text-align: left;
 }
-/* line 508, src/style.scss */
+/* line 620, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
 }
 
 /* ============================================= */
+/*	Raffle Page    						   		 */
+/* ============================================= */
+/* line 634, src/style.scss */
+.raffle-list {
+  background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
+  border-top: 2px solid;
+  border-bottom: 1px solid;
+  border-color: #fff;
+}
+
+/* line 641, src/style.scss */
+.raffle-list-mod {
+  background-color: #fff;
+  margin: 0 auto;
+  border: 1px solid;
+  border-color: #eee;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: -85px;
+  max-width: 935px;
+  width: 100%;
+  padding: 50px 100px 60px 90px;
+  text-align: center;
+}
+
+/* line 654, src/style.scss */
+.raffle-list-item {
+  font: 20px/200% "freight-text-pro";
+  text-align: left;
+}
+
+/* line 659, src/style.scss */
+.raffle-list-bg {
+  background-color: #fff;
+  height: 515px;
+  border: 1px solid;
+  border-color: #eee;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  position: absolute;
+}
+
+/* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 521, src/style.scss */
+/* line 677, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 527, src/style.scss */
+/* line 683, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 533, src/style.scss */
+/* line 689, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 539, src/style.scss */
+/* line 695, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1309,13 +1473,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 544, src/style.scss */
+/* line 700, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 550, src/style.scss */
+/* line 706, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1323,13 +1487,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 554, src/style.scss */
+/* line 710, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 560, src/style.scss */
+/* line 716, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1337,12 +1501,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 567, src/style.scss */
+/* line 723, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 572, src/style.scss */
+/* line 728, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1351,7 +1515,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/* line 580, src/style.scss */
+/* line 736, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1364,12 +1528,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 595, src/style.scss */
+/* line 753, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 599, src/style.scss */
+/* line 757, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1390,7 +1554,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 613, src/style.scss */
+/* line 771, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -1401,12 +1565,12 @@ footer {
   left: auto;
 }
 
-/* line 619, src/style.scss */
+/* line 777, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 623, src/style.scss */
+/* line 781, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -1427,7 +1591,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 637, src/style.scss */
+/* line 795, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
