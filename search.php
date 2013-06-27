@@ -11,7 +11,7 @@
   
 
 	$templates = array('archive.twig', 'index.twig');
-	$data = Timber::get_context();
+	$data = Spokes::get_context();
 
 	$data['title'] = 'Search results for '. get_search_query();
 	$data['posts'] = Timber::get_posts();

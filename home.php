@@ -18,7 +18,7 @@
 	}
 	$sponsors = Timber::get_post(16);
 	$sponsors->sponsors = get_field("sponsors", 16);
-	$data = Timber::get_context();
+	$data = Spokes::get_context();
 	$data['sponsors'] = $sponsors;
 	$posts = Timber::get_posts('TimberPost');
 	$data['posts'] = $posts;
