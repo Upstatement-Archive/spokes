@@ -16,7 +16,7 @@
 ?>
 <?php
 	
-	$context = Timber::get_context();
+	$context = Spokes::get_context();
 	$post = new TimberPost();
 	$context['post'] = $post;
 	render_twig(array('page-'.$post->post_name.'.twig', 'page-raffle.twig'), $context);

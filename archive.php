@@ -17,7 +17,7 @@
 
 		$templates = array('archive.twig', 'index.twig');
 
-		$data = Timber::get_context();
+		$data = Spokes::get_context();
 
 		$data['title'] = 'Archive';
 		if (is_day()){

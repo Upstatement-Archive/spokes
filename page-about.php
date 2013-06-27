@@ -15,7 +15,7 @@
  */
 ?>
 <?php
-	$context = Timber::get_context();
+	$context = Spokes::get_context();
 	$post = new TimberPost();
 	$post->team = get_field("about-team", 9);
 	$context['post'] = $post;

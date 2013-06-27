@@ -9,7 +9,7 @@
  * @since 		Timber 0.1
  */
 
-	$context = Timber::get_context();
+	$context = Spokes::get_context();
 	$post = new TimberPost();
 	$context['post'] = $post;
 	$context['wp_title'] .= ' - '.$post->post_title;

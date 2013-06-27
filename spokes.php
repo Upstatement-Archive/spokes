@@ -18,7 +18,7 @@
 		function get_context(){
 			$context = Timber::get_context();
 			$context['footer'] = array();
-			//$context['footer']['sponsors'] = whatever();
+			$context['footer']['sponsors'] = get_field("sponsors", 16);
 			return $context;
 		}
 
