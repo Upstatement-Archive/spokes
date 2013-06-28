@@ -304,6 +304,8 @@ em   	{	font-style: italic;	}
 	max-height: 525px;
 	height: 525px;
 	@include pie-clearfix;
+	border-bottom: 1px solid;
+	border-color: #eee;
 }
 
 .sub-intro-txt-mod-home {
@@ -467,6 +469,8 @@ em   	{	font-style: italic;	}
 .blog-feed {
 	margin: 0 auto;
 	text-align: center;
+	border-top: 1px solid;
+	border-color: #eee;
 }
 
 .blog-feed-mod {
@@ -599,6 +603,7 @@ em   	{	font-style: italic;	}
 	margin-bottom: 50px;
 	text-align: left;	
 	padding-bottom: 16px;
+	min-height: 268px;
 }
 
 a.history-link-mod {
