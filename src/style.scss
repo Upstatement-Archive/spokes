@@ -516,12 +516,11 @@ em   	{	font-style: italic;	}
 
 /* ============================================= */
 
-.intro-img-post {
+.post-intro-img {
 	padding: 0% 0%;
-	background: url(/wp-content/themes/spokes/images/hero-img-post.jpg) no-repeat center center;
-	background-size: 120%;
 	max-height: 786px;
 	height: 786px;	
+	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;		
 }
@@ -531,7 +530,8 @@ em   	{	font-style: italic;	}
 	margin: 0 auto;
 	max-width: 780px;
 	width: 100%;
-	background-color: #fff;		
+	background-color: #fff;	
+	position: relative;	
 }
 
 .post-content-topper {
@@ -541,7 +541,7 @@ em   	{	font-style: italic;	}
 	border-color: #eee;
 	margin-top: -50px;
 	height: 140px;
-	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));	
+	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));
 }
 
 .post-content-mod {

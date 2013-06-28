@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration {
   *zoom: 1;
   overflow: hidden;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .dropdown:after {
   content: "";
   display: table;
@@ -382,7 +382,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 18px;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tabs:after, .pills:after {
   content: "";
   display: table;
@@ -996,7 +996,7 @@ em {
   height: 525px;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro-home:after {
   content: "";
   display: table;
@@ -1016,7 +1016,7 @@ em {
   border: 1px solid;
   border-color: #eee;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro:after {
   content: "";
   display: table;
@@ -1096,7 +1096,7 @@ em {
   border-radius: 12px;
   *zoom: 1;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .raffle-inside:after {
   content: "";
   display: table;
@@ -1160,7 +1160,7 @@ em {
   border-color: #eee;
   font: 400 18px/150% "freight-text-pro";
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .team-profiles:after {
   content: "";
   display: table;
@@ -1255,22 +1255,22 @@ em {
 /*	Blog-Post   						   		 */
 /* ============================================= */
 /* line 519, src/style.scss */
-.intro-img-post {
+.post-intro-img {
   padding: 0% 0%;
-  background: url(/wp-content/themes/spokes/images/hero-img-post.jpg) no-repeat center center;
-  background-size: 120%;
   max-height: 786px;
   height: 786px;
+  overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 530, src/style.scss */
+/* line 529, src/style.scss */
 .post-content-topper, .post-content-mod {
   margin: 0 auto;
   max-width: 780px;
   width: 100%;
   background-color: #fff;
+  position: relative;
 }
 
 /* line 537, src/style.scss */
@@ -1342,7 +1342,7 @@ em {
   text-align: left;
   padding-bottom: 16px;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .history-year:after {
   content: "";
   display: table;
@@ -1484,7 +1484,7 @@ footer {
   *zoom: 1;
   text-align: left;
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .sponsors .sponsors-mod:after {
   content: "";
   display: table;
