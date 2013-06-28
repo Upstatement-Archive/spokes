@@ -517,12 +517,14 @@ em   	{	font-style: italic;	}
 /* ============================================= */
 
 .post-intro-img {
-	padding: 0% 0%;
 	max-height: 786px;
-	height: 786px;	
 	overflow: hidden;
 	margin: 0 auto;
-	text-align: center;		
+	text-align: center;
+
+	img {
+		width: 100%;
+	}		
 }
 
 
@@ -627,11 +629,14 @@ a.history-link-mod {
 /***  History-Post  ***/     						   		 
 
 .raffle-history {
-	top: 1160px;
-	left: 45px;
-	position: absolute;
-	max-width: 200px;
 	width: 100%;
+
+	@media (min-width: $large){
+		top: 1100px;
+		left: 45px;
+		position: absolute;
+		max-width: 200px;
+	}
 }
 
 .caption-h {

@@ -1256,15 +1256,17 @@ em {
 /* ============================================= */
 /* line 519, src/style.scss */
 .post-intro-img {
-  padding: 0% 0%;
   max-height: 786px;
-  height: 786px;
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
+/* line 525, src/style.scss */
+.post-intro-img img {
+  width: 100%;
+}
 
-/* line 529, src/style.scss */
+/* line 531, src/style.scss */
 .post-content-topper, .post-content-mod {
   margin: 0 auto;
   max-width: 780px;
@@ -1273,7 +1275,7 @@ em {
   position: relative;
 }
 
-/* line 537, src/style.scss */
+/* line 539, src/style.scss */
 .post-content-topper {
   border-top: 1px solid;
   border-left: 1px solid;
@@ -1286,28 +1288,28 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 547, src/style.scss */
+/* line 549, src/style.scss */
 .post-content-mod {
   max-width: 779px;
   margin-top: -140px;
   padding: 30px 10px 10px 10px;
 }
-/* line 552, src/style.scss */
+/* line 554, src/style.scss */
 .post-content-mod p {
   font: 20px/160% "freight-text-pro";
   margin-bottom: 28px;
 }
-/* line 557, src/style.scss */
+/* line 559, src/style.scss */
 .post-content-mod > img {
   width: 100%;
 }
-/* line 561, src/style.scss */
+/* line 563, src/style.scss */
 .post-content-mod .section-h1 {
   font-size: 18px;
   margin-bottom: 40px;
 }
 @media (min-width: 401px) {
-  /* line 547, src/style.scss */
+  /* line 549, src/style.scss */
   .post-content-mod {
     padding: 30px 80px 80px 80px;
   }
@@ -1316,14 +1318,14 @@ em {
 /* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 579, src/style.scss */
+/* line 581, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
   margin-top: -50px;
 }
 
-/* line 585, src/style.scss */
+/* line 587, src/style.scss */
 .history-year {
   max-width: 850px;
   width: 100%;
@@ -1349,12 +1351,12 @@ em {
   clear: both;
 }
 
-/* line 604, src/style.scss */
+/* line 606, src/style.scss */
 a.history-link-mod {
   display: block;
 }
 
-/* line 608, src/style.scss */
+/* line 610, src/style.scss */
 .year-tz-img {
   max-width: 380px;
   width: 100%;
@@ -1363,44 +1365,49 @@ a.history-link-mod {
   margin-left: -1px;
 }
 
-/* line 616, src/style.scss */
+/* line 618, src/style.scss */
 .year-tz-txt-mod {
   padding: 27px 20px 30px 420px;
   text-align: left;
 }
-/* line 620, src/style.scss */
+/* line 622, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
 }
 
 /***  History-Post  ***/
-/* line 629, src/style.scss */
+/* line 631, src/style.scss */
 .raffle-history {
-  top: 1160px;
-  left: 45px;
-  position: absolute;
-  max-width: 200px;
   width: 100%;
 }
+@media (min-width: 900px) {
+  /* line 631, src/style.scss */
+  .raffle-history {
+    top: 1100px;
+    left: 45px;
+    position: absolute;
+    max-width: 200px;
+  }
+}
 
-/* line 637, src/style.scss */
+/* line 642, src/style.scss */
 .caption-h {
   font: 800 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #555;
 }
 
-/* line 642, src/style.scss */
+/* line 647, src/style.scss */
 .raffle-history-ul {
   margin-bottom: 25px;
 }
 
-/* line 646, src/style.scss */
+/* line 651, src/style.scss */
 .raffle-history-item {
   font: 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #888;
 }
-/* line 650, src/style.scss */
+/* line 655, src/style.scss */
 .raffle-history-item:last-child {
   margin-bottom: 22px;
 }
@@ -1408,7 +1415,7 @@ a.history-link-mod {
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 662, src/style.scss */
+/* line 667, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1416,7 +1423,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 669, src/style.scss */
+/* line 674, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -1432,13 +1439,13 @@ a.history-link-mod {
   text-align: center;
 }
 
-/* line 682, src/style.scss */
+/* line 687, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro";
   text-align: left;
 }
 
-/* line 687, src/style.scss */
+/* line 692, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -1458,28 +1465,28 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 705, src/style.scss */
+/* line 710, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 711, src/style.scss */
+/* line 716, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 717, src/style.scss */
+/* line 722, src/style.scss */
 .sponsors {
   height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 723, src/style.scss */
+/* line 728, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1505,13 +1512,13 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 728, src/style.scss */
+/* line 733, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 734, src/style.scss */
+/* line 739, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -1519,13 +1526,13 @@ footer {
   -o-columns: 3;
   columns: 3;
 }
-/* line 738, src/style.scss */
+/* line 743, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 744, src/style.scss */
+/* line 749, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1533,12 +1540,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 751, src/style.scss */
+/* line 756, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 756, src/style.scss */
+/* line 761, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1547,7 +1554,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/* line 764, src/style.scss */
+/* line 769, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1560,12 +1567,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 781, src/style.scss */
+/* line 786, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 785, src/style.scss */
+/* line 790, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1586,7 +1593,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 799, src/style.scss */
+/* line 804, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -1597,12 +1604,12 @@ footer {
   left: auto;
 }
 
-/* line 805, src/style.scss */
+/* line 810, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 809, src/style.scss */
+/* line 814, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -1623,7 +1630,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 823, src/style.scss */
+/* line 828, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
