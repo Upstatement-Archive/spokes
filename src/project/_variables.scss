@@ -104,7 +104,8 @@ $serif: $bt-serif, Georgia, Times, "Times New Roman", serif;
 $mono: "Courier New", Courier, mono;
 
 $freight-sans: 'freight-sans-pro', $sans;
-$freight-txt:  'freight-text-pro';
+$freight-txt:  'freight-text-pro' $serif;
+$giza: 'Giza Five Five', $sans;
 
 
 $body: normal 18px/120% $freight-txt;

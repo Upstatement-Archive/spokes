@@ -44,11 +44,15 @@ em   	{	font-style: italic;	}
 .btn-donate {
 	margin: 0 auto;
 	text-align: center;
-	max-width: 175px;
+	max-width: 160px;
 	width: 100%;
 	padding: 20px;
 	position: relative;
-	@include box-shadow(inset #87a722 0px 0px 30px);	
+	@include box-shadow(inset #87a722 0px 0px 30px);
+
+	@media (min-width: $small) {
+		max-width: 175px;
+	}//mq
 }
 
 .btn-donate:after {
@@ -69,6 +73,14 @@ em   	{	font-style: italic;	}
     height: 100%;
     background-color: rgba(255,255,255,0);
      @include transition(all 0.5s ease-out);
+}
+
+.btn {
+	font-size: 10px;
+
+	@media (min-width: $small) {
+		font-size: 13px;
+	}//mq
 }
 
 .page-mod {
@@ -109,6 +121,21 @@ em   	{	font-style: italic;	}
 	text-align: center;
 }
 
+.read-more {
+		color: $bfc-gold;
+}
+
+.intro-stars {
+	max-width: 1080px;
+	width: 100%;
+	margin-bottom: 10px;
+	display: none;
+
+	@media (min-width: $medium) {
+		display: inline;
+	}//mq
+}
+
 
 
 /* ============================================= */
@@ -116,6 +143,23 @@ em   	{	font-style: italic;	}
 /*	Typography						   			 */ 
 
 /* ============================================= */
+
+
+.intro-h1 {
+	// font: 87px/200% $giza;
+	font: 30px/120% $giza;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	color: #fff;
+
+	@media (min-width: $small) {
+		font: 61px/120% $giza;
+	}//mq
+
+	@media (min-width: $medium) {
+		font: 71px/120% $giza;
+	}//mq
+}
 
 .section-h1 {
 	text-transform: uppercase;
@@ -165,8 +209,20 @@ em   	{	font-style: italic;	}
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	padding: 0px 35px;
+	padding: 0px 20px;
 	z-index: 3000;
+
+	@media (min-width: $medium) {
+		padding: 0px 35px;
+	}//mq
+}
+
+.large-nav {
+	display: none;
+
+	@media (min-width: $medium) {
+		display: block;
+	}//mq
 }
  
 #access {
@@ -196,9 +252,29 @@ em   	{	font-style: italic;	}
 } 
 
 .nav-logo {
-	max-width: 80px;
+	max-width: 65px;
 	width: 100%;
+
+	@media (min-width: $medium) {
+		max-width: 80px;
+	}//mq
 } 
+
+
+/***  Mobile-Nav  ***/ 
+
+.m-nav-toggle {
+	max-width: 25px;
+	width: 100%;
+	padding-top: 30px;
+	float: right;
+	display: block;
+
+	@media (min-width: $medium) {
+		display: none;
+	}
+}
+
 
 
 /* ============================================= */
@@ -210,17 +286,22 @@ em   	{	font-style: italic;	}
 .page-intro {
 	padding: 0% 0%;
 	background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
-	background-size: 120%; //If you change this, change the number in site.js
-	max-height: 786px;
-	height: 786px;	
+	background-size: cover; 
+	max-height: 413px;
+	height: 413px;	
 	margin: 0 auto;
 	text-align: center;	
+
+	@media (min-width: $small) {
+		max-height: 786px;
+		height: 786px;	
+	}//mq
 }
 
 .page-intro-history {
 	padding: 0% 0%;
 	background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
-	background-size: 120%; //If you change this, change the number in site.js
+	background-size: cover;
 	max-height: 786px;
 	height: 786px;	
 	margin: 0 auto;
@@ -229,8 +310,8 @@ em   	{	font-style: italic;	}
 
 .page-intro-about {
 	padding: 0% 0%;
-	background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
-	background-size: 120%; //If you change this, change the number in site.js
+	background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
+	background-size: cover;
 	max-height: 786px;
 	height: 786px;	
 	margin: 0 auto;
@@ -239,77 +320,42 @@ em   	{	font-style: italic;	}
 
 .page-intro-raffle {
 	padding: 0% 0%;
-	background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
-	background-size: 120%; //If you change this, change the number in site.js
+	background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
+	background-size: cover;
 	max-height: 786px;
 	height: 786px;	
 	margin: 0 auto;
 	text-align: center;	
 }
 
-.intro-h1 {
-}
-
 .home-intro {	
 	max-width: 1080px;
 	width: 100%;
-	text-indent: -3000px;
-	background: url(/wp-content/themes/spokes/images/home-intro-txt.png) no-repeat 50% 100%;
 	margin: 0 auto;
 	text-align: center;	
-	height: 110px;
-	padding-top: 400px;
+	padding-top: 150px;
 	background-size: 1080px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
+
+	@media (min-width: $small) {
+		padding-top: 227px;	
+	}//mq
 }
 
-.history-intro {
-	max-width: 1080px;
-	width: 100%;
-	text-indent: -3000px;
-	background: url(/wp-content/themes/spokes/images/history-intro-title.png) no-repeat 50% 100%;
-	margin: 0 auto;
-	text-align: center;	
-	height: 110px;
-	padding-top: 400px;
-	background-size: 1080px;
-	margin-bottom: 25px;		
-}
-
-.about-intro {
-	max-width: 1080px;
-	width: 100%;
-	text-indent: -3000px;
-	background: url(/wp-content/themes/spokes/images/about-intro-title.png) no-repeat 50% 100%;
-	margin: 0 auto;
-	text-align: center;	
-	height: 110px;
-	padding-top: 400px;
-	background-size: 1080px;
-	margin-bottom: 25px;	
-}
-
-.about-intro {
-	max-width: 1080px;
-	width: 100%;
-	text-indent: -3000px;
-	background: url(/wp-content/themes/spokes/images/raffle-intro-title.png) no-repeat 50% 100%;
-	margin: 0 auto;
-	text-align: center;	
-	height: 110px;
-	padding-top: 400px;
-	background-size: 1080px;
-	margin-bottom: 25px;	
-}
 
 .intro-h2 {
-	font: 600 29px/120% $freight-sans;
+	font: 600 16px/120% $freight-sans;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #fff;	
 	margin: 0 auto;
 	text-align: center;	
-	margin-bottom: 65px;
+	margin-bottom: 40px;
+
+	@media (min-width: $medium) {
+		font: 600 29px/120% $freight-sans;
+		margin-bottom: 65px;	
+	}
 }
 
 .page-sub-intro-home {
@@ -428,10 +474,11 @@ em   	{	font-style: italic;	}
 }
 
 .raffle-hdr {
-	background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
 	background-size: 100%;
-	text-indent: -7000px;
 	margin-bottom: 70px;
+	font: 38px/120% $giza;
+	color: $bfc-gold-dark;
+	@include opacity(.8);
 }
 
 .raffle-name-mod {
@@ -464,7 +511,7 @@ em   	{	font-style: italic;	}
 
 .raffle-name, .raffle-prize {
 	text-align: left;
-	font: 600 25px/130% $freight-sans;
+	font: 600 24px/130% $freight-sans;
 	color: #fff;
 	vertical-align: bottom;
 	position: absolute;
@@ -826,13 +873,17 @@ a.history-link-mod {
 footer {
 	background-color: #1D1D1D;
 	margin: 0 auto;
-	text-align: center;
 }
 
 .ftr-logo {
-	max-width: 515px;
+	max-width: 413px;
 	width: 100%;
 	margin-bottom: 25px;
+}
+
+.contact-li-item {
+	color: #fff;
+	font: 800 16px/160% $freight-sans;
 }
 
 .sponsors {
@@ -844,7 +895,7 @@ footer {
 		@include ui-grid-lr(100%, 100%, 0%);
 		text-align: left;
 
-		@media (min-width: 600px) {
+		@media (min-width: 700px) {
 			@include ui-grid-lr(25%, 75%, 5%);
 		}//mq
 	}
@@ -897,6 +948,7 @@ footer {
 	margin-top: -155px;
 	margin-bottom: 25px;
 	display: none;
+	position:relative;
 
 	@media (min-width: 700px) {
 		display: block;
@@ -910,6 +962,7 @@ footer {
 	text-transform: uppercase;
 	padding: 16px 25px 20px 25px;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 
