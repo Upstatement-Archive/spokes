@@ -19,4 +19,5 @@
 	$context = Spokes::get_context();
 	$post = new TimberPost();
 	$context['post'] = $post;
+	$post->intro = get_field('intro', 5);
 	render_twig(array('page-'.$post->post_name.'.twig', 'page-history.twig'), $context);

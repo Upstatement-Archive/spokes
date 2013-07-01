@@ -18,5 +18,7 @@
 	
 	$context = Spokes::get_context();
 	$post = new TimberPost();
+	$post->intro = get_field('intro', 8);
+	$post->winners = get_field('raffle_winners', 8);
 	$context['post'] = $post;
 	render_twig(array('page-'.$post->post_name.'.twig', 'page-raffle.twig'), $context);

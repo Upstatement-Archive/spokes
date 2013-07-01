@@ -14,11 +14,10 @@
  * @since 		Timber 0.2
  */
 	
-
+		
 		$templates = array('archive.twig', 'index.twig');
 
 		$data = Spokes::get_context();
-
 		$data['title'] = 'Archive';
 		if (is_day()){
 			$data['title'] = 'Archive: '.get_the_date( 'D M Y' );	
