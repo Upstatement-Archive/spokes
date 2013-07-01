@@ -4,73 +4,20 @@
 
 	<section class="page-intro-history">
 			<h1 class="intro-h1 history-intro">History</h1>
-			<h2 class="intro-h2">We've logged thousands of miles in the fight against cancer</h2>
+			<h2 class="intro-h2">{{post.intro}}</h2>
 			<a class="btn btn-donate">Make History</a>
 	</section><!-- /page-intro -->	
 
 	<section class="history-list-mod">
-		<article class="history-year card-effect-lg">
-			<a class="history-link-mod" src="#">
-				<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
+		{% for child in post.get_children %}
+			<article class="history-year card-effect-lg">
+				<img class="year-tz-img" src="{{child.get_thumbnail.get_src}}"/>
 				<div class="year-tz-txt-mod">
-					<h5 class="tz-h1">2012</h5>
-					<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
+					<h5 class="tz-h1">{{child.title}}</h5>
+					<p class="tz-txt">{{child.get_preview(60)}}</p>
 				</div><!-- /year-tz-txt-mod -->	
-			</a><!-- /history-link-mod -->	
-		</article><!-- /history-year -->
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2011</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->	
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2010</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2009</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2008</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2007</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->
-
-		<article class="history-year card-effect-lg">
-			<img class="year-tz-img" src="/wp-content/themes/spokes/images/history-tz-2012.jpg">
-			<div class="year-tz-txt-mod">
-				<h5 class="tz-h1">2006</h5>
-				<p class="tz-txt">For every $20 in a personal donation to the PMC for our team, we will put a ticket in our official “Raffle Bowl” with the donor’s name. Each day during the month of July, we will randomly draw a ticket.</p>
-			</div><!-- /year-tz-txt-mod -->	
-		</article><!-- /history-year -->								
-
+			</article><!-- /history-year -->	
+		{% endfor %}
 	</section><!-- /history-list-mod -->	
-	
-	{% for child in post.get_children %}
-		{{child.title}}
-	{% endfor %}
 
 {% endblock %}
