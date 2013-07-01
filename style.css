@@ -1028,7 +1028,7 @@ em {
 /* line 311, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
-  background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
+  background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
   background-size: cover;
   max-height: 786px;
   height: 786px;
@@ -1039,7 +1039,7 @@ em {
 /* line 321, src/style.scss */
 .page-intro-raffle {
   padding: 0% 0%;
-  background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
+  background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
   background-size: cover;
   max-height: 786px;
   height: 786px;
