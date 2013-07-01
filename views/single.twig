@@ -1,33 +1,33 @@
 {% extends "base.twig" %}
 
 {% block content %}
+	<div class="post-intro-img">
+		<img src="/wp-content/themes/spokes/images/hero-img-post.jpg" alt="alt text"/>
+	</div>
 
-	<h1> Detail page</h1>
+	<div class="post-content-topper"></div>
 	
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.post_title}}</h1>
-				
-				<p class="blog-author"><span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.display_date }}</p>
-				{{post.post_content|raw|wpautop}}
-			</section>
+	<div class="post-content-mod">
+			<div class="section-hd-mod">
+				<img class="section-icon" src="/wp-content/themes/spokes/images/icon-blog.png">
+				<h4 class="section-h1">Blog</h4>
+			</div><!-- /section-hd-mod -->	
 
-			<section class="comments">
-				<div class="respond">
-					<h3 class="h2">Comments</h3>
-						{{ comment_form }}
-					</div>
-					<div class="responses">
+			<h1 class="post-h1">Our Best Year Yet! We've been cycling like champs.</h1>
+			<div class="byline">By Mike</div><!-- /byline -->
+
+			<p>Holy smokes! Our biggest team yet! We’ve got eight dudes stacked up on our newly renamed Bikes Fight Cancer team this year! Welcome new comers: Will Bangs and James Sutter! Thanks to the great support of friends, family, and strangers-a-like, we were able to raise an astonishing $34,703 for the Jimmy Fund!</p>
+			<p>We dedicated the ride to our pal, Kevin Bouvier, who was recently diagnosed with cancer but is THANKFULLY getting the treatment he needs and was able to join us at the start line in Sturbridge for some photos.</p>  
+			<p>The ride was great fun, though Saturday was perhaps the hottest, muggiest ride in Pan-Mass Challenge history and Sunday was filled with short bursts of down-pouring rain. The weather was no match for our sleek new black & neon green BFC jerseys! Fashionistas! Keeping eight riders together for all 192-miles was a bit tricky but we all managed to start and end each day as a team (though James missed the last turn that we all take in Provincetown!!!... He’ll learn next year!). Congrats to Bob for winning the P-town line this year! Johnny came in a close second, which we all know is really just the first loser.</p>
+			<p>The Bikes Fight Cancer immediate family is also growing — Welcome Gracie Morin and Jaclyn Swiatlowski! Also congrats to the newlyweds Jon and Sara Jasak today!</p>
+
+			<img class="" src="/wp-content/themes/spokes/images/history-tz-2012.jpg"/>
+
+
+	</div> <!-- /post-content-mod -->	
 	
-					{% for cmt in post.get_comments() %}
-						{% include "comment.twig" with {comment:cmt} %}
-					{% endfor %}
-</div>
-
-			</section>
-
-		</article>
-	</div> <!-- /content-wrapper -->
+	{% for child in post.get_children %}
+		{{child.title}}
+	{% endfor %}
 
 {% endblock %}

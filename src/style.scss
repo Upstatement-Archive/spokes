@@ -72,7 +72,11 @@ em   	{	font-style: italic;	}
 }
 
 .page-mod {
-	padding: 75px 50px;
+	padding: 45px 20px;	
+
+	@media (min-width: $medium) {
+		padding: 75px 50px;
+	}//mq
 }
 
 .section-icon {
@@ -92,9 +96,13 @@ em   	{	font-style: italic;	}
 	max-width: 780px;
 	width: 100%;
 	margin-bottom: 25px;
-	@include columns(2);
 	font: 400 18px/150% $freight-txt;	
-	text-align: justify;
+
+	@media (min-width: 700px) {
+		@include columns(2);
+		@include column-gap(4em);
+		text-align: justify;
+	}//mq
 }
 
 .section-hd-mod {
@@ -114,7 +122,7 @@ em   	{	font-style: italic;	}
 	color: $bfc-gold;
 	font: 600 32px/120% $freight-sans, $sans;
 	letter-spacing: 1px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .tz-h1 {
@@ -123,8 +131,13 @@ em   	{	font-style: italic;	}
 }
 
 .tz-txt {
-	font: 400 20px/140% $freight-txt;
+	font: 400 19px/145% $freight-txt;
 	color: #464646;
+
+	@media (min-width: $small) {
+		font-size: 20px;
+		line-height: 140%;
+	}//mq
 }
 
 .post-h1 {
@@ -327,11 +340,15 @@ em   	{	font-style: italic;	}
 }
 
 .sub-intro-txt {
-	font: 600 32px/125% $freight-sans;
+	font: 600 21px/130% $freight-sans;
 	max-width: 780px;
 	width: 100%;
-	margin-bottom: 25px;
 	color: $bfc-gold;
+
+	@media (min-width: $medium) {
+		font: 600 32px/125% $freight-sans;
+		margin-bottom: 25px;	
+	}//mq
 }
 
 .team-signatures {
@@ -409,23 +426,38 @@ em   	{	font-style: italic;	}
 
 .raffle-name-title, .raffle-prize-title {
 	text-align: left;
-	font: 600 25px/120% $freight-txt;
+	font: 600 20px/120% $freight-txt;
 	color: $bfc-gold-dark;
 	float: left;
 	vertical-align: bottom;
 	position: absolute;
 	bottom: 0px;
+	display: none;
+
+	@media (min-width: $medium) {
+		display: block;
+	}//mq
 }
 
 .raffle-name, .raffle-prize {
 	text-align: left;
-	font: 600 35px/130% $freight-sans;
+	font: 600 25px/130% $freight-sans;
 	color: #fff;
 	vertical-align: bottom;
 	position: absolute;
 	bottom: 0px;
-	margin-left: 80px;
 	margin-bottom: -3px;
+	margin-left: 0px;
+
+	@media (min-width: $medium) {
+		font-size: 30px;
+		margin-left: 80px;		
+	}//mq
+
+
+	@media (min-width: 900px) {
+		font-size: 35px;
+	}//mq
 }
 
 
@@ -437,14 +469,25 @@ em   	{	font-style: italic;	}
 /* ============================================= */
 
 .team-profiles {
-	@include media-grid (3, 50px);
 	border-bottom: 1px solid;
 	border-color: #eee;
-	font: 400 18px/150% $freight-txt;	
+	font: 400 18px/150% $freight-txt;
+
+	@media (min-width: 401px) and (max-width: 800px) {
+		@include media-grid (2, 50px);
+	}	
+
+	@media (min-width: 801px) {
+		@include media-grid (3, 50px);
+	}
 }
 
 .team-member {
 	margin-bottom: 50px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}//last-child
 }
 
 .rider-img {
@@ -520,14 +563,15 @@ em   	{	font-style: italic;	}
 
 /* ============================================= */
 
-.intro-img-post {
-	padding: 0% 0%;
-	background: url(/wp-content/themes/spokes/images/hero-img-post.jpg) no-repeat center center;
-	background-size: 120%;
+.post-intro-img {
 	max-height: 786px;
-	height: 786px;	
+	overflow: hidden;
 	margin: 0 auto;
-	text-align: center;		
+	text-align: center;
+
+	img {
+		width: 100%;
+	}		
 }
 
 
@@ -535,7 +579,8 @@ em   	{	font-style: italic;	}
 	margin: 0 auto;
 	max-width: 780px;
 	width: 100%;
-	background-color: #fff;		
+	background-color: #fff;	
+	position: relative;	
 }
 
 .post-content-topper {
@@ -545,7 +590,7 @@ em   	{	font-style: italic;	}
 	border-color: #eee;
 	margin-top: -50px;
 	height: 140px;
-	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));	
+	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));
 }
 
 .post-content-mod {
@@ -584,12 +629,16 @@ em   	{	font-style: italic;	}
 	margin: 0 auto;
 	text-align: center;
 	margin-top: -50px;
+	padding: 0px 10px;
+
+	@media (min-width: $large) {
+		padding: 0px;
+	}//mq
 }
 
 .history-year {
-	max-width: 850px;
+	max-width: 500px;
 	width: 100%;
-	max-height: 270px;
 	border: 1px solid;
 	border-color: #eee;
 	border-bottom-color: #ddd;
@@ -604,6 +653,11 @@ em   	{	font-style: italic;	}
 	text-align: left;	
 	padding-bottom: 16px;
 	min-height: 268px;
+
+	@media (min-width: $large){
+		max-height: 270px;
+		max-width: 850px;	
+	}//mq
 }
 
 a.history-link-mod {
@@ -611,16 +665,23 @@ a.history-link-mod {
 }
 
 .year-tz-img {
-	max-width: 380px;
 	width: 100%;
-	float: left;
 	margin-top: -1px;
-	margin-left: -1px;
+
+	@media (min-width: $large) {
+		float: left;
+		max-width: 380px;
+		margin-left: -1px;			
+	}//mq
 }
 
 .year-tz-txt-mod {
-	padding: 27px 20px 30px 420px;
+	padding: 25px 25px 30px 25px;
 	text-align: left;
+
+	@media (min-width: $large) {
+		padding: 27px 20px 30px 420px;
+	}//mq
 
 	.tz-h1 {
 		color: $bfc-gold;
@@ -631,12 +692,23 @@ a.history-link-mod {
 
 /***  History-Post  ***/     						   		 
 
-.raffle-history {
-	top: 1160px;
-	left: 45px;
-	position: absolute;
-	max-width: 200px;
+.history-aside {
 	width: 100%;
+	margin: 0 auto;
+	position: static;
+
+	@media (min-width: 1117px){
+		top: 1100px;
+		left: 36px;
+		position: absolute;
+		max-width: 200px;
+	}
+}
+
+.caption-section-h {
+	font: 800 25px/150% $freight-sans;
+	color: #000;
+	margin-bottom: 15px;
 }
 
 .caption-h {
@@ -644,17 +716,21 @@ a.history-link-mod {
 	color: #555;	
 }
 
-.raffle-history-ul {
+.history-aside-ul {
 	margin-bottom: 25px;
 }
 
-.raffle-history-item {
+.history-aside-item {
 	font: 14px/150% $freight-sans;
 	color: #888;
 
 	&:last-child {
 		margin-bottom: 22px;
 	}
+}
+
+.history-post-img {
+	margin-bottom: 25px;
 }
 
 
@@ -720,7 +796,6 @@ footer {
 }
 
 .sponsors {
-	height: 515px;
 	background-color: #f5f5f3;
 	margin: 0 auto;
 	text-align: center;	
@@ -737,7 +812,15 @@ footer {
 	}	
 
 	.sponsors-list-mod {
-		@include columns(3);
+		@include columns(1);
+
+		@media (min-width: $large) {
+			@include columns(2);
+		}		
+
+		@media (min-width: $x-large) {
+			@include columns(3);
+		}
 	}
 
 	.sponsor-list-item {

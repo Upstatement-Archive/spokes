@@ -751,38 +751,54 @@ em {
 
 /* line 74, src/style.scss */
 .page-mod {
-  padding: 75px 50px;
+  padding: 45px 20px;
+}
+@media (min-width: 700px) {
+  /* line 74, src/style.scss */
+  .page-mod {
+    padding: 75px 50px;
+  }
 }
 
-/* line 78, src/style.scss */
+/* line 82, src/style.scss */
 .section-icon {
   max-width: 45px;
   width: 100%;
   margin-bottom: 5px;
 }
 
-/* line 84, src/style.scss */
+/* line 88, src/style.scss */
 .sub-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 91, src/style.scss */
+/* line 95, src/style.scss */
 .sub-txt {
   max-width: 780px;
   width: 100%;
   margin-bottom: 25px;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  -ms-columns: 2;
-  -o-columns: 2;
-  columns: 2;
   font: 400 18px/150% "freight-text-pro";
-  text-align: justify;
+}
+@media (min-width: 700px) {
+  /* line 95, src/style.scss */
+  .sub-txt {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    -ms-columns: 2;
+    -o-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    -ms-column-gap: 4em;
+    -o-column-gap: 4em;
+    column-gap: 4em;
+    text-align: justify;
+  }
 }
 
-/* line 100, src/style.scss */
+/* line 108, src/style.scss */
 .section-hd-mod {
   text-align: center;
 }
@@ -790,35 +806,42 @@ em {
 /* ============================================= */
 /*	Typography						   			 */
 /* ============================================= */
-/* line 112, src/style.scss */
+/* line 120, src/style.scss */
 .section-h1 {
   text-transform: uppercase;
   color: #9f916f;
   font: 600 32px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif, "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-/* line 120, src/style.scss */
+/* line 128, src/style.scss */
 .tz-h1 {
   font: 600 32px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #000;
 }
 
-/* line 125, src/style.scss */
+/* line 133, src/style.scss */
 .tz-txt {
-  font: 400 20px/140% "freight-text-pro";
+  font: 400 19px/145% "freight-text-pro";
   color: #464646;
 }
+@media (min-width: 401px) {
+  /* line 133, src/style.scss */
+  .tz-txt {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
 
-/* line 130, src/style.scss */
+/* line 143, src/style.scss */
 .post-h1 {
   font: 800 45px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   margin-bottom: 28px;
   color: #000;
 }
 
-/* line 136, src/style.scss */
+/* line 149, src/style.scss */
 .byline {
   font: 800 18px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -830,7 +853,7 @@ em {
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 151, src/style.scss */
+/* line 164, src/style.scss */
 .header {
   position: fixed;
   top: 0px;
@@ -839,12 +862,12 @@ em {
   z-index: 3000;
 }
 
-/* line 159, src/style.scss */
+/* line 172, src/style.scss */
 #access {
   float: right;
   padding-top: 30px;
 }
-/* line 164, src/style.scss */
+/* line 177, src/style.scss */
 #access #menu-main-nav > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -860,16 +883,16 @@ em {
   letter-spacing: 1px;
   margin-right: 2px;
 }
-/* line 174, src/style.scss */
+/* line 187, src/style.scss */
 #access #menu-main-nav > li:last-child {
   margin-right: 0px;
 }
-/* line 178, src/style.scss */
+/* line 191, src/style.scss */
 #access #menu-main-nav > li:hover {
   color: #bada55;
 }
 
-/* line 185, src/style.scss */
+/* line 198, src/style.scss */
 .nav-logo {
   max-width: 80px;
   width: 100%;
@@ -878,7 +901,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 197, src/style.scss */
+/* line 210, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -889,7 +912,7 @@ em {
   text-align: center;
 }
 
-/* line 207, src/style.scss */
+/* line 220, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -900,7 +923,7 @@ em {
   text-align: center;
 }
 
-/* line 217, src/style.scss */
+/* line 230, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -911,7 +934,7 @@ em {
   text-align: center;
 }
 
-/* line 227, src/style.scss */
+/* line 240, src/style.scss */
 .page-intro-raffle {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
@@ -922,7 +945,7 @@ em {
   text-align: center;
 }
 
-/* line 240, src/style.scss */
+/* line 253, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -936,7 +959,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 253, src/style.scss */
+/* line 266, src/style.scss */
 .history-intro {
   max-width: 1080px;
   width: 100%;
@@ -950,7 +973,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 266, src/style.scss */
+/* line 279, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -964,7 +987,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 279, src/style.scss */
+/* line 292, src/style.scss */
 .about-intro {
   max-width: 1080px;
   width: 100%;
@@ -978,7 +1001,7 @@ em {
   margin-bottom: 25px;
 }
 
-/* line 292, src/style.scss */
+/* line 305, src/style.scss */
 .intro-h2 {
   font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -989,7 +1012,7 @@ em {
   margin-bottom: 65px;
 }
 
-/* line 302, src/style.scss */
+/* line 315, src/style.scss */
 .page-sub-intro-home {
   background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
   max-height: 525px;
@@ -1005,14 +1028,14 @@ em {
   clear: both;
 }
 
-/* line 311, src/style.scss */
+/* line 324, src/style.scss */
 .sub-intro-txt-mod-home {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 317, src/style.scss */
+/* line 330, src/style.scss */
 .page-sub-intro {
   *zoom: 1;
   border: 1px solid;
@@ -1025,23 +1048,29 @@ em {
   clear: both;
 }
 
-/* line 323, src/style.scss */
+/* line 336, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 329, src/style.scss */
+/* line 342, src/style.scss */
 .sub-intro-txt {
-  font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  font: 600 21px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
   width: 100%;
-  margin-bottom: 25px;
   color: #9f916f;
 }
+@media (min-width: 700px) {
+  /* line 342, src/style.scss */
+  .sub-intro-txt {
+    font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+    margin-bottom: 25px;
+  }
+}
 
-/* line 337, src/style.scss */
+/* line 354, src/style.scss */
 .team-signatures {
   max-width: 750px;
   width: 100%;
@@ -1050,7 +1079,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 351, src/style.scss */
+/* line 368, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   height: 515px;
@@ -1060,7 +1089,7 @@ em {
   outline: 1px solid #eeeeee;
 }
 
-/* line 360, src/style.scss */
+/* line 377, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -1085,7 +1114,7 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* line 381, src/style.scss */
+/* line 398, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1105,7 +1134,7 @@ em {
   clear: both;
 }
 
-/* line 390, src/style.scss */
+/* line 407, src/style.scss */
 .raffle-hdr {
   background: url(/wp-content/themes/spokes/images/raffle-hdr.png) no-repeat 50% 50%;
   background-size: 100%;
@@ -1113,7 +1142,7 @@ em {
   margin-bottom: 70px;
 }
 
-/* line 397, src/style.scss */
+/* line 414, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1121,85 +1150,141 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 404, src/style.scss */
+/* line 421, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 410, src/style.scss */
+/* line 427, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
-  font: 600 25px/120% "freight-text-pro";
+  font: 600 20px/120% "freight-text-pro";
   color: #5d4e2e;
   float: left;
   vertical-align: bottom;
   position: absolute;
   bottom: 0px;
+  display: none;
+}
+@media (min-width: 700px) {
+  /* line 427, src/style.scss */
+  .raffle-name-title, .raffle-prize-title {
+    display: block;
+  }
 }
 
-/* line 420, src/style.scss */
+/* line 442, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
-  font: 600 35px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  font: 600 25px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #fff;
   vertical-align: bottom;
   position: absolute;
   bottom: 0px;
-  margin-left: 80px;
   margin-bottom: -3px;
+  margin-left: 0px;
+}
+@media (min-width: 700px) {
+  /* line 442, src/style.scss */
+  .raffle-name, .raffle-prize {
+    font-size: 30px;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 900px) {
+  /* line 442, src/style.scss */
+  .raffle-name, .raffle-prize {
+    font-size: 35px;
+  }
 }
 
 /* ============================================= */
 /*	About       						   		 */
 /* ============================================= */
-/* line 439, src/style.scss */
+/* line 471, src/style.scss */
 .team-profiles {
-  margin-left: -50px;
-  *zoom: 1;
   border-bottom: 1px solid;
   border-color: #eee;
   font: 400 18px/150% "freight-text-pro";
 }
-/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.team-profiles:after {
-  content: "";
-  display: table;
-  clear: both;
+@media (min-width: 401px) and (max-width: 800px) {
+  /* line 471, src/style.scss */
+  .team-profiles {
+    margin-left: -50px;
+    *zoom: 1;
+  }
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .team-profiles:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 253, src/partials/_layout.scss */
+  .team-profiles .media-block {
+    float: left;
+    padding-left: 50px;
+    width: 50%;
+  }
+  /* line 258, src/partials/_layout.scss */
+  .team-profiles .media-block:nth-child(2n+3) {
+    clear: left;
+  }
+  /* line 261, src/partials/_layout.scss */
+  .team-profiles .media-block.n2 {
+    clear: left;
+  }
 }
-/* line 253, src/partials/_layout.scss */
-.team-profiles .media-block {
-  float: left;
-  padding-left: 50px;
-  width: 33.3333%;
-}
-/* line 267, src/partials/_layout.scss */
-.team-profiles .media-block:nth-child(3n+4) {
-  clear: left;
-}
-/* line 270, src/partials/_layout.scss */
-.ie7 .team-profiles .media-block {
-  width: 33%;
-}
-/* line 273, src/partials/_layout.scss */
-.team-profiles .media-block.n3 {
-  clear: left;
+@media (min-width: 801px) {
+  /* line 471, src/style.scss */
+  .team-profiles {
+    margin-left: -50px;
+    *zoom: 1;
+  }
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .team-profiles:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 253, src/partials/_layout.scss */
+  .team-profiles .media-block {
+    float: left;
+    padding-left: 50px;
+    width: 33.3333%;
+  }
+  /* line 267, src/partials/_layout.scss */
+  .team-profiles .media-block:nth-child(3n+4) {
+    clear: left;
+  }
+  /* line 270, src/partials/_layout.scss */
+  .ie7 .team-profiles .media-block {
+    width: 33%;
+  }
+  /* line 273, src/partials/_layout.scss */
+  .team-profiles .media-block.n3 {
+    clear: left;
+  }
 }
 
-/* line 446, src/style.scss */
+/* line 485, src/style.scss */
 .team-member {
   margin-bottom: 50px;
 }
+/* line 488, src/style.scss */
+.team-member:last-child {
+  margin-bottom: 0px;
+}
 
-/* line 450, src/style.scss */
+/* line 493, src/style.scss */
 .rider-img {
   max-width: 138px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 456, src/style.scss */
+/* line 499, src/style.scss */
 .rider-img-mod {
   text-align: center;
   margin-bottom: 20px;
@@ -1208,7 +1293,7 @@ em {
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 469, src/style.scss */
+/* line 512, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
@@ -1216,7 +1301,7 @@ em {
   border-color: #eee;
 }
 
-/* line 479, src/style.scss */
+/* line 522, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1235,13 +1320,13 @@ em {
   min-height: 300px;
 }
 
-/* line 497, src/style.scss */
+/* line 540, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 502, src/style.scss */
+/* line 545, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1258,26 +1343,28 @@ em {
 /* ============================================= */
 /*	Blog-Post   						   		 */
 /* ============================================= */
-/* line 523, src/style.scss */
-.intro-img-post {
-  padding: 0% 0%;
-  background: url(/wp-content/themes/spokes/images/hero-img-post.jpg) no-repeat center center;
-  background-size: 120%;
+/* line 566, src/style.scss */
+.post-intro-img {
   max-height: 786px;
-  height: 786px;
+  overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
+/* line 572, src/style.scss */
+.post-intro-img img {
+  width: 100%;
+}
 
-/* line 534, src/style.scss */
+/* line 578, src/style.scss */
 .post-content-topper, .post-content-mod {
   margin: 0 auto;
   max-width: 780px;
   width: 100%;
   background-color: #fff;
+  position: relative;
 }
 
-/* line 541, src/style.scss */
+/* line 586, src/style.scss */
 .post-content-topper {
   border-top: 1px solid;
   border-left: 1px solid;
@@ -1290,28 +1377,28 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 551, src/style.scss */
+/* line 596, src/style.scss */
 .post-content-mod {
   max-width: 779px;
   margin-top: -140px;
   padding: 30px 10px 10px 10px;
 }
-/* line 556, src/style.scss */
+/* line 601, src/style.scss */
 .post-content-mod p {
   font: 20px/160% "freight-text-pro";
   margin-bottom: 28px;
 }
-/* line 561, src/style.scss */
+/* line 606, src/style.scss */
 .post-content-mod > img {
   width: 100%;
 }
-/* line 565, src/style.scss */
+/* line 610, src/style.scss */
 .post-content-mod .section-h1 {
   font-size: 18px;
   margin-bottom: 40px;
 }
 @media (min-width: 401px) {
-  /* line 551, src/style.scss */
+  /* line 596, src/style.scss */
   .post-content-mod {
     padding: 30px 80px 80px 80px;
   }
@@ -1320,18 +1407,24 @@ em {
 /* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 583, src/style.scss */
+/* line 628, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
   margin-top: -50px;
+  padding: 0px 10px;
+}
+@media (min-width: 900px) {
+  /* line 628, src/style.scss */
+  .history-list-mod {
+    padding: 0px;
+  }
 }
 
-/* line 589, src/style.scss */
+/* line 639, src/style.scss */
 .history-year {
-  max-width: 850px;
+  max-width: 500px;
   width: 100%;
-  max-height: 270px;
   border: 1px solid;
   border-color: #eee;
   border-bottom-color: #ddd;
@@ -1353,67 +1446,104 @@ em {
   display: table;
   clear: both;
 }
+@media (min-width: 900px) {
+  /* line 639, src/style.scss */
+  .history-year {
+    max-height: 270px;
+    max-width: 850px;
+  }
+}
 
-/* line 609, src/style.scss */
+/* line 663, src/style.scss */
 a.history-link-mod {
   display: block;
 }
 
-/* line 613, src/style.scss */
+/* line 667, src/style.scss */
 .year-tz-img {
-  max-width: 380px;
   width: 100%;
-  float: left;
   margin-top: -1px;
-  margin-left: -1px;
+}
+@media (min-width: 900px) {
+  /* line 667, src/style.scss */
+  .year-tz-img {
+    float: left;
+    max-width: 380px;
+    margin-left: -1px;
+  }
 }
 
-/* line 621, src/style.scss */
+/* line 678, src/style.scss */
 .year-tz-txt-mod {
-  padding: 27px 20px 30px 420px;
+  padding: 25px 25px 30px 25px;
   text-align: left;
 }
-/* line 625, src/style.scss */
+@media (min-width: 900px) {
+  /* line 678, src/style.scss */
+  .year-tz-txt-mod {
+    padding: 27px 20px 30px 420px;
+  }
+}
+/* line 686, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
 }
 
 /***  History-Post  ***/
-/* line 634, src/style.scss */
-.raffle-history {
-  top: 1160px;
-  left: 45px;
-  position: absolute;
-  max-width: 200px;
+/* line 695, src/style.scss */
+.history-aside {
   width: 100%;
+  margin: 0 auto;
+  position: static;
+}
+@media (min-width: 1117px) {
+  /* line 695, src/style.scss */
+  .history-aside {
+    top: 1100px;
+    left: 36px;
+    position: absolute;
+    max-width: 200px;
+  }
 }
 
-/* line 642, src/style.scss */
+/* line 708, src/style.scss */
+.caption-section-h {
+  font: 800 25px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* line 714, src/style.scss */
 .caption-h {
   font: 800 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #555;
 }
 
-/* line 647, src/style.scss */
-.raffle-history-ul {
+/* line 719, src/style.scss */
+.history-aside-ul {
   margin-bottom: 25px;
 }
 
-/* line 651, src/style.scss */
-.raffle-history-item {
+/* line 723, src/style.scss */
+.history-aside-item {
   font: 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #888;
 }
-/* line 655, src/style.scss */
-.raffle-history-item:last-child {
+/* line 727, src/style.scss */
+.history-aside-item:last-child {
   margin-bottom: 22px;
+}
+
+/* line 732, src/style.scss */
+.history-post-img {
+  margin-bottom: 25px;
 }
 
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 667, src/style.scss */
+/* line 743, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1421,7 +1551,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 674, src/style.scss */
+/* line 750, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -1437,13 +1567,13 @@ a.history-link-mod {
   text-align: center;
 }
 
-/* line 687, src/style.scss */
+/* line 763, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro";
   text-align: left;
 }
 
-/* line 692, src/style.scss */
+/* line 768, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -1463,28 +1593,27 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 710, src/style.scss */
+/* line 786, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 716, src/style.scss */
+/* line 792, src/style.scss */
 .ftr-logo {
   max-width: 515px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 722, src/style.scss */
+/* line 798, src/style.scss */
 .sponsors {
-  height: 515px;
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 728, src/style.scss */
+/* line 803, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1510,27 +1639,47 @@ footer {
   float: right;
   margin-right: 0;
 }
-/* line 733, src/style.scss */
+/* line 808, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 739, src/style.scss */
+/* line 814, src/style.scss */
 .sponsors .sponsors-list-mod {
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  -ms-columns: 3;
-  -o-columns: 3;
-  columns: 3;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  -ms-columns: 1;
+  -o-columns: 1;
+  columns: 1;
 }
-/* line 743, src/style.scss */
+@media (min-width: 900px) {
+  /* line 814, src/style.scss */
+  .sponsors .sponsors-list-mod {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    -ms-columns: 2;
+    -o-columns: 2;
+    columns: 2;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 814, src/style.scss */
+  .sponsors .sponsors-list-mod {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    -ms-columns: 3;
+    -o-columns: 3;
+    columns: 3;
+  }
+}
+/* line 826, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 749, src/style.scss */
+/* line 832, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1538,12 +1687,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 756, src/style.scss */
+/* line 839, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 761, src/style.scss */
+/* line 844, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1552,7 +1701,7 @@ footer {
   margin-bottom: 25px;
 }
 
-/* line 769, src/style.scss */
+/* line 852, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1565,12 +1714,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 786, src/style.scss */
+/* line 869, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 790, src/style.scss */
+/* line 873, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1591,7 +1740,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 804, src/style.scss */
+/* line 887, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -1602,12 +1751,12 @@ footer {
   left: auto;
 }
 
-/* line 810, src/style.scss */
+/* line 893, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 814, src/style.scss */
+/* line 897, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -1628,7 +1777,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 828, src/style.scss */
+/* line 911, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
