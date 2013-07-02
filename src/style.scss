@@ -298,6 +298,7 @@ em   	{	font-style: italic;	}
 	padding-top: 20px;
 	float: right;
 	display: block;
+	background-color: red;
 
 	@media (min-width: $medium) {
 		display: none;

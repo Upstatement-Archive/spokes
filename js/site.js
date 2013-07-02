@@ -22,8 +22,9 @@
 	
 // });
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
   $(".m-nav-toggle").click(function(){
-    $("nav").addClass("visible");
+  	console.log('clicked');
+    $("#access").toggleClass("visible");
   });
 });
