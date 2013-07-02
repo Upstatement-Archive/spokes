@@ -198,6 +198,18 @@ em   	{	font-style: italic;	}
 	letter-spacing: 1px;
 }
 
+.email-h1 {
+	font: 25px/125% $giza;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.ftr-h1 {
+	font: 30px/120% $giza;
+	color: #bada55;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
 
 /* ============================================= */
 
@@ -206,13 +218,15 @@ em   	{	font-style: italic;	}
 /* ============================================= */
 
 .header {
-	position: fixed;
+	position: static;
 	top: 0px;
 	width: 100%;
 	z-index: 3000;
 
 	@media (min-width: $medium) {
 		padding: 0px 35px;
+		height: 72px;
+		position: fixed;
 	}//mq
 }
 
@@ -275,6 +289,7 @@ em   	{	font-style: italic;	}
 
 			&:hover {
 				color: $bfc-green;
+				background-color: #333333;
 			}//hover
 		}//li
 	}//menu-main-nav
@@ -298,7 +313,9 @@ em   	{	font-style: italic;	}
 	padding-top: 20px;
 	float: right;
 	display: block;
-	background-color: red;
+	background-image: url(/wp-content/themes/spokes/images/mobile-nav-icon.png);
+	background-size: 25px;
+	margin-top: 20px;
 
 	@media (min-width: $medium) {
 		display: none;
@@ -325,7 +342,6 @@ em   	{	font-style: italic;	}
 	height: 413px;	
 	margin: 0 auto;
 	text-align: center;	
-	margin-top: 50px;
 
 	@media (min-width: $small) {
 		max-height: 786px;
@@ -940,8 +956,20 @@ footer {
 	margin: 0 auto;
 }
 
+.ftr-mod {
+
+	@media (min-width: 1000px) {
+		@include ui-grid-lr(58% 38% 5%);
+
+	}//mq
+}
+
+.ftr-logo-mod {
+	margin-bottom: 50px;
+}
+
 .ftr-logo {
-	max-width: 413px;
+	max-width: 300px;
 	width: 100%;
 	margin-bottom: 25px;
 }
@@ -1018,6 +1046,47 @@ footer {
 	@media (min-width: 700px) {
 		display: block;
 	}//mq
+}
+
+.mailing-list-mod {
+	max-width: 540px;
+	width: 100%;
+	height: 228px;
+	padding: 40px;
+	position: relative;
+	max-width: 540px;
+	background: 
+			url(/wp-content/themes/spokes/images/mailing-list-stamp.png) 100% 15% no-repeat,
+			url(/wp-content/themes/spokes/images/mailing-list-bg.jpg);
+	background-size: 150px, 100%;
+
+}
+
+
+.mailing-list-mod:before {
+	height: 8px;
+	content: '';
+	background: url(/wp-content/themes/spokes/images/mailing-list-top.jpg) 50% 50%;
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 4;
+	margin-left: -40px;
+	background-size: 540px;
+}
+
+.mailing-list-mod:after {
+	height: 8px;
+	content: '';
+	background: url(/wp-content/themes/spokes/images/mailing-list-btm.jpg) 50% 50%;
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	z-index: 4;
+	margin-left: -40px;
+	background-size: 540px;	
 }
 
 .site-credit {

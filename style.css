@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration {
   *zoom: 1;
   overflow: hidden;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .dropdown:after {
   content: "";
   display: table;
@@ -382,7 +382,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 18px;
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .tabs:after, .pills:after {
   content: "";
   display: table;
@@ -906,31 +906,48 @@ em {
   letter-spacing: 1px;
 }
 
+/* line 201, src/style.scss */
+.email-h1 {
+  font: 25px/125% "Giza Five Five", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* line 207, src/style.scss */
+.ftr-h1 {
+  font: 30px/120% "Giza Five Five", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #bada55;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 /* ============================================= */
 /*	nav     						   			 */
 /* ============================================= */
-/* line 208, src/style.scss */
+/* line 220, src/style.scss */
 .header {
-  position: fixed;
+  position: static;
   top: 0px;
   width: 100%;
   z-index: 3000;
 }
 @media (min-width: 700px) {
-  /* line 208, src/style.scss */
+  /* line 220, src/style.scss */
   .header {
     padding: 0px 35px;
+    height: 72px;
+    position: fixed;
   }
 }
 
-/* line 219, src/style.scss */
+/* line 233, src/style.scss */
 .nav-chrome {
   padding: 0px 15px;
   height: 58px;
   background-color: #000;
 }
 @media (min-width: 700px) {
-  /* line 219, src/style.scss */
+  /* line 233, src/style.scss */
   .nav-chrome {
     background-color: transparent;
     height: 0px;
@@ -938,31 +955,31 @@ em {
   }
 }
 
-/* line 231, src/style.scss */
+/* line 245, src/style.scss */
 .large-nav {
   display: none;
 }
 @media (min-width: 700px) {
-  /* line 231, src/style.scss */
+  /* line 245, src/style.scss */
   .large-nav {
     display: block;
   }
 }
 
-/* line 239, src/style.scss */
+/* line 253, src/style.scss */
 #access {
   float: none;
   background-color: #000;
 }
 @media (min-width: 700px) {
-  /* line 239, src/style.scss */
+  /* line 253, src/style.scss */
   #access {
     float: right;
     padding-top: 30px;
     background-color: transparent;
   }
 }
-/* line 250, src/style.scss */
+/* line 264, src/style.scss */
 #access #menu-main-nav > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -982,7 +999,7 @@ em {
   border-color: #222;
 }
 @media (min-width: 700px) {
-  /* line 250, src/style.scss */
+  /* line 264, src/style.scss */
   #access #menu-main-nav > li {
     display: inline;
     margin-right: 3px;
@@ -991,46 +1008,49 @@ em {
     border-bottom: 0px;
   }
 }
-/* line 271, src/style.scss */
+/* line 285, src/style.scss */
 #access #menu-main-nav > li:last-child {
   margin-right: 0px;
   border-bottom: 0px;
 }
-/* line 276, src/style.scss */
+/* line 290, src/style.scss */
 #access #menu-main-nav > li:hover {
   color: #bada55;
+  background-color: #333333;
 }
 
-/* line 283, src/style.scss */
+/* line 298, src/style.scss */
 .nav-logo {
   max-width: 46px;
   width: 100%;
 }
 @media (min-width: 700px) {
-  /* line 283, src/style.scss */
+  /* line 298, src/style.scss */
   .nav-logo {
     max-width: 80px;
   }
 }
 
 /***  Mobile-Nav  ***/
-/* line 295, src/style.scss */
+/* line 310, src/style.scss */
 .m-nav-toggle {
   max-width: 25px;
   width: 100%;
   padding-top: 20px;
   float: right;
   display: block;
-  background-color: red;
+  background-image: url(/wp-content/themes/spokes/images/mobile-nav-icon.png);
+  background-size: 25px;
+  margin-top: 20px;
 }
 @media (min-width: 700px) {
-  /* line 295, src/style.scss */
+  /* line 310, src/style.scss */
   .m-nav-toggle {
     display: none;
   }
 }
 
-/* line 308, src/style.scss */
+/* line 325, src/style.scss */
 .visible {
   display: block;
   background-color: red;
@@ -1039,7 +1059,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 320, src/style.scss */
+/* line 337, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -1048,10 +1068,9 @@ em {
   height: 413px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 50px;
 }
 @media (min-width: 401px) {
-  /* line 320, src/style.scss */
+  /* line 337, src/style.scss */
   .page-intro {
     max-height: 786px;
     height: 786px;
@@ -1059,7 +1078,7 @@ em {
   }
 }
 
-/* line 337, src/style.scss */
+/* line 353, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -1070,14 +1089,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 337, src/style.scss */
+  /* line 353, src/style.scss */
   .page-intro-history {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 352, src/style.scss */
+/* line 368, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -1088,14 +1107,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 352, src/style.scss */
+  /* line 368, src/style.scss */
   .page-intro-about {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 367, src/style.scss */
+/* line 383, src/style.scss */
 .page-intro-raffle {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
@@ -1106,14 +1125,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 367, src/style.scss */
+  /* line 383, src/style.scss */
   .page-intro-raffle {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 383, src/style.scss */
+/* line 399, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -1124,13 +1143,13 @@ em {
   margin-bottom: 10px;
 }
 @media (min-width: 401px) {
-  /* line 383, src/style.scss */
+  /* line 399, src/style.scss */
   .home-intro {
     padding-top: 227px;
   }
 }
 
-/* line 398, src/style.scss */
+/* line 414, src/style.scss */
 .intro-h2 {
   font: 600 16px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -1141,27 +1160,27 @@ em {
   margin-bottom: 40px;
 }
 @media (min-width: 700px) {
-  /* line 398, src/style.scss */
+  /* line 414, src/style.scss */
   .intro-h2 {
     font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
     margin-bottom: 65px;
   }
 }
 
-/* line 413, src/style.scss */
+/* line 429, src/style.scss */
 .page-sub-intro-home {
   *zoom: 1;
   border-bottom: 1px solid;
   border-color: #eee;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro-home:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 700px) {
-  /* line 413, src/style.scss */
+  /* line 429, src/style.scss */
   .page-sub-intro-home {
     background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
     max-height: 525px;
@@ -1169,34 +1188,34 @@ em {
   }
 }
 
-/* line 425, src/style.scss */
+/* line 441, src/style.scss */
 .sub-intro-txt-mod-home {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 431, src/style.scss */
+/* line 447, src/style.scss */
 .page-sub-intro {
   *zoom: 1;
   border: 1px solid;
   border-color: #eee;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page-sub-intro:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 437, src/style.scss */
+/* line 453, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 443, src/style.scss */
+/* line 459, src/style.scss */
 .sub-intro-txt {
   font: 600 21px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -1205,37 +1224,37 @@ em {
   margin-bottom: 20px;
 }
 @media (min-width: 700px) {
-  /* line 443, src/style.scss */
+  /* line 459, src/style.scss */
   .sub-intro-txt {
     font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
     margin-bottom: 25px;
   }
 }
 
-/* line 456, src/style.scss */
+/* line 472, src/style.scss */
 .team-signature {
   max-width: 120px;
   width: 100%;
   display: inline;
   margin-right: 15px;
 }
-/* line 462, src/style.scss */
+/* line 478, src/style.scss */
 .team-signature:last-child {
   margin-right: 0px;
 }
-/* line 466, src/style.scss */
+/* line 482, src/style.scss */
 .team-signature img {
   max-width: 95px;
   width: 100%;
 }
 @media (min-width: 700px) {
-  /* line 472, src/style.scss */
+  /* line 488, src/style.scss */
   .team-signature img {
     max-width: 111px;
   }
 }
 
-/* line 478, src/style.scss */
+/* line 494, src/style.scss */
 .team-signatures-orig {
   max-width: 750px;
   width: 100%;
@@ -1244,7 +1263,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 492, src/style.scss */
+/* line 508, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1253,13 +1272,13 @@ em {
   outline: 1px solid #eeeeee;
 }
 @media (min-width: 700px) {
-  /* line 492, src/style.scss */
+  /* line 508, src/style.scss */
   .raffle-tz {
     height: 515px;
   }
 }
 
-/* line 504, src/style.scss */
+/* line 520, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -1282,14 +1301,14 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 700px) {
-  /* line 504, src/style.scss */
+  /* line 520, src/style.scss */
   .raffle-ticket-mod {
     max-height: 355px;
     height: 355px;
   }
 }
 
-/* line 528, src/style.scss */
+/* line 544, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1302,14 +1321,14 @@ em {
   border-radius: 12px;
   *zoom: 1;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .raffle-inside:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 537, src/style.scss */
+/* line 553, src/style.scss */
 .raffle-hdr {
   background-size: 100%;
   margin-bottom: 70px;
@@ -1319,7 +1338,7 @@ em {
   opacity: 0.8;
 }
 
-/* line 545, src/style.scss */
+/* line 561, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1327,14 +1346,14 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 552, src/style.scss */
+/* line 568, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 558, src/style.scss */
+/* line 574, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
   font: 600 20px/120% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
@@ -1346,13 +1365,13 @@ em {
   display: none;
 }
 @media (min-width: 700px) {
-  /* line 558, src/style.scss */
+  /* line 574, src/style.scss */
   .raffle-name-title, .raffle-prize-title {
     display: block;
   }
 }
 
-/* line 573, src/style.scss */
+/* line 589, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
   font: 600 24px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -1364,14 +1383,14 @@ em {
   margin-left: 0px;
 }
 @media (min-width: 700px) {
-  /* line 573, src/style.scss */
+  /* line 589, src/style.scss */
   .raffle-name, .raffle-prize {
     font-size: 30px;
     margin-left: 80px;
   }
 }
 @media (min-width: 900px) {
-  /* line 573, src/style.scss */
+  /* line 589, src/style.scss */
   .raffle-name, .raffle-prize {
     font-size: 35px;
   }
@@ -1380,19 +1399,19 @@ em {
 /* ============================================= */
 /*	About       						   		 */
 /* ============================================= */
-/* line 603, src/style.scss */
+/* line 619, src/style.scss */
 .team-profiles {
   border-bottom: 1px solid;
   border-color: #eee;
   font: 400 18px/150% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 }
 @media (min-width: 401px) and (max-width: 800px) {
-  /* line 603, src/style.scss */
+  /* line 619, src/style.scss */
   .team-profiles {
     margin-left: -50px;
     *zoom: 1;
   }
-  /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .team-profiles:after {
     content: "";
     display: table;
@@ -1414,12 +1433,12 @@ em {
   }
 }
 @media (min-width: 801px) {
-  /* line 603, src/style.scss */
+  /* line 619, src/style.scss */
   .team-profiles {
     margin-left: -50px;
     *zoom: 1;
   }
-  /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .team-profiles:after {
     content: "";
     display: table;
@@ -1445,23 +1464,23 @@ em {
   }
 }
 
-/* line 617, src/style.scss */
+/* line 633, src/style.scss */
 .team-member {
   margin-bottom: 50px;
 }
-/* line 620, src/style.scss */
+/* line 636, src/style.scss */
 .team-member:last-child {
   margin-bottom: 0px;
 }
 
-/* line 625, src/style.scss */
+/* line 641, src/style.scss */
 .rider-img {
   max-width: 138px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 631, src/style.scss */
+/* line 647, src/style.scss */
 .rider-img-mod {
   text-align: center;
   margin-bottom: 20px;
@@ -1470,7 +1489,7 @@ em {
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 644, src/style.scss */
+/* line 660, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
@@ -1478,7 +1497,7 @@ em {
   border-color: #eee;
 }
 
-/* line 654, src/style.scss */
+/* line 670, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1497,13 +1516,13 @@ em {
   min-height: 300px;
 }
 
-/* line 672, src/style.scss */
+/* line 688, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 677, src/style.scss */
+/* line 693, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1520,19 +1539,19 @@ em {
 /* ============================================= */
 /*	Blog-Post   						   		 */
 /* ============================================= */
-/* line 698, src/style.scss */
+/* line 714, src/style.scss */
 .post-intro-img {
   max-height: 786px;
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
-/* line 704, src/style.scss */
+/* line 720, src/style.scss */
 .post-intro-img img {
   width: 100%;
 }
 
-/* line 710, src/style.scss */
+/* line 726, src/style.scss */
 .post-content-topper, .post-content-mod {
   margin: 0 auto;
   max-width: 780px;
@@ -1541,7 +1560,7 @@ em {
   position: relative;
 }
 
-/* line 718, src/style.scss */
+/* line 734, src/style.scss */
 .post-content-topper {
   border-top: 1px solid;
   border-left: 1px solid;
@@ -1554,28 +1573,28 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 728, src/style.scss */
+/* line 744, src/style.scss */
 .post-content-mod {
   max-width: 779px;
   margin-top: -140px;
   padding: 30px 10px 10px 10px;
 }
-/* line 733, src/style.scss */
+/* line 749, src/style.scss */
 .post-content-mod p {
   font: 20px/160% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   margin-bottom: 28px;
 }
-/* line 738, src/style.scss */
+/* line 754, src/style.scss */
 .post-content-mod > img {
   width: 100%;
 }
-/* line 742, src/style.scss */
+/* line 758, src/style.scss */
 .post-content-mod .section-h1 {
   font-size: 18px;
   margin-bottom: 40px;
 }
 @media (min-width: 401px) {
-  /* line 728, src/style.scss */
+  /* line 744, src/style.scss */
   .post-content-mod {
     padding: 30px 80px 80px 80px;
   }
@@ -1584,7 +1603,7 @@ em {
 /* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 760, src/style.scss */
+/* line 776, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
@@ -1592,19 +1611,19 @@ em {
   padding: 0px 10px;
 }
 @media (min-width: 401px) {
-  /* line 760, src/style.scss */
+  /* line 776, src/style.scss */
   .history-list-mod {
     margin-top: -50px;
   }
 }
 @media (min-width: 900px) {
-  /* line 760, src/style.scss */
+  /* line 776, src/style.scss */
   .history-list-mod {
     padding: 0px;
   }
 }
 
-/* line 775, src/style.scss */
+/* line 791, src/style.scss */
 .history-year {
   max-width: 500px;
   width: 100%;
@@ -1623,32 +1642,32 @@ em {
   padding-bottom: 16px;
   min-height: 268px;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .history-year:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 900px) {
-  /* line 775, src/style.scss */
+  /* line 791, src/style.scss */
   .history-year {
     max-height: 270px;
     max-width: 850px;
   }
 }
 
-/* line 799, src/style.scss */
+/* line 815, src/style.scss */
 a.history-link-mod {
   display: block;
 }
 
-/* line 803, src/style.scss */
+/* line 819, src/style.scss */
 .year-tz-img {
   width: 100%;
   margin-top: -1px;
 }
 @media (min-width: 900px) {
-  /* line 803, src/style.scss */
+  /* line 819, src/style.scss */
   .year-tz-img {
     float: left;
     max-width: 380px;
@@ -1656,32 +1675,32 @@ a.history-link-mod {
   }
 }
 
-/* line 814, src/style.scss */
+/* line 830, src/style.scss */
 .year-tz-txt-mod {
   padding: 25px 25px 30px 25px;
   text-align: left;
 }
 @media (min-width: 900px) {
-  /* line 814, src/style.scss */
+  /* line 830, src/style.scss */
   .year-tz-txt-mod {
     padding: 27px 20px 30px 420px;
   }
 }
-/* line 822, src/style.scss */
+/* line 838, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
 }
 
 /***  History-Post  ***/
-/* line 831, src/style.scss */
+/* line 847, src/style.scss */
 .history-aside {
   width: 100%;
   margin: 0 auto;
   position: static;
 }
 @media (min-width: 1117px) {
-  /* line 831, src/style.scss */
+  /* line 847, src/style.scss */
   .history-aside {
     top: 1100px;
     left: 36px;
@@ -1690,35 +1709,35 @@ a.history-link-mod {
   }
 }
 
-/* line 844, src/style.scss */
+/* line 860, src/style.scss */
 .caption-section-h {
   font: 800 25px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #000;
   margin-bottom: 15px;
 }
 
-/* line 850, src/style.scss */
+/* line 866, src/style.scss */
 .caption-h {
   font: 800 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #555;
 }
 
-/* line 855, src/style.scss */
+/* line 871, src/style.scss */
 .history-aside-ul {
   margin-bottom: 25px;
 }
 
-/* line 859, src/style.scss */
+/* line 875, src/style.scss */
 .history-aside-item {
   font: 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #888;
 }
-/* line 863, src/style.scss */
+/* line 879, src/style.scss */
 .history-aside-item:last-child {
   margin-bottom: 22px;
 }
 
-/* line 868, src/style.scss */
+/* line 884, src/style.scss */
 .history-post-img {
   margin-bottom: 25px;
 }
@@ -1726,7 +1745,7 @@ a.history-link-mod {
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 879, src/style.scss */
+/* line 895, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1734,7 +1753,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 886, src/style.scss */
+/* line 902, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -1750,19 +1769,19 @@ a.history-link-mod {
   text-align: center;
 }
 @media (min-width: 550px) {
-  /* line 886, src/style.scss */
+  /* line 902, src/style.scss */
   .raffle-list-mod {
     padding: 50px 100px 60px 90px;
   }
 }
 
-/* line 903, src/style.scss */
+/* line 919, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 
-/* line 908, src/style.scss */
+/* line 924, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -1779,13 +1798,13 @@ a.history-link-mod {
   position: absolute;
 }
 
-/* line 919, src/style.scss */
+/* line 935, src/style.scss */
 .raffle-content p {
   font: 17px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 @media (min-width: 700px) {
-  /* line 919, src/style.scss */
+  /* line 935, src/style.scss */
   .raffle-content p {
     font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   }
@@ -1794,37 +1813,70 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 938, src/style.scss */
+/* line 954, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
 }
 
-/* line 943, src/style.scss */
+@media (min-width: 1000px) {
+  /* line 959, src/style.scss */
+  .ftr-mod {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .ftr-mod:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 356, src/partials/_layout.scss */
+  .ftr-mod > .ui-block-1,
+  .ftr-mod > .ui-block.first {
+    width: 58% 38% 5%-2.5%;
+    display: inline;
+    float: left;
+  }
+  /* line 362, src/partials/_layout.scss */
+  .ftr-mod > .ui-block-2,
+  .ftr-mod > .ui-block.second {
+    width: 47.5%;
+    display: inline;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 967, src/style.scss */
+.ftr-logo-mod {
+  margin-bottom: 50px;
+}
+
+/* line 971, src/style.scss */
 .ftr-logo {
-  max-width: 413px;
+  max-width: 300px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 949, src/style.scss */
+/* line 977, src/style.scss */
 .contact-li-item {
   color: #fff;
   font: 800 16px/160% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 954, src/style.scss */
+/* line 982, src/style.scss */
 .sponsors {
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 959, src/style.scss */
+/* line 987, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
 }
-/* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .sponsors .sponsors-mod:after {
   content: "";
   display: table;
@@ -1846,11 +1898,11 @@ footer {
   margin-right: 0;
 }
 @media (min-width: 700px) {
-  /* line 959, src/style.scss */
+  /* line 987, src/style.scss */
   .sponsors .sponsors-mod {
     *zoom: 1;
   }
-  /* line 38, ../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .sponsors .sponsors-mod:after {
     content: "";
     display: table;
@@ -1872,13 +1924,13 @@ footer {
     margin-right: 0;
   }
 }
-/* line 968, src/style.scss */
+/* line 996, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 974, src/style.scss */
+/* line 1002, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 1;
   -moz-columns: 1;
@@ -1888,13 +1940,13 @@ footer {
   margin-bottom: 25px;
 }
 @media (min-width: 600px) {
-  /* line 974, src/style.scss */
+  /* line 1002, src/style.scss */
   .sponsors .sponsors-list-mod {
     margin-bottom: 0px;
   }
 }
 @media (min-width: 900px) {
-  /* line 974, src/style.scss */
+  /* line 1002, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -1904,7 +1956,7 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  /* line 974, src/style.scss */
+  /* line 1002, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 3;
     -moz-columns: 3;
@@ -1913,13 +1965,13 @@ footer {
     columns: 3;
   }
 }
-/* line 991, src/style.scss */
+/* line 1019, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 997, src/style.scss */
+/* line 1025, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1927,12 +1979,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 1004, src/style.scss */
+/* line 1032, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 1009, src/style.scss */
+/* line 1037, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1943,13 +1995,53 @@ footer {
   position: relative;
 }
 @media (min-width: 700px) {
-  /* line 1009, src/style.scss */
+  /* line 1037, src/style.scss */
   .ftr-logo-bike {
     display: block;
   }
 }
 
-/* line 1023, src/style.scss */
+/* line 1051, src/style.scss */
+.mailing-list-mod {
+  max-width: 540px;
+  width: 100%;
+  height: 228px;
+  padding: 40px;
+  position: relative;
+  max-width: 540px;
+  background: url(/wp-content/themes/spokes/images/mailing-list-stamp.png) 100% 15% no-repeat, url(/wp-content/themes/spokes/images/mailing-list-bg.jpg);
+  background-size: 150px, 100%;
+}
+
+/* line 1066, src/style.scss */
+.mailing-list-mod:before {
+  height: 8px;
+  content: '';
+  background: url(/wp-content/themes/spokes/images/mailing-list-top.jpg) 50% 50%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+  margin-left: -40px;
+  background-size: 540px;
+}
+
+/* line 1079, src/style.scss */
+.mailing-list-mod:after {
+  height: 8px;
+  content: '';
+  background: url(/wp-content/themes/spokes/images/mailing-list-btm.jpg) 50% 50%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+  margin-left: -40px;
+  background-size: 540px;
+}
+
+/* line 1092, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -1963,12 +2055,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 1041, src/style.scss */
+/* line 1110, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 1045, src/style.scss */
+/* line 1114, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -1989,7 +2081,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1059, src/style.scss */
+/* line 1128, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2000,12 +2092,12 @@ footer {
   left: auto;
 }
 
-/* line 1065, src/style.scss */
+/* line 1134, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 1069, src/style.scss */
+/* line 1138, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -2026,7 +2118,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1083, src/style.scss */
+/* line 1152, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
