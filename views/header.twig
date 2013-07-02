@@ -1,12 +1,13 @@
 <header class="header" data-source="base.twig">
     {% block header %}
     <div class="wrapper">
-		<a href="/"> <img class="nav-logo" src="/wp-content/themes/spokes/images/bfc-nav-logo.png"/> </a>
-
-        <nav id="access" class="large-nav" role="navigation">
-           {{wp_nav_menu}}
-        </nav><!-- #access -->
-        <a href="#"><img class="m-nav-toggle" src="/wp-content/themes/spokes/images/mobile-nav-icon.png" /></a>
-    </div>
+    	<div class="nav-chrome">
+			<a href="/"> <img class="nav-logo" src="/wp-content/themes/spokes/images/bfc-nav-logo.png"/> </a>
+	        <a href=""><img class="m-nav-toggle" src="/wp-content/themes/spokes/images/mobile-nav-icon.png" /></a>
+    	</div><!-- /nav-chrome -->
+    	<nav id="access" class="large-nav" role="navigation">
+	           {{wp_nav_menu}}
+	        </nav><!-- #access -->
+    </div><!-- /wrapper -->
     {% endblock %}
 </header>

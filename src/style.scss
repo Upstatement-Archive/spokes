@@ -209,11 +209,22 @@ em   	{	font-style: italic;	}
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	padding: 0px 20px;
 	z-index: 3000;
 
 	@media (min-width: $medium) {
 		padding: 0px 35px;
+	}//mq
+}
+
+.nav-chrome {
+	padding: 0px 15px;
+	height: 58px;
+	background-color: #000;
+
+	@media (min-width: $medium) {
+		background-color: transparent;
+		height: 0px;
+		padding: 0px;
 	}//mq
 }
 
@@ -226,33 +237,51 @@ em   	{	font-style: italic;	}
 }
  
 #access {
-	float: right;
-	padding-top: 30px;
+	float: none;
+	background-color: #000;
+
+	@media (min-width: $medium) {
+		float: right;
+		padding-top: 30px;
+		background-color: transparent;		
+	}//mq
 
 	#menu-main-nav {
 		> li {
 			@include inline-block;
-			background-color: #000;
+			background-color: #262626;
 			color: #fff;
-			padding: 2px 6px;
 			font: 600 15px/120% $freight-sans;
 			text-transform: uppercase;
 			letter-spacing: 1px;
-			margin-right: 2px;
+			margin-right: 0px;
+			display: block;
+			padding: 22px 6px 22px 20px;
+			border-bottom: 1px solid;
+			border-color: #222;
+
+			@media (min-width: $medium) {
+				display: inline;
+				margin-right: 3px;
+				background-color: #000;
+				padding: 2px 8px;
+				border-bottom: 0px;
+			}//mq
 
 			&:last-child {
 				margin-right: 0px;
+				border-bottom: 0px;
 			}
 
 			&:hover {
 				color: $bfc-green;
-			}
-		}
-	}
-} 
+			}//hover
+		}//li
+	}//menu-main-nav
+}//#access 
 
 .nav-logo {
-	max-width: 65px;
+	max-width: 46px;
 	width: 100%;
 
 	@media (min-width: $medium) {
@@ -266,7 +295,7 @@ em   	{	font-style: italic;	}
 .m-nav-toggle {
 	max-width: 25px;
 	width: 100%;
-	padding-top: 30px;
+	padding-top: 20px;
 	float: right;
 	display: block;
 
@@ -275,6 +304,10 @@ em   	{	font-style: italic;	}
 	}
 }
 
+.visible {
+	display: block;
+	background-color: red;
+}
 
 
 /* ============================================= */
@@ -291,10 +324,12 @@ em   	{	font-style: italic;	}
 	height: 413px;	
 	margin: 0 auto;
 	text-align: center;	
+	margin-top: 50px;
 
 	@media (min-width: $small) {
 		max-height: 786px;
 		height: 786px;	
+		margin-top: 0px;
 	}//mq
 }
 
@@ -302,30 +337,46 @@ em   	{	font-style: italic;	}
 	padding: 0% 0%;
 	background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
 	background-size: cover;
-	max-height: 786px;
-	height: 786px;	
+	max-height: 413px;
+	height: 413px;	
 	margin: 0 auto;
 	text-align: center;	
+
+	@media (min-width: $small) {
+		max-height: 786px;
+		height: 786px;	
+	}//mq	
 }
 
 .page-intro-about {
 	padding: 0% 0%;
 	background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
 	background-size: cover;
-	max-height: 786px;
-	height: 786px;	
+	max-height: 413px;
+	height: 413px;
 	margin: 0 auto;
 	text-align: center;	
+
+	@media (min-width: $small) {
+		max-height: 786px;
+		height: 786px;	
+	}//mq	
 }
 
 .page-intro-raffle {
 	padding: 0% 0%;
 	background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
 	background-size: cover;
-	max-height: 786px;
-	height: 786px;	
+	max-height: 413px;
+	height: 413px;
 	margin: 0 auto;
 	text-align: center;	
+
+	@media (min-width: $small) {
+		max-height: 786px;
+		height: 786px;	
+	}//mq	
+
 }
 
 .home-intro {	
@@ -333,7 +384,7 @@ em   	{	font-style: italic;	}
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;	
-	padding-top: 150px;
+	padding-top: 110px;
 	background-size: 1080px;
 	margin-bottom: 10px;
 
@@ -359,12 +410,15 @@ em   	{	font-style: italic;	}
 }
 
 .page-sub-intro-home {
-	background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
-	max-height: 525px;
-	height: 525px;
 	@include pie-clearfix;
 	border-bottom: 1px solid;
 	border-color: #eee;
+
+	@media (min-width: $medium) {
+		background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;	
+		max-height: 525px;
+		height: 525px;
+	}//mq
 }
 
 .sub-intro-txt-mod-home {
@@ -436,11 +490,14 @@ em   	{	font-style: italic;	}
 
 .raffle-tz {
 	background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
-	height: 515px;
 	border-top: 2px solid;
 	border-bottom: 2px solid;	
 	border-color: #fff;
 	outline: 1px solid #eee;
+
+	@media (min-width: $medium) {
+		height: 515px;
+	}//mq
 }	
 
 .raffle-ticket-mod {
@@ -450,8 +507,6 @@ em   	{	font-style: italic;	}
     @include border-radius(12px);
     max-width: 780px;
     width: 100%;
-    max-height: 355px;
-    height: 355px;
     padding: 35px;
 	background-size: 101%; 
 	margin: 0 auto;
@@ -462,6 +517,11 @@ em   	{	font-style: italic;	}
 
 	background-size: 175px, 50%;
 	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));	
+
+	@media (min-width: $medium) {
+    	max-height: 355px;
+    	height: 355px;
+    }//mq
 }
 
 .raffle-inside {
@@ -699,8 +759,12 @@ em   	{	font-style: italic;	}
 .history-list-mod {
 	margin: 0 auto;
 	text-align: center;
-	margin-top: -50px;
+	margin-top: 25px;
 	padding: 0px 10px;
+
+	@media (min-width: $small) {
+		margin-top: -50px;
+	}//mq
 
 	@media (min-width: $large) {
 		padding: 0px;

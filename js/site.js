@@ -22,3 +22,8 @@
 	
 // });
 
+$(document).ready(function(){
+  $(".m-nav-toggle").click(function(){
+    $("nav").addClass("visible");
+  });
+});
