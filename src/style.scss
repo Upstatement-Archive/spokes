@@ -40,7 +40,6 @@ a 		{ 	text-decoration: none; color: inherit; }
 strong	{	font-weight: bold;	}
 em   	{	font-style: italic;	}
 
-
 .btn-donate {
 	margin: 0 auto;
 	text-align: center;
@@ -803,6 +802,7 @@ em   	{	font-style: italic;	}
 
 	@media (min-width: $large) {
 		padding: 0px;
+		margin-bottom: 100px;
 	}//mq
 }
 
@@ -823,6 +823,12 @@ em   	{	font-style: italic;	}
 	text-align: left;	
 	padding-bottom: 16px;
 	min-height: 268px;
+	@include trans;
+
+	&:hover {
+		@include trans;
+		@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));
+	}
 
 	@media (min-width: $large){
 		max-height: 270px;
@@ -985,6 +991,8 @@ footer {
 }
 
 .ftr-mod {
+	margin: 0 auto;
+	max-width: 1200px;
 
 	@media (min-width: 1000px) {
 		@include ui-grid-lr(58% 38% 5%);
@@ -1088,6 +1096,23 @@ footer {
 			url(/wp-content/themes/spokes/images/mailing-list-bg.jpg);
 	background-size: 150px, 100%;
 
+	#mailing-list, #mailing-list-subscribe{
+		height: 32px;
+		margin-bottom: 12px;
+	}
+
+	#mailing-list {
+		border-color: #eee;
+		@include border-radius(5px);
+		padding: 10px;
+		border-bottom: 1px solid;
+		border-bottom-color: #ddd;
+		width: 229px;
+	}//mailing-list
+
+	#mailing-list-subscribe {
+		width: 105px;
+	}
 }
 
 
