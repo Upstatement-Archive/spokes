@@ -439,6 +439,8 @@ em   	{	font-style: italic;	}
 	@include pie-clearfix;
 	border-bottom: 1px solid;
 	border-color: #eee;
+	margin: 0 auto;
+	max-width: 1200px;
 
 	@media (min-width: $medium) {
 		background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;	
@@ -807,20 +809,19 @@ em   	{	font-style: italic;	}
 }
 
 .history-year {
-	max-width: 500px;
-	width: 100%;
+	margin: 0 auto 50px auto;
 	border: 1px solid;
 	border-color: #eee;
 	border-bottom-color: #ddd;
+	max-width: 500px;
+	width: 100%;
 	text-align: center;
-	margin: 0 auto 50px auto;
+	position: relative;	
 	background-color: #fff;
-	@include pie-clearfix;
 	background-image: url(/wp-content/themes/spokes/images/bg-dots-long.png);
 	background-size: 250px;
 	background-repeat: repeat-x;
 	margin-bottom: 50px;
-	text-align: left;	
 	padding-bottom: 16px;
 	min-height: 268px;
 	@include trans;
