@@ -1000,6 +1000,16 @@ em {
   border-bottom: 1px solid;
   border-color: #222;
 }
+/* line 279, src/style.scss */
+#access #menu-main-nav > li:last-child {
+  margin-right: 0px;
+  border-bottom: 0px;
+}
+/* line 284, src/style.scss */
+#access #menu-main-nav > li:hover {
+  color: #bada55;
+  background-color: #333;
+}
 @media (min-width: 700px) {
   /* line 266, src/style.scss */
   #access #menu-main-nav > li {
@@ -1009,32 +1019,26 @@ em {
     padding: 2px 8px;
     border-bottom: 0px;
   }
-}
-/* line 287, src/style.scss */
-#access #menu-main-nav > li:last-child {
-  margin-right: 0px;
-  border-bottom: 0px;
-}
-/* line 292, src/style.scss */
-#access #menu-main-nav > li:hover {
-  color: #bada55;
-  background-color: #333333;
+  /* line 296, src/style.scss */
+  #access #menu-main-nav > li:hover {
+    background-color: #121212;
+  }
 }
 
-/* line 300, src/style.scss */
+/* line 308, src/style.scss */
 .nav-logo {
   max-width: 46px;
   width: 100%;
 }
 @media (min-width: 700px) {
-  /* line 300, src/style.scss */
+  /* line 308, src/style.scss */
   .nav-logo {
     max-width: 80px;
   }
 }
 
 /***  Mobile-Nav  ***/
-/* line 312, src/style.scss */
+/* line 320, src/style.scss */
 .m-nav-toggle {
   max-width: 25px;
   width: 100%;
@@ -1046,13 +1050,13 @@ em {
   margin-top: 20px;
 }
 @media (min-width: 700px) {
-  /* line 312, src/style.scss */
+  /* line 320, src/style.scss */
   .m-nav-toggle {
     display: none;
   }
 }
 
-/* line 327, src/style.scss */
+/* line 335, src/style.scss */
 .visible {
   display: block;
   background-color: red;
@@ -1061,7 +1065,7 @@ em {
 /* ============================================= */
 /*	Page-Intro     						   		 */
 /* ============================================= */
-/* line 339, src/style.scss */
+/* line 347, src/style.scss */
 .page-intro {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/home-hero-1.jpg) no-repeat center center;
@@ -1072,7 +1076,7 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 339, src/style.scss */
+  /* line 347, src/style.scss */
   .page-intro {
     max-height: 786px;
     height: 786px;
@@ -1080,7 +1084,7 @@ em {
   }
 }
 
-/* line 355, src/style.scss */
+/* line 363, src/style.scss */
 .page-intro-history {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/history-hero.jpg) no-repeat center center;
@@ -1091,14 +1095,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 355, src/style.scss */
+  /* line 363, src/style.scss */
   .page-intro-history {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 370, src/style.scss */
+/* line 378, src/style.scss */
 .page-intro-about {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/about-hero.jpg) no-repeat center center;
@@ -1109,14 +1113,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 370, src/style.scss */
+  /* line 378, src/style.scss */
   .page-intro-about {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 385, src/style.scss */
+/* line 393, src/style.scss */
 .page-intro-raffle {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/raffle-hero.jpg) no-repeat center center;
@@ -1127,14 +1131,14 @@ em {
   text-align: center;
 }
 @media (min-width: 401px) {
-  /* line 385, src/style.scss */
+  /* line 393, src/style.scss */
   .page-intro-raffle {
     max-height: 786px;
     height: 786px;
   }
 }
 
-/* line 401, src/style.scss */
+/* line 409, src/style.scss */
 .home-intro {
   max-width: 1080px;
   width: 100%;
@@ -1142,16 +1146,16 @@ em {
   text-align: center;
   padding-top: 110px;
   background-size: 1080px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 @media (min-width: 401px) {
-  /* line 401, src/style.scss */
+  /* line 409, src/style.scss */
   .home-intro {
     padding-top: 227px;
   }
 }
 
-/* line 416, src/style.scss */
+/* line 424, src/style.scss */
 .intro-h2 {
   font: 600 16px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
@@ -1162,14 +1166,14 @@ em {
   margin-bottom: 40px;
 }
 @media (min-width: 700px) {
-  /* line 416, src/style.scss */
+  /* line 424, src/style.scss */
   .intro-h2 {
     font: 600 29px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
     margin-bottom: 65px;
   }
 }
 
-/* line 431, src/style.scss */
+/* line 439, src/style.scss */
 .page-sub-intro-home {
   *zoom: 1;
   border-bottom: 1px solid;
@@ -1182,7 +1186,7 @@ em {
   clear: both;
 }
 @media (min-width: 700px) {
-  /* line 431, src/style.scss */
+  /* line 439, src/style.scss */
   .page-sub-intro-home {
     background: url(/wp-content/themes/spokes/images/home-sub-intro.png) no-repeat 7% -10%;
     max-height: 525px;
@@ -1190,14 +1194,14 @@ em {
   }
 }
 
-/* line 443, src/style.scss */
+/* line 451, src/style.scss */
 .sub-intro-txt-mod-home {
   max-width: 780px;
   width: 100%;
   float: right;
 }
 
-/* line 449, src/style.scss */
+/* line 457, src/style.scss */
 .page-sub-intro {
   *zoom: 1;
   border: 1px solid;
@@ -1210,14 +1214,14 @@ em {
   clear: both;
 }
 
-/* line 455, src/style.scss */
+/* line 463, src/style.scss */
 .sub-intro-txt-mod {
   max-width: 780px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 461, src/style.scss */
+/* line 469, src/style.scss */
 .sub-intro-txt {
   font: 600 21px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   max-width: 780px;
@@ -1226,37 +1230,37 @@ em {
   margin-bottom: 20px;
 }
 @media (min-width: 700px) {
-  /* line 461, src/style.scss */
+  /* line 469, src/style.scss */
   .sub-intro-txt {
     font: 600 32px/125% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
     margin-bottom: 25px;
   }
 }
 
-/* line 474, src/style.scss */
+/* line 482, src/style.scss */
 .team-signature {
   max-width: 120px;
   width: 100%;
   display: inline;
   margin-right: 15px;
 }
-/* line 480, src/style.scss */
+/* line 488, src/style.scss */
 .team-signature:last-child {
   margin-right: 0px;
 }
-/* line 484, src/style.scss */
+/* line 492, src/style.scss */
 .team-signature img {
   max-width: 95px;
   width: 100%;
 }
 @media (min-width: 700px) {
-  /* line 490, src/style.scss */
+  /* line 498, src/style.scss */
   .team-signature img {
     max-width: 111px;
   }
 }
 
-/* line 496, src/style.scss */
+/* line 504, src/style.scss */
 .team-signatures-orig {
   max-width: 750px;
   width: 100%;
@@ -1265,7 +1269,7 @@ em {
 /* ============================================= */
 /*	Raffle-TZ     						   		 */
 /* ============================================= */
-/* line 510, src/style.scss */
+/* line 518, src/style.scss */
 .raffle-tz {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1274,13 +1278,13 @@ em {
   outline: 1px solid #eeeeee;
 }
 @media (min-width: 700px) {
-  /* line 510, src/style.scss */
+  /* line 518, src/style.scss */
   .raffle-tz {
     height: 515px;
   }
 }
 
-/* line 522, src/style.scss */
+/* line 530, src/style.scss */
 .raffle-ticket-mod {
   border: 1px solid;
   border-color: #817351;
@@ -1303,14 +1307,14 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 700px) {
-  /* line 522, src/style.scss */
+  /* line 530, src/style.scss */
   .raffle-ticket-mod {
     max-height: 355px;
     height: 355px;
   }
 }
 
-/* line 546, src/style.scss */
+/* line 554, src/style.scss */
 .raffle-inside {
   padding: 40px;
   border: 3px dashed;
@@ -1330,7 +1334,7 @@ em {
   clear: both;
 }
 
-/* line 555, src/style.scss */
+/* line 563, src/style.scss */
 .raffle-hdr {
   background-size: 100%;
   margin-bottom: 70px;
@@ -1340,7 +1344,7 @@ em {
   opacity: 0.8;
 }
 
-/* line 563, src/style.scss */
+/* line 571, src/style.scss */
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
@@ -1348,14 +1352,14 @@ em {
   margin-bottom: 80px;
 }
 
-/* line 570, src/style.scss */
+/* line 578, src/style.scss */
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
   border-color: #5d4e2e;
 }
 
-/* line 576, src/style.scss */
+/* line 584, src/style.scss */
 .raffle-name-title, .raffle-prize-title {
   text-align: left;
   font: 600 20px/120% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
@@ -1367,13 +1371,13 @@ em {
   display: none;
 }
 @media (min-width: 700px) {
-  /* line 576, src/style.scss */
+  /* line 584, src/style.scss */
   .raffle-name-title, .raffle-prize-title {
     display: block;
   }
 }
 
-/* line 591, src/style.scss */
+/* line 599, src/style.scss */
 .raffle-name, .raffle-prize {
   text-align: left;
   font: 600 24px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -1385,14 +1389,14 @@ em {
   margin-left: 0px;
 }
 @media (min-width: 700px) {
-  /* line 591, src/style.scss */
+  /* line 599, src/style.scss */
   .raffle-name, .raffle-prize {
     font-size: 30px;
     margin-left: 80px;
   }
 }
 @media (min-width: 900px) {
-  /* line 591, src/style.scss */
+  /* line 599, src/style.scss */
   .raffle-name, .raffle-prize {
     font-size: 35px;
   }
@@ -1401,14 +1405,14 @@ em {
 /* ============================================= */
 /*	About       						   		 */
 /* ============================================= */
-/* line 621, src/style.scss */
+/* line 626, src/style.scss */
 .team-profiles {
   border-bottom: 1px solid;
   border-color: #eee;
   font: 400 18px/150% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
 }
 @media (min-width: 401px) and (max-width: 800px) {
-  /* line 621, src/style.scss */
+  /* line 626, src/style.scss */
   .team-profiles {
     margin-left: -50px;
     *zoom: 1;
@@ -1435,7 +1439,7 @@ em {
   }
 }
 @media (min-width: 801px) {
-  /* line 621, src/style.scss */
+  /* line 626, src/style.scss */
   .team-profiles {
     margin-left: -50px;
     *zoom: 1;
@@ -1466,23 +1470,23 @@ em {
   }
 }
 
-/* line 635, src/style.scss */
+/* line 640, src/style.scss */
 .team-member {
   margin-bottom: 50px;
 }
-/* line 638, src/style.scss */
+/* line 643, src/style.scss */
 .team-member:last-child {
   margin-bottom: 0px;
 }
 
-/* line 643, src/style.scss */
+/* line 648, src/style.scss */
 .rider-img {
   max-width: 138px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 649, src/style.scss */
+/* line 654, src/style.scss */
 .rider-img-mod {
   text-align: center;
   margin-bottom: 20px;
@@ -1491,7 +1495,7 @@ em {
 /* ============================================= */
 /*	Blog-Feed    						   		 */
 /* ============================================= */
-/* line 662, src/style.scss */
+/* line 667, src/style.scss */
 .blog-feed {
   margin: 0 auto;
   text-align: center;
@@ -1499,7 +1503,7 @@ em {
   border-color: #eee;
 }
 
-/* line 672, src/style.scss */
+/* line 677, src/style.scss */
 .blog-post-tz {
   margin: 0 auto 50px auto;
   border: 1px solid;
@@ -1518,13 +1522,13 @@ em {
   min-height: 300px;
 }
 
-/* line 690, src/style.scss */
+/* line 695, src/style.scss */
 .post-date-mod {
   width: 131px;
   height: 260px;
 }
 
-/* line 695, src/style.scss */
+/* line 700, src/style.scss */
 .post-date {
   background-color: #9f916f;
   padding: 10px;
@@ -1541,19 +1545,19 @@ em {
 /* ============================================= */
 /*	Blog-Post   						   		 */
 /* ============================================= */
-/* line 716, src/style.scss */
+/* line 721, src/style.scss */
 .post-intro-img {
   max-height: 786px;
   overflow: hidden;
   margin: 0 auto;
   text-align: center;
 }
-/* line 722, src/style.scss */
+/* line 727, src/style.scss */
 .post-intro-img img {
   width: 100%;
 }
 
-/* line 728, src/style.scss */
+/* line 733, src/style.scss */
 .post-content-topper, .post-content-mod {
   margin: 0 auto;
   max-width: 780px;
@@ -1562,7 +1566,7 @@ em {
   position: relative;
 }
 
-/* line 736, src/style.scss */
+/* line 741, src/style.scss */
 .post-content-topper {
   border-top: 1px solid;
   border-left: 1px solid;
@@ -1575,37 +1579,49 @@ em {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 746, src/style.scss */
+/* line 751, src/style.scss */
 .post-content-mod {
   max-width: 779px;
   margin-top: -140px;
   padding: 30px 10px 10px 10px;
 }
-/* line 751, src/style.scss */
+/* line 756, src/style.scss */
 .post-content-mod p {
   font: 20px/160% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   margin-bottom: 28px;
 }
-/* line 756, src/style.scss */
-.post-content-mod > img {
+/* line 761, src/style.scss */
+.post-content-mod .size-full {
+  max-width: 779px;
   width: 100%;
+  height: auto;
 }
-/* line 760, src/style.scss */
+/* line 767, src/style.scss */
 .post-content-mod .section-h1 {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
-@media (min-width: 401px) {
-  /* line 746, src/style.scss */
+@media (min-width: 500px) {
+  /* line 751, src/style.scss */
+  .post-content-mod {
+    padding: 30px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 751, src/style.scss */
   .post-content-mod {
     padding: 30px 80px 80px 80px;
+  }
+  /* line 779, src/style.scss */
+  .post-content-mod .section-h1 {
+    margin-bottom: 40px;
   }
 }
 
 /* ============================================= */
 /*	History-Page   						   		 */
 /* ============================================= */
-/* line 778, src/style.scss */
+/* line 794, src/style.scss */
 .history-list-mod {
   margin: 0 auto;
   text-align: center;
@@ -1613,19 +1629,19 @@ em {
   padding: 0px 10px;
 }
 @media (min-width: 401px) {
-  /* line 778, src/style.scss */
+  /* line 794, src/style.scss */
   .history-list-mod {
     margin-top: -50px;
   }
 }
 @media (min-width: 900px) {
-  /* line 778, src/style.scss */
+  /* line 794, src/style.scss */
   .history-list-mod {
     padding: 0px;
   }
 }
 
-/* line 793, src/style.scss */
+/* line 809, src/style.scss */
 .history-year {
   max-width: 500px;
   width: 100%;
@@ -1651,25 +1667,25 @@ em {
   clear: both;
 }
 @media (min-width: 900px) {
-  /* line 793, src/style.scss */
+  /* line 809, src/style.scss */
   .history-year {
     max-height: 270px;
     max-width: 850px;
   }
 }
 
-/* line 817, src/style.scss */
+/* line 833, src/style.scss */
 a.history-link-mod {
   display: block;
 }
 
-/* line 821, src/style.scss */
+/* line 837, src/style.scss */
 .year-tz-img {
   width: 100%;
   margin-top: -1px;
 }
 @media (min-width: 900px) {
-  /* line 821, src/style.scss */
+  /* line 837, src/style.scss */
   .year-tz-img {
     float: left;
     max-width: 380px;
@@ -1677,69 +1693,80 @@ a.history-link-mod {
   }
 }
 
-/* line 832, src/style.scss */
+/* line 848, src/style.scss */
 .year-tz-txt-mod {
   padding: 25px 25px 30px 25px;
   text-align: left;
 }
 @media (min-width: 900px) {
-  /* line 832, src/style.scss */
+  /* line 848, src/style.scss */
   .year-tz-txt-mod {
     padding: 27px 20px 30px 420px;
   }
 }
-/* line 840, src/style.scss */
+/* line 856, src/style.scss */
 .year-tz-txt-mod .tz-h1 {
   color: #9f916f;
   margin-bottom: 15px;
 }
 
 /***  History-Post  ***/
-/* line 849, src/style.scss */
+/* line 865, src/style.scss */
 .history-aside {
-  width: 100%;
   margin: 0 auto;
   position: static;
+  line-height: 20px;
+  color: #555;
+  max-width: 779px;
+  width: 100%;
+  padding: 0px 80px 80px 80px;
 }
-@media (min-width: 1117px) {
-  /* line 849, src/style.scss */
+@media (min-width: 1150px) {
+  /* line 865, src/style.scss */
   .history-aside {
     top: 1100px;
-    left: 36px;
+    left: 4%;
     position: absolute;
     max-width: 200px;
+    padding: 0px;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 865, src/style.scss */
+  .history-aside {
+    left: 10%;
   }
 }
 
-/* line 862, src/style.scss */
+/* line 888, src/style.scss */
 .caption-section-h {
-  font: 800 25px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
-  color: #000;
-  margin-bottom: 15px;
+  font: 800 23px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #444;
+  margin: 40px 0px 15px 0px;
 }
 
-/* line 868, src/style.scss */
+/* line 894, src/style.scss */
 .caption-h {
   font: 800 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #555;
 }
 
-/* line 873, src/style.scss */
+/* line 899, src/style.scss */
 .history-aside-ul {
   margin-bottom: 25px;
 }
 
-/* line 877, src/style.scss */
+/* line 903, src/style.scss */
 .history-aside-item {
   font: 14px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #888;
 }
-/* line 881, src/style.scss */
+/* line 907, src/style.scss */
 .history-aside-item:last-child {
   margin-bottom: 22px;
 }
 
-/* line 886, src/style.scss */
+/* line 912, src/style.scss */
 .history-post-img {
   margin-bottom: 25px;
 }
@@ -1747,7 +1774,7 @@ a.history-link-mod {
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 897, src/style.scss */
+/* line 923, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -1755,7 +1782,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 904, src/style.scss */
+/* line 930, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -1771,19 +1798,19 @@ a.history-link-mod {
   text-align: center;
 }
 @media (min-width: 550px) {
-  /* line 904, src/style.scss */
+  /* line 930, src/style.scss */
   .raffle-list-mod {
     padding: 50px 100px 60px 90px;
   }
 }
 
-/* line 921, src/style.scss */
+/* line 947, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 
-/* line 926, src/style.scss */
+/* line 952, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -1800,13 +1827,13 @@ a.history-link-mod {
   position: absolute;
 }
 
-/* line 937, src/style.scss */
+/* line 963, src/style.scss */
 .raffle-content p {
   font: 17px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 @media (min-width: 700px) {
-  /* line 937, src/style.scss */
+  /* line 963, src/style.scss */
   .raffle-content p {
     font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   }
@@ -1815,14 +1842,14 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 956, src/style.scss */
+/* line 982, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
-  /* line 961, src/style.scss */
+  /* line 987, src/style.scss */
   .ftr-mod {
     *zoom: 1;
   }
@@ -1849,31 +1876,31 @@ footer {
   }
 }
 
-/* line 969, src/style.scss */
+/* line 995, src/style.scss */
 .ftr-logo-mod {
   margin-bottom: 50px;
 }
 
-/* line 973, src/style.scss */
+/* line 999, src/style.scss */
 .ftr-logo {
   max-width: 300px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 979, src/style.scss */
+/* line 1005, src/style.scss */
 .contact-li-item {
   color: #fff;
   font: 800 16px/160% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 984, src/style.scss */
+/* line 1010, src/style.scss */
 .sponsors {
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 989, src/style.scss */
+/* line 1015, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -1900,7 +1927,7 @@ footer {
   margin-right: 0;
 }
 @media (min-width: 700px) {
-  /* line 989, src/style.scss */
+  /* line 1015, src/style.scss */
   .sponsors .sponsors-mod {
     *zoom: 1;
   }
@@ -1926,13 +1953,13 @@ footer {
     margin-right: 0;
   }
 }
-/* line 998, src/style.scss */
+/* line 1024, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 1004, src/style.scss */
+/* line 1030, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 1;
   -moz-columns: 1;
@@ -1942,13 +1969,13 @@ footer {
   margin-bottom: 25px;
 }
 @media (min-width: 600px) {
-  /* line 1004, src/style.scss */
+  /* line 1030, src/style.scss */
   .sponsors .sponsors-list-mod {
     margin-bottom: 0px;
   }
 }
 @media (min-width: 900px) {
-  /* line 1004, src/style.scss */
+  /* line 1030, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -1958,7 +1985,7 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  /* line 1004, src/style.scss */
+  /* line 1030, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 3;
     -moz-columns: 3;
@@ -1967,13 +1994,13 @@ footer {
     columns: 3;
   }
 }
-/* line 1021, src/style.scss */
+/* line 1047, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 1027, src/style.scss */
+/* line 1053, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -1981,12 +2008,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 1034, src/style.scss */
+/* line 1060, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 1039, src/style.scss */
+/* line 1065, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -1997,13 +2024,13 @@ footer {
   position: relative;
 }
 @media (min-width: 700px) {
-  /* line 1039, src/style.scss */
+  /* line 1065, src/style.scss */
   .ftr-logo-bike {
     display: block;
   }
 }
 
-/* line 1053, src/style.scss */
+/* line 1079, src/style.scss */
 .mailing-list-mod {
   max-width: 540px;
   width: 100%;
@@ -2015,7 +2042,7 @@ footer {
   background-size: 150px, 100%;
 }
 
-/* line 1068, src/style.scss */
+/* line 1094, src/style.scss */
 .mailing-list-mod:before {
   height: 8px;
   content: '';
@@ -2029,7 +2056,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1081, src/style.scss */
+/* line 1107, src/style.scss */
 .mailing-list-mod:after {
   height: 8px;
   content: '';
@@ -2043,7 +2070,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1094, src/style.scss */
+/* line 1120, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -2057,12 +2084,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 1112, src/style.scss */
+/* line 1138, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 1116, src/style.scss */
+/* line 1142, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -2083,7 +2110,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1130, src/style.scss */
+/* line 1156, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2094,12 +2121,12 @@ footer {
   left: auto;
 }
 
-/* line 1136, src/style.scss */
+/* line 1162, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 1140, src/style.scss */
+/* line 1166, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -2120,7 +2147,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1154, src/style.scss */
+/* line 1180, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
