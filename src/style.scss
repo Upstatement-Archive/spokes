@@ -177,6 +177,15 @@ em   	{	font-style: italic;	}
 	font: 400 19px/145% $freight-txt;
 	color: #464646;
 
+	a {
+		@include trans;
+
+		&:hover {
+			@include trans;
+			color:darken($bfc-gold, 12%);
+		}//hover
+	}//a
+
 	@media (min-width: $small) {
 		font-size: 20px;
 		line-height: 140%;
@@ -274,6 +283,7 @@ em   	{	font-style: italic;	}
 			padding: 22px 6px 22px 20px;
 			border-bottom: 1px solid;
 			border-color: #222;
+			@include trans;
 
 			&:last-child {
 				margin-right: 0px;
@@ -281,6 +291,7 @@ em   	{	font-style: italic;	}
 			}
 
 			&:hover {
+				@include trans;
 				color: $bfc-green;
 				background-color: #333;
 			}//hover
@@ -691,6 +702,12 @@ em   	{	font-style: italic;	}
 	background-size: 120px;
 	background-repeat: repeat-y;
 	min-height: 300px;
+	@include trans;	
+
+	&:hover {
+		@include trans;
+		@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));	
+	}
 }
 
 .post-date-mod {
@@ -863,7 +880,16 @@ a.history-link-mod {
 	.tz-h1 {
 		color: $bfc-gold;
 		margin-bottom: 15px;
-	}
+
+		a {
+			@include trans;
+
+			&:hover {
+				@include trans;
+				color:darken($bfc-gold, 12%);
+			}//hover
+		}//a		
+	}//tz-h1
 }
 
 
@@ -877,6 +903,15 @@ a.history-link-mod {
 	max-width: 779px;
 	width: 100%;
 	padding: 0px 80px 80px 80px;
+
+	a {
+		@include trans;
+
+		&:hover {
+			@include trans;
+			color: $bfc-gold;
+		}//hover
+	}//a	
 
 
 	@media (min-width: 1150px){
@@ -1037,6 +1072,15 @@ footer {
 .contact-li-item {
 	color: #fff;
 	font: 800 16px/160% $freight-sans;
+
+	a {
+		@include trans;
+
+		&:hover {
+			@include trans;
+			color: #555;
+		}
+	}
 }
 
 .sponsors {
@@ -1062,6 +1106,15 @@ footer {
 	.sponsors-list-mod {
 		@include columns(1);
 		margin-bottom: 25px;
+
+			a {
+				@include trans;
+
+				&:hover {
+					@include trans;
+					color: $bfc-green;
+				}//hover
+			}//a			
 
 		@media (min-width: 600px) {
 			margin-bottom: 0px;
