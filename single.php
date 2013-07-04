@@ -11,6 +11,8 @@
 
 	$context = Spokes::get_context();
 	$post = new TimberPost();
+	$post->hero = get_field('hero');
+
 	$context['post'] = $post;
 	$context['wp_title'] .= ' - '.$post->post_title;
 	$context['comment_form'] = WPHelper::get_comment_form($pid);
