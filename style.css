@@ -1578,8 +1578,8 @@ em {
 @media (min-width: 900px) {
   /* line 703, src/style.scss */
   .blog-post-tz {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 335px;
+    max-height: 335px;
   }
 }
 
@@ -2310,9 +2310,11 @@ footer {
 /* line 1291, src/style.scss */
 .mailing-list-mod #mc-embedded-subscribe {
   width: 105px;
+  letter-spacing: 1px;
+  padding: 0px 2px 0px 2px;
 }
 
-/* line 1297, src/style.scss */
+/* line 1299, src/style.scss */
 .mailing-list-mod:before {
   height: 8px;
   content: '';
@@ -2326,7 +2328,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1310, src/style.scss */
+/* line 1312, src/style.scss */
 .mailing-list-mod:after {
   height: 8px;
   content: '';
@@ -2340,7 +2342,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1323, src/style.scss */
+/* line 1325, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -2354,12 +2356,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 1345, src/style.scss */
+/* line 1347, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 1349, src/style.scss */
+/* line 1351, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -2380,7 +2382,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1363, src/style.scss */
+/* line 1365, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2391,12 +2393,12 @@ footer {
   left: auto;
 }
 
-/* line 1369, src/style.scss */
+/* line 1371, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 1373, src/style.scss */
+/* line 1375, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -2417,7 +2419,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1387, src/style.scss */
+/* line 1389, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
