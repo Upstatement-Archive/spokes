@@ -70,7 +70,7 @@
 			$doc = phpQuery::newDocument($content);
 			$id = str_replace('attachment_', '', $atts['id']);
 			$data['image'] = new InkwellImage($id);
-			return render_twig('components/core-image.twig', $data, false);
+			return Timber::render('components/core-image.twig', $data, false);
 		}
 
 		function get_options(){

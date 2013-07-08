@@ -34,6 +34,6 @@
 	$intro->sigs = get_field("team_signatures", 36);
 	$data['intro'] = $intro;
 
-	render_twig('home.twig', $data);
+	Timber::render('home.twig', $data);
 
 

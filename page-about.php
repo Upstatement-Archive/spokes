@@ -21,4 +21,4 @@
 	$post->pmc = get_field('about_pmc', 9);
 	$post->intro = get_field('page_intro', 9);
 	$context['post'] = $post;
-	render_twig(array('page-'.$post->post_name.'.twig', 'page-about.twig'), $context);
+	Timber::render(array('page-'.$post->post_name.'.twig', 'page-about.twig'), $context);
