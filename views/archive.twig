@@ -6,4 +6,6 @@
 		{% include ['tease-'~post.post_type~'.twig', 'tease-blog.twig'] %}
 	{% endfor %}
 
+	{{pagination|print_r}}
+
 {% endblock %}

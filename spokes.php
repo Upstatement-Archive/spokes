@@ -44,13 +44,13 @@
 
 		function add_routes(){
 			Timber::add_route('blog', function($params){
-				$query = 'posts_per_page=5&post_type=post';
+				$query = 'posts_per_page=2&post_type=post';
 				query_posts($query);
 				Timber::load_template('archive.php');
 			});
 
 			Timber::add_route('blog/page/:pg', function($params){
-				$query = 'posts_per_page=5&post_type=post&paged='.$params['pg'];
+				$query = 'posts_per_page=2&post_type=post&paged='.$params['pg'];
 				query_posts($query);
 				Timber::load_template('archive.php');
 			});
@@ -70,7 +70,7 @@
 			$doc = phpQuery::newDocument($content);
 			$id = str_replace('attachment_', '', $atts['id']);
 			$data['image'] = new InkwellImage($id);
-			return render_twig('components/core-image.twig', $data, false);
+			return Timber::render('components/core-image.twig', $data, false);
 		}
 
 		function get_options(){

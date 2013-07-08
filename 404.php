@@ -12,4 +12,4 @@
 <?php
 	$context = Spokes::get_context();
 	$context['post'] = $post;
-	render_twig(array('page-'.$post->post_name.'.twig', '404.twig'), $context);
+	Timber::render(array('page-'.$post->post_name.'.twig', '404.twig'), $context);

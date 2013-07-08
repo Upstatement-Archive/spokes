@@ -23,4 +23,4 @@
 	$post->sponsors = get_field('sponsors');
 	$post->headline = get_field('headline');
 	$context['post'] = $post;
-	render_twig(array('page-'.$post->post_name.'.twig', 'page.twig'), $context);
+	Timber::render(array('page-'.$post->post_name.'.twig', 'page.twig'), $context);
