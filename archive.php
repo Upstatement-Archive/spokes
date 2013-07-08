@@ -36,5 +36,6 @@
 		}
 		
 		$data['posts'] = Timber::get_posts();
+		$data['pagination'] = Timber::get_pagination();
 		
 		render_twig($templates, $data);
