@@ -727,8 +727,8 @@ em   	{	font-style: italic;	}
 	}//mq
 
 	@media (min-width: $large) {
-		min-height: 300px;
-		max-height: 300px;
+		min-height: 335px;
+		max-height: 335px;
 	}//mq
 }
 
@@ -1290,6 +1290,8 @@ footer {
 
 	#mc-embedded-subscribe {
 		width: 105px;
+		letter-spacing: 1px;
+		padding: 0px 2px 0px 2px;
 	}
 }
 
