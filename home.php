@@ -22,7 +22,7 @@
 	$sponsors->sponsors = get_field("sponsors", 16);
 	$data['sponsors'] = $sponsors;
 
-	$posts = Timber::get_posts('TimberPost');
+	$posts = Timber::get_posts('numberposts=3','TimberPost');
 	$data['posts'] = $posts;
 
 	$raffle = Timber::get_post(35);
