@@ -2047,7 +2047,7 @@ a.history-link-mod {
 .caption-section-h {
   font: 800 23px/150% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #444;
-  margin: 40px 0px 15px 0px;
+  margin: 20px 0px 15px 0px;
 }
 
 /* line 1160, src/style.scss */
@@ -2076,17 +2076,21 @@ a.history-link-mod {
   margin-bottom: 25px;
 }
 
-/* line 1183, src/style.scss */
-.history-aside .caption-section-h {
-  border-top: 1px solid;
-  border-color: #eee;
-  padding-top: 25px;
+/* line 1185, src/style.scss */
+.aside-rule {
+  background: url(/wp-content/themes/spokes/images/bg-dots-long.png) 100% 15% no-repeat;
+  background-size: 190px;
+  width: 240%;
+  height: 12px;
+  background-repeat: repeat-x;
+  margin-left: -141%;
+  margin-top: 60px;
 }
 
 /* ============================================= */
 /*	Raffle Page    						   		 */
 /* ============================================= */
-/* line 1196, src/style.scss */
+/* line 1202, src/style.scss */
 .raffle-list {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
   border-top: 2px solid;
@@ -2094,7 +2098,7 @@ a.history-link-mod {
   border-color: #fff;
 }
 
-/* line 1203, src/style.scss */
+/* line 1209, src/style.scss */
 .raffle-list-mod {
   background-color: #fff;
   margin: 0 auto;
@@ -2110,19 +2114,19 @@ a.history-link-mod {
   text-align: center;
 }
 @media (min-width: 550px) {
-  /* line 1203, src/style.scss */
+  /* line 1209, src/style.scss */
   .raffle-list-mod {
     padding: 50px 100px 60px 90px;
   }
 }
 
-/* line 1220, src/style.scss */
+/* line 1226, src/style.scss */
 .raffle-list-item {
   font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 
-/* line 1225, src/style.scss */
+/* line 1231, src/style.scss */
 .raffle-list-bg {
   background-color: #fff;
   height: 515px;
@@ -2139,13 +2143,13 @@ a.history-link-mod {
   position: absolute;
 }
 
-/* line 1236, src/style.scss */
+/* line 1242, src/style.scss */
 .raffle-content p {
   font: 17px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   text-align: left;
 }
 @media (min-width: 700px) {
-  /* line 1236, src/style.scss */
+  /* line 1242, src/style.scss */
   .raffle-content p {
     font: 20px/200% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   }
@@ -2154,32 +2158,32 @@ a.history-link-mod {
 /* ============================================= */
 /*	Store	    						   		 */
 /* ============================================= */
-/* line 1256, src/style.scss */
+/* line 1262, src/style.scss */
 .closed-store {
   background: url(/wp-content/themes/spokes/images/bg-hatch.png) 50% 50%;
 }
 
-/* line 1260, src/style.scss */
+/* line 1266, src/style.scss */
 .closed-sign-mod {
   max-width: 620px;
   width: 100%;
   margin: 0 auto;
   padding-top: 0px;
 }
-/* line 1266, src/style.scss */
+/* line 1272, src/style.scss */
 .closed-sign-mod img {
   max-width: 600px;
   width: 100%;
 }
 @media (min-width: 700px) {
-  /* line 1260, src/style.scss */
+  /* line 1266, src/style.scss */
   .closed-sign-mod {
     padding-top: 90px;
     padding-bottom: 50px;
   }
 }
 
-/* line 1277, src/style.scss */
+/* line 1283, src/style.scss */
 .store-closed {
   text-align: center;
   font: 800 20px/130% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
@@ -2189,7 +2193,7 @@ a.history-link-mod {
 /* ============================================= */
 /*	Blog-Post   						   		 */
 /* ============================================= */
-/* line 1290, src/style.scss */
+/* line 1296, src/style.scss */
 .bfc-404 {
   padding: 0% 0%;
   background: url(/wp-content/themes/spokes/images/bfc-404.jpg) no-repeat center center;
@@ -2201,7 +2205,7 @@ a.history-link-mod {
   position: relative;
 }
 
-/* line 1301, src/style.scss */
+/* line 1307, src/style.scss */
 .txt-mod-404 {
   text-align: left;
   background-color: #000;
@@ -2217,7 +2221,7 @@ a.history-link-mod {
   max-width: 500px;
 }
 
-/* line 1312, src/style.scss */
+/* line 1318, src/style.scss */
 .h1-404 {
   font: 800 48px/120% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #fff;
@@ -2226,7 +2230,7 @@ a.history-link-mod {
   letter-spacing: 1px;
 }
 
-/* line 1320, src/style.scss */
+/* line 1326, src/style.scss */
 .txt-404 {
   font: 22px/148% "freight-text-pro" "Roboto Slab", Georgia, Times, "Times New Roman", serif;
   color: #ddd;
@@ -2235,19 +2239,19 @@ a.history-link-mod {
 /* ============================================= */
 /*	Footer	    						   		 */
 /* ============================================= */
-/* line 1334, src/style.scss */
+/* line 1340, src/style.scss */
 footer {
   background-color: #1D1D1D;
   margin: 0 auto;
 }
 
-/* line 1339, src/style.scss */
+/* line 1345, src/style.scss */
 .ftr-mod {
   margin: 0 auto;
   max-width: 1200px;
 }
 @media (min-width: 1000px) {
-  /* line 1339, src/style.scss */
+  /* line 1345, src/style.scss */
   .ftr-mod {
     *zoom: 1;
   }
@@ -2274,31 +2278,31 @@ footer {
   }
 }
 
-/* line 1349, src/style.scss */
+/* line 1355, src/style.scss */
 .ftr-logo-mod {
   margin-bottom: 50px;
 }
 
-/* line 1353, src/style.scss */
+/* line 1359, src/style.scss */
 .ftr-logo {
   max-width: 300px;
   width: 100%;
   margin-bottom: 25px;
 }
 
-/* line 1359, src/style.scss */
+/* line 1365, src/style.scss */
 .contact-li-item {
   color: #fff;
   font: 800 16px/160% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
-/* line 1363, src/style.scss */
+/* line 1369, src/style.scss */
 .contact-li-item a {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 1366, src/style.scss */
+/* line 1372, src/style.scss */
 .contact-li-item a:hover {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -2307,13 +2311,13 @@ footer {
   color: #555;
 }
 
-/* line 1373, src/style.scss */
+/* line 1379, src/style.scss */
 .sponsors {
   background-color: #f5f5f3;
   margin: 0 auto;
   text-align: center;
 }
-/* line 1378, src/style.scss */
+/* line 1384, src/style.scss */
 .sponsors .sponsors-mod {
   *zoom: 1;
   text-align: left;
@@ -2342,7 +2346,7 @@ footer {
   margin-right: 0;
 }
 @media (min-width: 700px) {
-  /* line 1378, src/style.scss */
+  /* line 1384, src/style.scss */
   .sponsors .sponsors-mod {
     *zoom: 1;
   }
@@ -2368,13 +2372,13 @@ footer {
     margin-right: 0;
   }
 }
-/* line 1389, src/style.scss */
+/* line 1395, src/style.scss */
 .sponsors .section-h1 {
   color: #000;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 1395, src/style.scss */
+/* line 1401, src/style.scss */
 .sponsors .sponsors-list-mod {
   -webkit-columns: 1;
   -moz-columns: 1;
@@ -2383,14 +2387,14 @@ footer {
   columns: 1;
   margin-bottom: 25px;
 }
-/* line 1399, src/style.scss */
+/* line 1405, src/style.scss */
 .sponsors .sponsors-list-mod a {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 1402, src/style.scss */
+/* line 1408, src/style.scss */
 .sponsors .sponsors-list-mod a:hover {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -2399,13 +2403,13 @@ footer {
   color: #bada55;
 }
 @media (min-width: 600px) {
-  /* line 1395, src/style.scss */
+  /* line 1401, src/style.scss */
   .sponsors .sponsors-list-mod {
     margin-bottom: 0px;
   }
 }
 @media (min-width: 900px) {
-  /* line 1395, src/style.scss */
+  /* line 1401, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -2415,7 +2419,7 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  /* line 1395, src/style.scss */
+  /* line 1401, src/style.scss */
   .sponsors .sponsors-list-mod {
     -webkit-columns: 3;
     -moz-columns: 3;
@@ -2424,13 +2428,13 @@ footer {
     columns: 3;
   }
 }
-/* line 1421, src/style.scss */
+/* line 1427, src/style.scss */
 .sponsors .sponsor-list-item {
   font: 400 18px/175% "freight-sans-pro", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   text-align: left;
 }
 
-/* line 1427, src/style.scss */
+/* line 1433, src/style.scss */
 .sponsors-ul {
   display: inline-block;
   margin-right: 10%;
@@ -2438,12 +2442,12 @@ footer {
   text-align: left;
   vertical-align: top;
 }
-/* line 1434, src/style.scss */
+/* line 1440, src/style.scss */
 .sponsors-ul:last-child {
   margin-right: 0px;
 }
 
-/* line 1439, src/style.scss */
+/* line 1445, src/style.scss */
 .ftr-logo-bike {
   max-width: 160px;
   width: 100%;
@@ -2454,13 +2458,13 @@ footer {
   position: relative;
 }
 @media (min-width: 700px) {
-  /* line 1439, src/style.scss */
+  /* line 1445, src/style.scss */
   .ftr-logo-bike {
     display: block;
   }
 }
 
-/* line 1453, src/style.scss */
+/* line 1459, src/style.scss */
 .mailing-list-mod {
   max-width: 540px;
   width: 100%;
@@ -2470,18 +2474,18 @@ footer {
   background-size: 150px, 100%;
 }
 @media (min-width: 700px) {
-  /* line 1453, src/style.scss */
+  /* line 1459, src/style.scss */
   .mailing-list-mod {
     max-height: 228px;
     height: 228px;
   }
 }
-/* line 1468, src/style.scss */
+/* line 1474, src/style.scss */
 .mailing-list-mod #mce-EMAIL, .mailing-list-mod #mc-embedded-subscribe {
   height: 32px;
   margin-bottom: 12px;
 }
-/* line 1473, src/style.scss */
+/* line 1479, src/style.scss */
 .mailing-list-mod #mce-EMAIL {
   border-color: #eee;
   -webkit-border-radius: 5px;
@@ -2494,14 +2498,14 @@ footer {
   border-bottom-color: #ddd;
   width: 229px;
 }
-/* line 1482, src/style.scss */
+/* line 1488, src/style.scss */
 .mailing-list-mod #mc-embedded-subscribe {
   width: 105px;
   letter-spacing: 1px;
   padding: 0px 2px 0px 2px;
 }
 
-/* line 1490, src/style.scss */
+/* line 1496, src/style.scss */
 .mailing-list-mod:before {
   height: 8px;
   content: '';
@@ -2515,7 +2519,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1503, src/style.scss */
+/* line 1509, src/style.scss */
 .mailing-list-mod:after {
   height: 8px;
   content: '';
@@ -2529,7 +2533,7 @@ footer {
   background-size: 540px;
 }
 
-/* line 1516, src/style.scss */
+/* line 1522, src/style.scss */
 .site-credit {
   background-color: #2A2B2A;
   color: #fff;
@@ -2540,7 +2544,7 @@ footer {
   text-align: center;
 }
 
-/* line 1531, src/style.scss */
+/* line 1537, src/style.scss */
 .fb-box-mod {
   margin-top: 30px;
 }
@@ -2548,12 +2552,12 @@ footer {
 /* ============================================= */
 /*	Special FX    						   		 */
 /* ============================================= */
-/* line 1541, src/style.scss */
+/* line 1547, src/style.scss */
 .card-effect {
   position: relative;
 }
 
-/* line 1545, src/style.scss */
+/* line 1551, src/style.scss */
 .card-effect:before, .card-effect:after {
   z-index: -1;
   position: absolute;
@@ -2574,7 +2578,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1559, src/style.scss */
+/* line 1565, src/style.scss */
 .card-effect:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -2585,12 +2589,12 @@ footer {
   left: auto;
 }
 
-/* line 1565, src/style.scss */
+/* line 1571, src/style.scss */
 .card-effect-lg {
   position: relative;
 }
 
-/* line 1569, src/style.scss */
+/* line 1575, src/style.scss */
 .card-effect-lg:before, .card-effect-lg:after {
   z-index: -1;
   position: absolute;
@@ -2611,7 +2615,7 @@ footer {
   transform: rotate(-3deg);
 }
 
-/* line 1583, src/style.scss */
+/* line 1589, src/style.scss */
 .card-effect-lg:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);

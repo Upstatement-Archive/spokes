@@ -1154,7 +1154,7 @@ a.history-link-mod {
 .caption-section-h {
 	font: 800 23px/150% $freight-sans;
 	color: #444;
-	margin: 40px 0px 15px 0px; 
+	margin: 20px 0px 15px 0px; 
 }
 
 .caption-h {
@@ -1180,12 +1180,18 @@ a.history-link-mod {
 }
 
 .history-aside {
-	.caption-section-h {
-		border-top: 1px solid;
-		border-color: #eee;
-		padding-top: 25px;
-	}//caption-section-h	
 }//history-aside
+
+.aside-rule {
+	background: url(/wp-content/themes/spokes/images/bg-dots-long.png) 100% 15% no-repeat;
+	background-size: 190px;
+	width: 240%;
+	height: 12px;
+	background-repeat: repeat-x;
+	margin-left: -141%;
+	margin-top: 60px;
+}
+
 
 /* ============================================= */
 
