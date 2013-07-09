@@ -15,9 +15,25 @@
 
 			<h1 class="post-h1">{{post.title}}</h1>
 			<div class="byline">by {{post.author.display_name}}</div><!-- /byline -->
-
-			{{post.get_content}}
-
+			<div class="single-content">
+				{{post.get_content}}
+				<p>We're just testing a <a href="#">Link</a> Here.</p>
+				<blockquote>This is a big old blockquote. Check it out My brother. The other day I had a fish Sandwhich. It was rilly kewl.</blockquote>	
+				<ul class="bulleted-list">
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+				</ul>	
+				<ul class="numbered-list">
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+					<li><span>Stuff</span></li>
+				</ul>	
+			</div><!-- /single-content -->
 	</div> <!-- /post-content-mod -->	
 
 {% endblock %}

@@ -1,12 +1,11 @@
 {% extends "base.twig" %}
 
-{% block content %}
-	<section class="closed-store">
+	{% block content %}
+	<div class="page-mod">
 		<div class="closed-sign-mod">
-			<div class="page-mod">
-				<img class="closed-sign" src="/wp-content/themes/spokes/images/closed-sign.png" />
-			</div><!-- /page-mod -->
+			<img class="closed-sign" src="/wp-content/themes/spokes/images/closed-sign.png" />
+			<h1 class="store-closed">Our store is closed. Please check back next Season.</h1>
 		</div><!-- /closed-sign-mod -->
-	</section><!-- /closed-store -->	
+	</div>
+	{% endblock %}
 
-{% endblock %}
