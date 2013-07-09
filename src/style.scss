@@ -942,6 +942,9 @@ em   	{	font-style: italic;	}
 		font: 400 33px/136% $freight-sans;
 		margin-bottom: 28px;
 		font-style: italic;
+		border-left: 3px solid;
+		border-color: $bfc-gold;
+		padding-left: 20px;
 	}//blockquote
 
 	.bulleted-list, .numbered-list {
@@ -1472,6 +1475,9 @@ footer {
 
 }
 
+.fb-box-mod {
+	margin-top: 30px;
+}
 
 /* ============================================= */
 
