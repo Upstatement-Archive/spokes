@@ -1,6 +1,12 @@
 {% extends "base.twig" %}
 
 {% block content %}
+		{% set size = intro.bgs | length - 1 %}
+		{% set key = random(size) %}
+
+		<div class="post-intro-img">
+			<img src="{{ intro.bgs[key].image.url }}"/>
+		</div>
 
 		<section class="page-intro">
 			<h1 class="intro-h1 home-intro">Bikes Fight Cancer</h1>

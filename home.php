@@ -32,6 +32,8 @@
 	$intro = Timber::get_post(36);
 	$intro->goal = get_field("goal", 36);
 	$intro->sigs = get_field("team_signatures", 36);
+	$intro->bgs = get_field("background_images", 36);
+
 	$data['intro'] = $intro;
 
 	Timber::render('home.twig', $data);
