@@ -925,6 +925,13 @@ em   	{	font-style: italic;	}
 	}
 }//post-conenter-mod
 
+//for when there's no hero
+.no-hero {
+	.post-content-topper {
+		margin-top: 100px;
+	}
+}
+
 .single-content {
 
 	> p {
