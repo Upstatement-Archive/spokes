@@ -896,8 +896,21 @@ em   	{	font-style: italic;	}
 		}//lc
 	}
 
+	img {
+		width: 100%;
+		height: auto;
+
+		@media (min-width: $large) {
+			width: 125%;
+		}//mq		
+
+		@media (min-width: $x-large) {
+			width: 157%;
+		}//mq
+	}//img
+
 	.size-full {
-		max-width:779px;
+		max-width: 779px;
 		width: 100%;
 		height: auto;
 	} // wp-image fix
@@ -923,7 +936,7 @@ em   	{	font-style: italic;	}
 	@media (min-width: 1150px) {
 		padding: 30px 80px 90px 80px;
 	}
-}//post-conenter-mod
+}//post-conent-mod
 
 //for when there's no hero
 .no-hero {

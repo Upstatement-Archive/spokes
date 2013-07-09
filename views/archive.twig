@@ -2,10 +2,12 @@
 
 {% block content %}
 	<div class="page-mod">
-		{% for post in posts %}
-			{% include ['tease-'~post.post_type~'.twig', 'tease-blog.twig'] %}
-		{% endfor %}
+		<div class="post-feed-mod">
+			{% for post in posts %}
+				{% include ['tease-'~post.post_type~'.twig', 'tease-blog.twig'] %}
+			{% endfor %}
 
-		{% include "components/pagination.twig" %}
+			{% include "components/pagination.twig" %}
+		</div><!-- /post-feed-mod -->	
 	</div><!-- /page-mod -->
 {% endblock %}

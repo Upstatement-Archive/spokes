@@ -2,13 +2,11 @@
 
 {% block content %}
 
-	{% if post.hero %}
+	{% if post.get_thumbnail %}
 		<div class="post-intro-img">
-			<img src="{{post.hero.url}}" alt="alt text"/>
+			<img src="{{post.get_thumbnail.get_src}}" alt="alt text"/>
 		</div>
-	{% endif %}
-
-	{% if not post.hero %}
+	{% else %}
 		<div class="no-hero">
 	{% endif %}
 
@@ -43,7 +41,7 @@
 			</div><!-- /single-content -->
 	</div> <!-- /post-content-mod -->	
 
-	{% if not post.hero %}
+	{% if not post.get_thumnail %}
 		</div>
 	{% endif %}
 
