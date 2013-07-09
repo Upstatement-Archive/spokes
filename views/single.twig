@@ -1,9 +1,16 @@
 {% extends "base.twig" %}
 
 {% block content %}
+
+	{% if post.hero %}
 		<div class="post-intro-img">
 			<img src="{{post.hero.url}}" alt="alt text"/>
 		</div>
+	{% endif %}
+
+	{% if not post.hero %}
+		<div class="no-hero">
+	{% endif %}
 
 	<div class="post-content-topper"></div>
 	
@@ -35,5 +42,9 @@
 				</ul>	
 			</div><!-- /single-content -->
 	</div> <!-- /post-content-mod -->	
+
+	{% if not post.hero %}
+		</div>
+	{% endif %}
 
 {% endblock %}
