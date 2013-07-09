@@ -96,24 +96,40 @@ em   	{	font-style: italic;	}
 	margin-bottom: 5px;
 }
 
-.sub-txt-mod {
-	max-width: 780px;
+.page-sub-txt {
+	@include pie-clearfix;
+	max-width: 1300px;
 	width: 100%;
 	margin: 0 auto;
+
+	@media (min-width: $large) {
+		background: url(/wp-content/themes/spokes/images/pmc-logo-fade.png) no-repeat 108% -89%;
+		background-size: 697px;
+		padding-bottom: 90px;
+	}//mq
+
+	@media (max-width: 1300px) {
+		margin: 0 auto;
+		margin-right: 0px;
+	}//mq
 }
 
+.sub-txt-mod {
+	max-width: 540px;
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+
+	@media (min-width: $large) {
+		float: left;
+	}
+}
 
 .sub-txt {
-	max-width: 780px;
+	max-width: 540px;
 	width: 100%;
 	margin-bottom: 25px;
-	font: 400 18px/150% $freight-txt;	
-
-	@media (min-width: 700px) {
-		@include columns(2);
-		@include column-gap(4em);
-		text-align: justify;
-	}//mq
+	font: 400 20px/160% $freight-txt;	
 }
 
 .section-hd-mod {
@@ -1362,6 +1378,8 @@ footer {
 	.sponsors-mod {
 		@include ui-grid-lr(100%, 100%, 0%);
 		text-align: left;
+		max-width: 1200px;
+		margin: 0 auto;
 
 		@media (min-width: 700px) {
 			@include ui-grid-lr(25%, 75%, 5%);
