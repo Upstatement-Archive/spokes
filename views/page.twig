@@ -1,10 +1,16 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="post-intro-img">
-		<img src="{{post.hero.url}}" alt="alt text"/>
-	</div>
 
+	{% if post.hero %}
+		<div class="post-intro-img">
+			<img src="{{post.hero.url}}" alt="alt text"/>
+		</div>
+	{% endif %}
+
+	{% if not post.hero %}
+		<div class="no-hero">
+	{% endif %}
 	<div class="post-content-topper"></div>
 	<div class="post-content-mod">
 			<div class="section-hd-mod">
@@ -16,8 +22,10 @@
 			<div class="byline">by {{post.author.display_name}}</div><!-- /byline -->
 			
 			{{post.get_content}}
-			
-	</div> <!-- /post-content-mod -->	
+	</div> <!-- /post-content-mod -->
+	{% if not post.hero %}
+		</div>
+	{% endif %}
 
 	<section class="raffle-history history-aside">
 		{% if post.sponsors %}
