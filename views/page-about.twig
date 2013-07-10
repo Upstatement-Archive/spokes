@@ -19,18 +19,20 @@
 
 	<section class="team-profiles">
 		<div class="page-mod">
-			{% for rider in post.team %}
-				<div class="team-member media-block">
-					<div class="rider-img-mod">
-						<img class="rider-img" src="{{rider.image.url}}">
-					</div><!-- /rider-img-mod -->
-					<p><strong>{{rider.name}}</strong> – {{rider.bio}}</p>
-				</div><!-- /team-member -->
-			{% endfor %}
+			<div class="profiles-mod">
+				{% for rider in post.team %}
+					<div class="team-member media-block">
+						<div class="rider-img-mod">
+							<img class="rider-img" src="{{rider.image.url}}">
+						</div><!-- /rider-img-mod -->
+						<p><strong>{{rider.name}}</strong> – {{rider.bio}}</p>
+					</div><!-- /team-member -->
+				{% endfor %}
+			</div><!-- /profiles-mod -->	
 		</div><!-- /page-mod -->			
 	</section><!-- /team-profiles -->	
 
-	<section class="page-sub-txt">
+	<section class="page-sub-txt about-sub-txt">
 		<div class="page-mod">
 			<div class="sub-txt-mod">
 				<h4 class="section-h1">Bikes Fight Cancer and The PMC</h4>

@@ -98,15 +98,10 @@ em   	{	font-style: italic;	}
 
 .page-sub-txt {
 	@include pie-clearfix;
-	max-width: 1300px;
 	width: 100%;
 	margin: 0 auto;
-
-	@media (min-width: $large) {
-		background: url(/wp-content/themes/spokes/images/pmc-logo-fade.png) no-repeat 108% -89%;
-		background-size: 697px;
-		padding-bottom: 90px;
-	}//mq
+	border-bottom: 1px solid;
+	border-color: #eee;	
 
 	@media (max-width: 1300px) {
 		margin: 0 auto;
@@ -235,6 +230,12 @@ em   	{	font-style: italic;	}
 	color: #bada55;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+.ftr-h2 {
+	font: 800 20px/140% $freight-sans;
+	color: #fff;
 }
 
 /* ============================================= */
@@ -659,6 +660,11 @@ em   	{	font-style: italic;	}
 	}//mq
 }
 
+.sub-txt-raffle {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
 /* ============================================= */
 
 /*	About       						   		 */ 
@@ -677,6 +683,12 @@ em   	{	font-style: italic;	}
 	@media (min-width: 801px) {
 		@include media-grid (3, 50px);
 	}
+}
+
+.profiles-mod {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 .team-member {
@@ -698,7 +710,14 @@ em   	{	font-style: italic;	}
 	margin-bottom: 20px;
 }
 
+.about-sub-txt {
 
+	@media (min-width: $large) {
+		background: url(/wp-content/themes/spokes/images/pmc-logo-fade.png) no-repeat 108% -89%;
+		background-size: 697px;
+		padding-bottom: 90px;
+	}//mq
+}
 
 /* ============================================= */
 
@@ -706,14 +725,15 @@ em   	{	font-style: italic;	}
 
 /* ============================================= */
 
+.blog-feed-mod {
+	margin-top: 60px;
+}
+
 .blog-feed {
 	margin: 0 auto;
 	text-align: center;
 	border-top: 1px solid;
 	border-color: #eee;
-}
-
-.blog-feed-mod {
 }
 
 .blog-post-tz {
@@ -941,7 +961,7 @@ em   	{	font-style: italic;	}
 	}//MQ
 
 	@media (min-width: 600px) {
-		padding: 30px 80px 90px 80px;
+		padding: 30px 80px 50px 80px;
 
 		.section-h1 {
 			margin-bottom: 40px;
@@ -1123,7 +1143,7 @@ a.history-link-mod {
 	color: #555;
 	max-width: 779px;
 	width: 100%;
-	padding: 0px 10px 80px 10px;
+	padding: 30px 10px 0px 10px;
 
 	a {
 		@include trans;
@@ -1135,7 +1155,11 @@ a.history-link-mod {
 	}//a	
 
 	@media (min-width: 500px) {
-		padding: 0px 80px 80px 80px;		
+		padding: 0px 30px 0px 30px;		
+	}//mq
+
+	@media (min-width: 600px) {
+		padding: 0px 80px 30px 80px;				
 	}//mq
 
 	@media (min-width: 1150px){
@@ -1179,19 +1203,22 @@ a.history-link-mod {
 	margin-bottom: 25px;
 }
 
-.history-aside {
-}//history-aside
-
 .aside-rule {
 	background: url(/wp-content/themes/spokes/images/bg-dots-long.png) 100% 15% no-repeat;
 	background-size: 190px;
-	width: 240%;
+	width: 100%;
 	height: 12px;
 	background-repeat: repeat-x;
-	margin-left: -141%;
-	margin-top: 60px;
+
+	@media (min-width: 1150px){
+		width: 240%;
+		margin-left: -141%;
+	}//mq
 }
 
+.aside-section-mod {
+	margin-bottom: 55px;
+}
 
 /* ============================================= */
 
@@ -1247,11 +1274,34 @@ a.history-link-mod {
 		font: 20px/200% $freight-txt;
 	}//mq
 
-	}
+	}//p
+}//raffle-content
 
-
+.raffle-shirt {
+	max-width: 540px;
+	width: 100%;
 }
 
+
+.raffle-sub-txt {
+	border-bottom: 1px solid;
+	border-color: #eee;
+
+	.sub-txt, .section-h1 {
+		margin: 0 auto;
+		max-width: 570px;
+		margin-bottom: 25px;
+	}
+}
+
+.raffle-ui-group {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media (min-width: 800px) {
+		@include ui-grid-lr(48%, 48%, 2%);
+	}//mq	
+}//raffle-ui-group
 
 /* ============================================= */
 
@@ -1363,8 +1413,8 @@ footer {
 }
 
 .contact-li-item {
-	color: #fff;
-	font: 800 16px/160% $freight-sans;
+	color: #eee;
+	font: 400 16px/160% $freight-sans;
 
 	a {
 		@include trans;
@@ -1380,6 +1430,8 @@ footer {
 	background-color: #f5f5f3;
 	margin: 0 auto;
 	text-align: center;	
+	border-top: 1px solid;
+	border-color: #eee;
 
 	.sponsors-mod {
 		@include ui-grid-lr(100%, 100%, 0%);
@@ -1527,7 +1579,17 @@ footer {
 	padding: 16px 25px 20px 25px;
 	letter-spacing: 1px;
 	text-align: center;
-}
+
+	a {
+		@include trans;
+
+		&:hover {
+			@include trans;
+			color: $bfc-green;
+		}//hover
+	}//a
+
+}//site-credit
 
 
 #mc_embed_signup {

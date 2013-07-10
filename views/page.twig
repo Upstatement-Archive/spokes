@@ -30,14 +30,18 @@
 	<section class="raffle-history history-aside">
 		<div class="aside-rule"></div>
 		{% if post.sponsors %}
-			<h4 class="caption-section-h">Raffle Winners</h4>
-			{{post.winners}}	
+			<div class="aside-section-mod">
+				<h4 class="caption-section-h">Raffle Winners</h4>
+				{{post.winners}}
+			</div><!-- /aside-section-mod -->		
 		{% endif %}
 
 		<div class="aside-rule"></div>
 		{% if post.sponsors %}
-			<h4 class="caption-section-h">Business Sponsors</h4>
-			{{post.sponsors}}
+			<div class="aside-section-mod">
+				<h4 class="caption-section-h">Business Sponsors</h4>
+				{{post.sponsors}}
+			</div> <!-- /aside-section-mod -->	
 		{% endif %}
 	</section><!-- /raffle-history -->	
 
