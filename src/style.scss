@@ -32,8 +32,6 @@
 
 body {
 	overflow: hidden;
-	// font: 400 18px/150% $freight-txt;
-
 }
 
 a 		{ 	text-decoration: none; color: inherit; }
@@ -99,12 +97,10 @@ em   	{	font-style: italic;	}
 .page-sub-txt {
 	@include pie-clearfix;
 	width: 100%;
+	max-width: 1300px;
 	margin: 0 auto;
-	border-bottom: 1px solid;
-	border-color: #eee;	
 
 	@media (max-width: 1300px) {
-		margin: 0 auto;
 		margin-right: 0px;
 	}//mq
 }
@@ -238,6 +234,7 @@ em   	{	font-style: italic;	}
 	color: #fff;
 }
 
+
 /* ============================================= */
 
 /*	nav     						   			 */ 
@@ -324,10 +321,6 @@ em   	{	font-style: italic;	}
 					background-color: #121212;
 				}//hover
 			}//mq
-
-			
-
-		
 		}//li
 	}//menu-main-nav
 }//#access 
@@ -370,7 +363,7 @@ em   	{	font-style: italic;	}
 
 	@media (min-width: $medium) {
 		display: none;
-	}
+	}//mq
 }
 
 .visible {
@@ -474,7 +467,7 @@ em   	{	font-style: italic;	}
 	@media (min-width: $medium) {
 		font: 600 29px/120% $freight-sans;
 		margin-bottom: 65px;	
-	}
+	}//mq
 }
 
 .page-sub-intro-home {
@@ -548,7 +541,6 @@ em   	{	font-style: italic;	}
 	max-width: 750px;
 	width: 100%;
 }
-
 
 
 /* ============================================= */
@@ -665,6 +657,7 @@ em   	{	font-style: italic;	}
 	margin: 0 auto;
 }
 
+
 /* ============================================= */
 
 /*	About       						   		 */ 
@@ -678,11 +671,11 @@ em   	{	font-style: italic;	}
 
 	@media (min-width: 401px) and (max-width: 800px) {
 		@include media-grid (2, 50px);
-	}	
+	}//mq	
 
 	@media (min-width: 801px) {
 		@include media-grid (3, 50px);
-	}
+	}//mq
 }
 
 .profiles-mod {
@@ -718,6 +711,7 @@ em   	{	font-style: italic;	}
 		padding-bottom: 90px;
 	}//mq
 }
+
 
 /* ============================================= */
 
@@ -843,8 +837,8 @@ em   	{	font-style: italic;	}
 
 		&:last-child {
 			margin-right: 0px;
-		}
-	}
+		}//last-child
+	}//li
 }
 
 .next {
@@ -1220,6 +1214,7 @@ a.history-link-mod {
 	margin-bottom: 55px;
 }
 
+
 /* ============================================= */
 
 /*	Raffle Page    						   		 */ 
@@ -1295,9 +1290,10 @@ a.history-link-mod {
 }
 
 .raffle-sub-txt-mod {
-
+	p {
 		font: 20px/160% $freight-txt;
-	
+		margin-bottom: 25px;
+	}
 }
 
 .raffle-ui-group {
@@ -1305,9 +1301,11 @@ a.history-link-mod {
 	margin: 0 auto;
 
 	@media (min-width: 800px) {
-		@include ui-grid-lr(48%, 48%, 2%);
+		@include ui-grid-lr(48%, 48%, 2%);	
 	}//mq	
 }//raffle-ui-group
+
+
 
 /* ============================================= */
 
@@ -1341,6 +1339,7 @@ a.history-link-mod {
 	font: 800 20px/130% $freight-sans;
 	padding-top: 30px;
 }
+
 
 /* ============================================= */
 
@@ -1385,8 +1384,6 @@ a.history-link-mod {
 }
 
 
-
-
 /* ============================================= */
 
 /*	Footer	    						   		 */ 
@@ -1428,8 +1425,8 @@ footer {
 		&:hover {
 			@include trans;
 			color: #555;
-		}
-	}
+		}//hover
+	}//q
 }
 
 .sponsors {
@@ -1485,7 +1482,7 @@ footer {
 	.sponsor-list-item {
 		font: 400 18px/175% $freight-sans;
 		text-align: left;
-	}
+	}//sponsor-list-item
 }
 
 .sponsors-ul {
@@ -1497,7 +1494,7 @@ footer {
 
 	&:last-child {
 		margin-right: 0px;
-	}
+	}//last-child
 }
 
 .ftr-logo-bike {
@@ -1527,7 +1524,7 @@ footer {
 	@media (min-width: $medium) {
 		max-height: 228px;
 		height: 228px;
-	}
+	}//mq
 
 	#mce-EMAIL, #mc-embedded-subscribe {
 		height: 32px;
@@ -1605,6 +1602,7 @@ footer {
 .fb-box-mod {
 	margin-top: 30px;
 }
+
 
 /* ============================================= */
 
