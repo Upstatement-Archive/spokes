@@ -13,7 +13,7 @@
 
 		{% for child in post.get_children %}
 			<article class="history-year card-effect-lg">
-				<img class="year-tz-img" src="{{child.get_thumbnail.get_src}}"/>
+				<img class="year-tz-img" src="{{child.get_thumbnail.get_src|resize(380, 268)}}"/>
 				<div class="year-tz-txt-mod">
 					<h5 class="tz-h1"><a href="{{child.permalink}}">{{child.title}}</a></h5>
 					<p class="tz-txt">{{child.get_preview(25)}}</p>
