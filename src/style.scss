@@ -81,7 +81,7 @@ em   	{	font-style: italic;	}
 }
 
 .page-mod {
-	padding: 45px 20px;	
+	padding: 40px 20px;	
 
 	@media (min-width: $medium) {
 		padding: 75px 50px;
@@ -90,6 +90,7 @@ em   	{	font-style: italic;	}
 
 .section-icon {
 	max-width: 45px;
+	max-height: 44px;
 	width: 100%;
 	margin-bottom: 5px;
 }
@@ -120,7 +121,11 @@ em   	{	font-style: italic;	}
 	max-width: 540px;
 	width: 100%;
 	margin-bottom: 25px;
-	font: 400 20px/160% $freight-txt;	
+	font: 400 18px/160% $freight-txt;	
+
+	@media (min-width: $medium) {
+		font-size: 20px;
+	}//mq
 }
 
 .section-hd-mod {
@@ -172,7 +177,7 @@ em   	{	font-style: italic;	}
 	color: $bfc-gold;
 	font: 600 32px/120% $freight-sans, $sans;
 	letter-spacing: 1px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .tz-h1 {
@@ -200,9 +205,13 @@ em   	{	font-style: italic;	}
 }
 
 .post-h1 {
-	font: 800 45px/125% $freight-sans;
+	font: 800 40px/125% $freight-sans;
 	margin-bottom: 28px;
 	color: #000;
+
+	@media (min-width: $small) {
+		font: 800 45px/125% $freight-sans;
+	}//mq
 }
 
 .byline {
@@ -286,41 +295,50 @@ em   	{	font-style: italic;	}
 
 	#menu-main-nav {
 		> li {
-			@include inline-block;
-			background-color: #262626;
-			color: #fff;
-			font: 600 15px/120% $freight-sans;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			margin-right: 0px;
 			display: block;
-			padding: 22px 6px 22px 20px;
 			border-bottom: 1px solid;
 			border-color: #222;
-			@include trans;
-
-			&:last-child {
-				margin-right: 0px;
-				border-bottom: 0px;
-			}
-
-			&:hover {
-				@include trans;
-				color: $bfc-green;
-				background-color: #333;
-			}//hover
 
 			@media (min-width: $medium) {
 				display: inline;
-				margin-right: 3px;
-				background-color: #000;
-				padding: 2px 8px;
-				border-bottom: 0px;
+				border-bottom: 0px solid;
+			}//mq
+
+			a {
+				@include inline-block;
+				background-color: #262626;
+				color: #fff;
+				font: 600 15px/120% $freight-sans;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-right: 0px;
+				display: block;
+				padding: 22px 6px 22px 20px;
+				@include trans;
+
+				&:last-child {
+					margin-right: 0px;
+					border-bottom: 0px;
+				}
 
 				&:hover {
-					background-color: #121212;
+					@include trans;
+					color: $bfc-green;
+					background-color: #333;
 				}//hover
-			}//mq
+
+				@media (min-width: $medium) {
+					display: inline;
+					margin-right: 3px;
+					background-color: #000;
+					padding: 2px 8px;
+					border-bottom: 0px;
+
+					&:hover {
+						background-color: #121212;
+					}//hover
+				}//mq
+			}//a	
 		}//li
 	}//menu-main-nav
 }//#access 
@@ -333,6 +351,7 @@ em   	{	font-style: italic;	}
 
 	@media (min-width: 700px) {
 		max-width: 80px;
+		max-height: 100px;
 		display: inline;
 	}//mq
 } 
@@ -527,6 +546,7 @@ em   	{	font-style: italic;	}
 
 	img {
 		max-width: 95px;
+		max-height: 111px;
 		width: 100%;
 	}
 
@@ -569,7 +589,7 @@ em   	{	font-style: italic;	}
     @include border-radius(12px);
     max-width: 780px;
     width: 100%;
-    padding: 35px;
+    padding: 20px;
 	background-size: 101%; 
 	margin: 0 auto;
 	text-align: center;
@@ -581,18 +601,21 @@ em   	{	font-style: italic;	}
 	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));	
 
 	@media (min-width: $medium) {
-    	// max-height: 355px;
-    	// height: 355px;
+        padding: 35px;
     }//mq
 }
 
 .raffle-inside {
-	padding: 40px;
+	padding: 30px 30px 45px 30px;
 	border: 3px dashed;
 	border-color: $bfc-gold-dark;
 	height: 100%;
 	@include border-radius(12px);
 	@include pie-clearfix;	
+
+	@media (min-width: $medium) {
+		padding: 40px;
+	}//mq
 }
 
 .raffle-hdr {
@@ -667,7 +690,7 @@ em   	{	font-style: italic;	}
 .team-profiles {
 	border-bottom: 1px solid;
 	border-color: #eee;
-	font: 400 18px/150% $freight-txt;
+	font: 400 16px/150% $freight-txt;
 
 	@media (min-width: 401px) and (max-width: 800px) {
 		@include media-grid (2, 50px);
@@ -675,13 +698,18 @@ em   	{	font-style: italic;	}
 
 	@media (min-width: 801px) {
 		@include media-grid (3, 50px);
+		font-size: 18px;
 	}//mq
 }
 
 .profiles-mod {
 	max-width: 1300px;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
+
+	@media (min-width: $medium) {
+		padding-bottom: 50px;
+	}//mq
 }
 
 .team-member {
@@ -694,6 +722,7 @@ em   	{	font-style: italic;	}
 
 .rider-img {
 	max-width: 138px;
+	max-height: 138px;
 	width: 100%;
 	margin: 0 auto;	
 }
@@ -728,9 +757,23 @@ em   	{	font-style: italic;	}
 	text-align: center;
 	border-top: 1px solid;
 	border-color: #eee;
+
+	.page-mod {
+		padding: 40px 10px;	
+
+		@media (min-width: $medium) {
+			padding: 75px 50px;
+		}//mq
+	}//page-mod
 }
 
 .blog-post-tz {
+	background-color: #fff;
+	max-width: 768px;	
+	margin: 0 auto 50px auto;	
+}
+
+.blog-post-tz-mod {
 	margin: 0 auto 50px auto;
 	border: 1px solid;
 	border-color: #eee;
@@ -754,6 +797,11 @@ em   	{	font-style: italic;	}
 		background-size: 120px;
 		background-repeat: repeat-y;
 		padding: 35px 35px 50px 165px;
+
+		.lt-ie9 & { 
+			background-color: #fff;
+			background-image: none;
+		}//lt-ie9
 	}//mq
 
 	@media (min-width: $large) {
@@ -788,6 +836,7 @@ em   	{	font-style: italic;	}
 
 .tz-content-mod {
 	padding: 20px;
+	background-color: #fff;
 }
 
 .pagination-mod {
@@ -903,13 +952,16 @@ em   	{	font-style: italic;	}
 }
 
 .post-content-topper {
-	border-top: 1px solid;
-	border-left: 1px solid;
-	border-right: 1px solid;
-	border-color: #eee;
 	margin-top: -50px;
 	height: 140px;
-	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));
+
+	@media (min-width: 800px) {
+		border-top: 1px solid;
+		border-left: 1px solid;
+		border-right: 1px solid;
+		border-color: #eee;
+		@include box-shadow(0 0 30px rgba(0, 0, 0, 0.2));
+	}//mq
 }
 
 .post-content-mod {
@@ -918,12 +970,16 @@ em   	{	font-style: italic;	}
 	padding: 30px 10px 0px 10px;
 
 	p {
-		font: 20px/160% $freight-txt;
+		font: 17px/155% $freight-txt;
 		margin-bottom: 28px;
 
 		&:last-child {
 			margin-bottom: 0px;
 		}//lc
+
+		@media (min-width: $small) {
+			font: 20px/160% $freight-txt;
+		}
 	}
 
 	img {
@@ -971,8 +1027,12 @@ em   	{	font-style: italic;	}
 //for when there's no hero
 .no-hero {
 	.post-content-topper {
-		margin-top: 100px;
-	}
+		margin-top: 0px;
+
+		@media (min-width: $medium) {
+			margin-top: 100px;
+		}//mq
+	}//post-content-topper
 }
 
 .single-content {
@@ -1076,6 +1136,7 @@ em   	{	font-style: italic;	}
 	margin-bottom: 50px;
 	padding-bottom: 16px;
 	min-height: 268px;
+	background-color: #fff;
 	@include trans;
 
 	&:hover {
@@ -1100,6 +1161,7 @@ a.history-link-mod {
 	@media (min-width: $large) {
 		float: left;
 		max-width: 380px;
+		max-height: 268px;
 		margin-left: -1px;			
 	}//mq
 }
@@ -1107,6 +1169,7 @@ a.history-link-mod {
 .year-tz-txt-mod {
 	padding: 25px 25px 30px 25px;
 	text-align: left;
+	background-color: #fff;
 
 	@media (min-width: $large) {
 		padding: 27px 20px 30px 420px;
@@ -1133,11 +1196,12 @@ a.history-link-mod {
 .history-aside {
 	margin: 0 auto;
 	position: static;
-	line-height: 20px;
+	line-height: 170%;
 	color: #555;
 	max-width: 779px;
 	width: 100%;
 	padding: 30px 10px 0px 10px;
+	font-size: 15px;
 
 	a {
 		@include trans;
@@ -1153,10 +1217,12 @@ a.history-link-mod {
 	}//mq
 
 	@media (min-width: 600px) {
-		padding: 0px 80px 30px 80px;				
+		padding: 0px 80px 30px 80px;
 	}//mq
 
 	@media (min-width: 1150px){
+				font-size: 12px;				
+
 		top: 1100px;
 		left: 4%;
 		position: absolute;
@@ -1203,6 +1269,11 @@ a.history-link-mod {
 	width: 100%;
 	height: 12px;
 	background-repeat: repeat-x;
+
+	.lt-ie9 & { 
+		background-color: #fff;
+		background-image: none;
+	}
 
 	@media (min-width: 1150px){
 		width: 240%;
@@ -1261,29 +1332,34 @@ a.history-link-mod {
 }
 
 .raffle-content {
+	padding-bottom: 10px;
+
 	p {
 		font: 17px/200% $freight-txt;
 		text-align: left;
 
 	@media (min-width: $medium) {
 		font: 20px/200% $freight-txt;
+		padding-bottom: 70px;
 	}//mq
 
 	}//p
 }//raffle-content
+
+.raffle-winners {
+	padding: 40px 0px;
+}
 
 .raffle-shirt {
 	max-width: 540px;
 	width: 100%;
 }
 
-
 .raffle-sub-txt {
 	border-bottom: 1px solid;
 	border-color: #eee;
 
 	.sub-txt, .section-h1 {
-		margin: 0 auto;
 		max-width: 570px;
 		margin-bottom: 25px;
 	}
@@ -1291,9 +1367,13 @@ a.history-link-mod {
 
 .raffle-sub-txt-mod {
 	p {
-		font: 20px/160% $freight-txt;
+		font: 18px/160% $freight-txt;
 		margin-bottom: 25px;
-	}
+
+		@media (min-width: $medium) {
+			font-size: 20px;
+		}//mq
+	}//p
 }
 
 .raffle-ui-group {
@@ -1499,6 +1579,7 @@ footer {
 
 .ftr-logo-bike {
 	max-width: 160px;
+	max-height: 211px;
 	width: 100%;
 	display: block;
 	margin-top: -155px;
@@ -1514,16 +1595,19 @@ footer {
 .mailing-list-mod {
 	max-width: 540px;
 	width: 100%;
-	padding: 40px;
+	padding: 20px;
 	position: relative;
 	background: 
 			url(/wp-content/themes/spokes/images/mailing-list-stamp.png) 100% 15% no-repeat,
 			url(/wp-content/themes/spokes/images/mailing-list-bg.jpg);
-	background-size: 150px, 100%;
+	background-size: 90px, 100%;
+	background-color: #fff;
 
 	@media (min-width: $medium) {
 		max-height: 228px;
 		height: 228px;
+		background-size: 150px, 100%;
+		padding: 40px;
 	}//mq
 
 	#mce-EMAIL, #mc-embedded-subscribe {
@@ -1557,8 +1641,12 @@ footer {
 	position: absolute;
 	top: 0px;
 	z-index: 4;
-	margin-left: -40px;
+	margin-left: -20px;
 	background-size: 540px;
+
+	@media (min-width: $medium) {
+		margin-left: -40px;
+	}//mq
 }
 
 .mailing-list-mod:after {
@@ -1570,8 +1658,12 @@ footer {
 	position: absolute;
 	bottom: 0px;
 	z-index: 4;
-	margin-left: -40px;
+	margin-left: -20px;
 	background-size: 540px;	
+
+	@media (min-width: $medium) {
+		margin-left: -40px;
+	}//mq	
 }
 
 .site-credit {
