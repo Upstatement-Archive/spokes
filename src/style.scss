@@ -207,7 +207,7 @@ em   	{	font-style: italic;	}
 .post-h1 {
 	font: 800 40px/125% $freight-sans;
 	margin-bottom: 28px;
-	color: #000;
+	color: #000; 
 
 	@media (min-width: $small) {
 		font: 800 45px/125% $freight-sans;
@@ -218,8 +218,9 @@ em   	{	font-style: italic;	}
 	font: 800 18px/125% $freight-sans;
 	text-transform: uppercase;
 	color: #555;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
 	letter-spacing: 1px;
+	padding-top: 5px;
 }
 
 .email-h1 {
