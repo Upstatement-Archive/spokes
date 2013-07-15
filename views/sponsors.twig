@@ -9,7 +9,7 @@
 				<ul class="sponsors-list-mod">
 					{% for sponsor in footer.sponsors %}
 						<li class="sponsor-list-item">
-							{% if sponsor.sponsor_link %}<a href="{{sponsor.sponsor_link}}">{% endif %}
+							{% if sponsor.sponsor_link %}<a href="{{sponsor.sponsor_link}}" target="_blank">{% endif %}
 							{{sponsor.sponsor_name}}
 							{% if sponsor.sponsor_link %}</a>{% endif %}
 						</li><!-- sponsor -->
