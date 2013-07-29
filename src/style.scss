@@ -621,13 +621,14 @@ em   	{	font-style: italic;	}
 
 .raffle-hdr {
 	background-size: 100%;
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 	font: 30px/120% $giza;
 	color: $bfc-gold-dark;
 	@include opacity(.8);
 
 	@media (min-width: 500px) {
 		font: 38px/120% $giza;
+		margin-bottom: 70px;
 	}
 }
 
