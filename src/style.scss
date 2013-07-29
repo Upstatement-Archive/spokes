@@ -535,6 +535,16 @@ em   	{	font-style: italic;	}
 	}//mq
 }
 
+.team-signature-mod {
+	margin: 0 auto;
+	text-align: center;
+
+	@media (min-width: 500px) {
+		margin: 0px;
+		text-align: left;
+	}
+}
+
 .team-signature {
 	max-width: 120px;
 	width: 100%;
