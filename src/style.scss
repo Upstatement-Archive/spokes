@@ -1224,6 +1224,14 @@ a.history-link-mod {
 			}//hover
 		}//a		
 	}//tz-h1
+
+	.tz-txt {
+		padding-bottom: 25px;
+
+		@media(min-width: 500px) {
+			padding-bottom: 0px;
+		}
+	}
 }
 
 
