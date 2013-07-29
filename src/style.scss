@@ -622,9 +622,13 @@ em   	{	font-style: italic;	}
 .raffle-hdr {
 	background-size: 100%;
 	margin-bottom: 70px;
-	font: 38px/120% $giza;
+	font: 30px/120% $giza;
 	color: $bfc-gold-dark;
 	@include opacity(.8);
+
+	@media (min-width: 450px) {
+		font: 38px/120% $giza;
+	}
 }
 
 .raffle-name-mod {
@@ -1168,6 +1172,10 @@ em   	{	font-style: italic;	}
 
 a.history-link-mod {
 	display: block;
+}
+
+.history-year-mod {
+	background-color: #fff;
 }
 
 .year-tz-img {
