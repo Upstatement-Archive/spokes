@@ -15,14 +15,13 @@
 			<div class="page-mod">
 				<div class="sub-intro-txt-mod-home">
 				<h3 class="sub-intro-txt">{{ intro.post_content }}</h3>
-					{% for sig in intro.sigs %}
 					<div class="team-signature-mod">
-						<div class="team-signature">
-							<img src="{{sig.signature.url}}" alt="{{sig.signature.alt}}" />
-						</div><!-- /team-signatures -->
+						{% for sig in intro.sigs %}
+							<div class="team-signature">
+								<img src="{{sig.signature.url}}" alt="{{sig.signature.alt}}" />
+							</div><!-- /team-signatures -->
+						{% endfor %}
 					</div><!-- /team-signature-mod -->	
-					{% endfor %}
-				<!-- <img class="team-signatures" src="/wp-content/themes/spokes/images/team-signatures.png"> -->
 				</div><!-- /sub-intro-txt-mod -->
 			</div><!-- /page-mod -->	
 		</section><!-- /page-sub-intro -->	
