@@ -609,7 +609,7 @@ em   	{	font-style: italic;	}
 .raffle-inside {
 	padding: 30px 30px 45px 30px;
 	border: 3px dashed;
-	border-color: $bfc-gold-dark;
+	border-color: #6A5B3B;
 	height: 100%;
 	@include border-radius(12px);
 	@include pie-clearfix;	
@@ -624,7 +624,7 @@ em   	{	font-style: italic;	}
 	margin-bottom: 60px;
 	font: 30px/120% $giza;
 	color: $bfc-gold-dark;
-	@include opacity(.8);
+	@include opacity(.9);
 
 	@media (min-width: 500px) {
 		font: 38px/120% $giza;

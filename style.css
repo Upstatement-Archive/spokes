@@ -1404,7 +1404,7 @@ em {
 .raffle-inside {
   padding: 30px 30px 45px 30px;
   border: 3px dashed;
-  border-color: #5d4e2e;
+  border-color: #6A5B3B;
   height: 100%;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -1432,8 +1432,8 @@ em {
   margin-bottom: 60px;
   font: 30px/120% "Giza Five Five", "PT Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   color: #5d4e2e;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
 }
 @media (min-width: 500px) {
   /* line 622, src/style.scss */
