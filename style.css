@@ -1447,7 +1447,7 @@ em {
 .raffle-name-mod {
   position: relative;
   border-bottom: 3px solid;
-  border-color: #5d4e2e;
+  border-color: #776848;
   margin-bottom: 80px;
 }
 
@@ -1455,7 +1455,7 @@ em {
 .raffle-prize-mod {
   position: relative;
   border-bottom: 3px solid;
-  border-color: #5d4e2e;
+  border-color: #776848;
 }
 
 /* line 648, src/style.scss */
