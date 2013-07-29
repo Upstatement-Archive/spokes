@@ -556,7 +556,7 @@ em   	{	font-style: italic;	}
 	}
 
 	img {
-		max-width: 111px;
+		max-width: 100px;
 		max-height: 111px;
 		width: 100%;
 	}
@@ -1187,6 +1187,7 @@ a.history-link-mod {
 
 .history-year-mod {
 	background-color: #fff;
+	max-height: 509px;
 }
 
 .year-tz-img {
