@@ -30,12 +30,12 @@
 			{% include 'raffle-ticket.twig' %}
 		{% endif %}
 
-		<section class="blog-feed blog-feed-home">
+		<section class="blog-feed">
 			<div class="page-mod">
 				<img class="section-icon" src="/wp-content/themes/spokes/images/icon-blog.png">
 				<h4 class="section-h1">Blog</h4>
 
-				<div class="blog-feed-mod">
+				<div class="blog-feed-mod blog-feed-home">
 					{% for post in posts %}
 						{% include 'tease-blog.twig' %}
 					{% endfor %}
