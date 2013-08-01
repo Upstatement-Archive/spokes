@@ -779,8 +779,8 @@ em {
 
 /* line 91, src/style.scss */
 .section-icon {
-  max-width: 45px;
-  max-height: 44px;
+  max-width: 50px;
+  max-height: 49px;
   width: 100%;
   margin-bottom: 5px;
 }
@@ -1937,8 +1937,8 @@ em {
 }
 /* line 1032, src/style.scss */
 .post-content-mod .section-h1 {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 23px;
+  margin-bottom: 20px;
 }
 @media (min-width: 500px) {
   /* line 1001, src/style.scss */
@@ -1953,7 +1953,7 @@ em {
   }
   /* line 1044, src/style.scss */
   .post-content-mod .section-h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1150px) {
